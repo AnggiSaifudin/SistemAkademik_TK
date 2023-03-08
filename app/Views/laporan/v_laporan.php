@@ -26,7 +26,7 @@
                         <div class="col-10 input-group">
                             <select name="mapel" id="mapel" class="form-control">
                                 <option value="">Pilih Aspek Perkembangan</option>
-                                <option value="sosial dan emosi">SOSIAL DAN EMOSI</option>
+                                <option value="sosial dan emosi">Sosial dan Emosi</option>
                                 <option value="kognitif">Kognitif</option>
                                 <option value="agama dan moral">Agama dan Moral</option>
                                 <option value="bahasa">Bahasa</option>

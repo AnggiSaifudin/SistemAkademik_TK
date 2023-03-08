@@ -70,7 +70,7 @@ class Laporan extends BaseController
     public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
     {
         $ta = $this->ModelTa->ta_aktif();
-        $user = $this->ModelUser->User();
+        // $user = $this->ModelUser->User();
 
         $data = [
             'title' => 'Cetak Penilaian',
@@ -80,7 +80,7 @@ class Laporan extends BaseController
             'nama_kelas' => $nama_kelas,
             'siswa' => $this->LaporanModel->Siswa(),
             'ta' => $ta,
-            'user' => $user,
+            'user' => $this->ModelUser->User(),
             'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
 
         ];

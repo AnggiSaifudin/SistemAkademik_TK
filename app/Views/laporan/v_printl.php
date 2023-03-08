@@ -56,14 +56,7 @@
                     <!-- info row -->
                     <div class="row invoice-info">
                         <div class="col-6">
-                            <table class="">
 
-                                <tr>
-                                    <td width="200px"><b>Penanggung Jawab</b></td>
-                                    <td width="20px">:</td>
-                                    <td><?= $user['nama_user']; ?></td>
-                                </tr>
-                            </table>
                         </div>
                     </div>
                     <br>
@@ -115,7 +108,7 @@
                     <!-- /.row -->
                     <br>
                         <!-- accepted payments column -->
-                        <div class="col-md-6 text-center float-right">
+                        <div class="col-md-6 text-center float-left">
                             Mengetahui,<br>
                             Kepala Sekolah <br>
                             <br>
@@ -126,7 +119,20 @@
                             <b>Suningsih S.Pd</b> <br>
                         </div>
                         <!-- /.col -->
+                        <div class="col-6 text-center float-right">
+                            Pemalang, <?php 
+                                            $time_tamp = strtotime($tgl_nilai);
+                                            echo date('d-m-Y', $time_tamp);
+                            ?><br>
+                            Penanggung Jawab <br>
+                            <br>
+                            <br>
+                            <br>ttd
+                            <br>
+                            <br>
+                            <b><?= session()->get('nama') ?></b><br>
 
+                        </div>
                 </div>
                 <!-- /.row -->
 
