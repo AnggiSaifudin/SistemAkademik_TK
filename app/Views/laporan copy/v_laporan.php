@@ -1,3 +1,4 @@
+
 <div class="col-md-12">
     <div class="card card-primary">
         <div class="card-header">
@@ -25,7 +26,7 @@
                         <div class="col-10 input-group">
                             <select name="mapel" id="mapel" class="form-control">
                                 <option value="">Pilih Aspek Perkembangan</option>
-                                <option value="sosial dan emosi">SOSIAL DAN EMOSI</option>
+                                <option value="sosial dan emosi">Sosial dan Emosi</option>
                                 <option value="kognitif">Kognitif</option>
                                 <option value="agama dan moral">Agama dan Moral</option>
                                 <option value="bahasa">Bahasa</option>
@@ -49,7 +50,7 @@
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label">Tanggal :</label>
                         <div class="col-10 input-group">
-                        <input type="date" name="tgl_nilai" class="form-control" id="tgl_nilai">
+                        <input type="text" name="tgl_nilai" class="form-control" id="tgl_nilai" placeholder="dd-mm-yyyy">
                         </div>
                     </div>
 
@@ -78,6 +79,25 @@
     <!-- /.card -->
 </div>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+    <!-- link datepicker  -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Javascript Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js">
+    </script>
+    <!-- Javascript Bootstrap Datepicker -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js">
+</script>
+<script type="text/javascript">
+        $('#tgl_nilai').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+        });
+    </script>
+<!-- end link datepicker  -->
 
 <script>
     function ViewTabelLaporan() {
@@ -137,6 +157,3 @@
     }
 </script>
 
-<!-- else if (ta == "") {
-            swal("Tahun Akademik belum diisi");
-        }  -->

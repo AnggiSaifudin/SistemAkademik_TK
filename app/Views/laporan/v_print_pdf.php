@@ -1,74 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cetak Data Laporan</title>
-
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="<?= base_url(); ?>/halaman/plugins/fontawesome-free/css/all.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="<?= base_url(); ?>/halaman/dist/css/adminlte.min.css">
-</head>
-
-<body class="hold-transition sidebar-mini" onload="window.print();">
-    <div class="wrapper">
-
-
-        <section class="content">
-            <div class="container-fluid">
-
-
-                <!-- Main content -->
-                <div class="invoice p-3 mb-3">
-                    <!-- title row -->
-                    <div class="row">
+                   <style>
+                    table, td, th {
+                        border : 1px solid #333;
+                    }
+                    table{
+                        width: 100%;
+                        border-collapse: collapse;
+                        text-align: center;
+                    }
+                    td, th{
+                        padding: 2px;
+                    }
+                    th{
+                        background-color: #CCC;
+                    }
+                    .kiri, .gmb_kiri{
+                        float: left;
+                        text-align: center;
+                    }
+                    .kanan, .gmb_kanan {
+                        float: right;
+                        text-align: center;
+                    }
+                    .tanggal_download{
+                        float: right;
+                    }
+                    .title, .tk, .akreditasi, .jalan, .judul{
+                        text-align: center;
+                    }
+                   </style>
+                   
+                   <div class="row">
                         <div class="col-12">
-                            <p class="text-center">Cetak Data Laporan</p>
+                            <p class="title">Cetak Data Laporan</p>
                             <h4>
-                                <small class="float-right">Date: <?= date('d M Y'); ?></small>
+                                <small class="tanggal_download">Date: <?= date('d M Y'); ?></small>
                                 <br>
                                 <br>
-                                <td><img src="<?= base_url('gambar/yayasan.png'); ?>" height="50px" width="50px" class="float-left"><img src="<?= base_url('gambar/yayasan.png'); ?>" height="50px" width="50px" class="float-right"></td>
-                                <p class="text-center">TK PUTRA VII BOJONGBATA KABUPATEN PEMALANG</p>
-                                <p class="text-center">Akreditasi B</p>
+                                <img src="<?= base_url('gambar/yayasan.png'); ?>" height="50px" width="50px" class="gmb_kiri"><img src="<?= base_url('gambar/yayasan.png'); ?>" height="50px" width="50px" class="gmb_kanan">
+                                <p class="tk">TK PUTRA VII BOJONGBATA KABUPATEN PEMALANG</p>
+                                <p class="akreditasi">Akreditasi B</p>
                             </h4>
                         </div>
                         <!-- /.col -->
                     </div>
 
                     <br> <!-- /.row -->
-                    <p class="text-center">Jl. Gatot Subroto No.103, Bojongbata, Kec. Pemalang, Kabupaten Pemalang, Jawa Tengah 52319</p>
+                    <p class="jalan">Jl. Gatot Subroto No.103, Bojongbata, Kec. Pemalang, Kabupaten Pemalang, Jawa Tengah 52319</p>
                     <hr color="black" />
 
                     <br>
                     <div class="col-12">
-                        <h3 class="text-center">Data Laporan Hasil Penilaian <br>
+                        <h3 class="judul">Data Laporan Hasil Penilaian <br>
                             Perkembangan Anak Semester <?= $ta['semester']; ?> Tahun Akademik <?= $ta['ta']; ?><br>
                             Tanggal <?php
                                     $time_tamp = strtotime($tgl_nilai);
                                     echo date('d-m-Y', $time_tamp);
                                     ?></h3>
                     </div>
-                    <!-- info row -->
-                    <div class="row invoice-info">
-                        <div class="col-6">
 
-                        </div>
-                    </div>
-                    <br>
-                    <!-- Table row -->
-                    <div class="row">
-                        <div class="col-12 table-responsive">
-                            <table class="table table-bordered table-striped">
+                   <!-- Table row -->
+                            <table class="table">
                                 <thead class=" bg-blue">
-                                    <tr class="text-center">
+                                    <tr>
                                         <th width="50px">No</th>
                                         <th class="text-center">Nis</th>
-                                        <th class="text-center">Nama siswa</th>
+                                        <th class="text-center">Nama Siswa</th>
                                         <th class="text-center">Kelas</th>
                                         <th class="text-center">Smt</th>
                                         <th class="text-center">Mata Pelajaran</th>
@@ -102,13 +98,9 @@
                                     <?php } ?>
                                 </tbody>
                             </table>
-                        </div>
-                        <!-- /.col -->
-                    </div>
-                    <!-- /.row -->
-                    <br>
-                        <!-- accepted payments column -->
-                        <div class="col-md-6 text-center float-left">
+               <br>
+               <br>
+                            <div class="kiri">
                             Mengetahui,<br>
                             Kepala Sekolah <br>
                             <br>
@@ -119,7 +111,7 @@
                             <b>Suningsih S.Pd</b> <br>
                         </div>
                         <!-- /.col -->
-                        <div class="col-6 text-center float-right">
+                        <div class="kanan">
                             Pemalang, <?php 
                                             $time_tamp = strtotime($tgl_nilai);
                                             echo date('d-m-Y', $time_tamp);
@@ -133,24 +125,3 @@
                             <b><?= session()->get('nama') ?></b><br>
 
                         </div>
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.invoice -->
-    </div><!-- /.container-fluid -->
-    </section>
-    <!-- /.content -->
-    <!-- ./wrapper -->
-
-    <!-- jQuery -->
-    <script src="<?= base_url(); ?>/halaman/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap 4 -->
-    <script src="<?= base_url(); ?>/halaman/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="<?= base_url(); ?>/halaman/dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="<?= base_url(); ?>/halaman/dist/js/demo.js"></script>
-</body>
-
-</html>

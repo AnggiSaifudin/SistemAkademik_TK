@@ -47,6 +47,7 @@ class Laporan extends BaseController
     {
         $smt = $this->request->getPost('smt');
         $tgl_nilai = $this->request->getPost('tgl_nilai');
+        // $tgl_nilai = date('d-m-Y');
         $mapel = $this->request->getPost('mapel');
         $nama_kelas = $this->request->getPost('nama_kelas');
 
@@ -68,8 +69,8 @@ class Laporan extends BaseController
 
     public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
     {
-        // $ta = $this->ModelTa->ta_aktif();
-        $user = $this->ModelUser->User();
+        $ta = $this->ModelTa->ta_aktif();
+        // $user = $this->ModelUser->User();
 
         $data = [
             'title' => 'Cetak Penilaian',
@@ -78,8 +79,8 @@ class Laporan extends BaseController
             'mapel' => $mapel,
             'nama_kelas' => $nama_kelas,
             'siswa' => $this->LaporanModel->Siswa(),
-            // 'ta' => $ta,
-            'user' => $user,
+            'ta' => $ta,
+            'user' => $this->ModelUser->User(),
             'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
 
         ];
