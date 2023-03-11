@@ -70,7 +70,7 @@ class Laporan extends BaseController
     }
 
 
-    public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
+    public function Printpdf($smt,$nama_kelas,$mapel,$tgl_nilai)
     {
         $ta = $this->ModelTa->ta_aktif();
         // $user = $this->ModelUser->User();
@@ -100,24 +100,24 @@ class Laporan extends BaseController
             $dompdf->stream("Laporan Perkembangan anak.pdf", array('attachment' => false));
     }
 
-    // public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
-    // {
-    //     $ta = $this->ModelTa->ta_aktif();
-    //     // $user = $this->ModelUser->User();
+    public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
+    {
+        $ta = $this->ModelTa->ta_aktif();
+        // $user = $this->ModelUser->User();
 
-    //     $data = [
-    //         'title' => 'Cetak Penilaian',
-    //         'smt' => $smt,
-    //         'tgl_nilai' => $tgl_nilai,
-    //         'mapel' => $mapel,
-    //         'nama_kelas' => $nama_kelas,
-    //         'siswa' => $this->LaporanModel->Siswa(),
-    //         'ta' => $ta,
-    //         'user' => $this->ModelUser->User(),
-    //         'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
+        $data = [
+            'title' => 'Cetak Penilaian',
+            'smt' => $smt,
+            'tgl_nilai' => $tgl_nilai,
+            'mapel' => $mapel,
+            'nama_kelas' => $nama_kelas,
+            'siswa' => $this->LaporanModel->Siswa(),
+            'ta' => $ta,
+            'user' => $this->ModelUser->User(),
+            'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
 
-    //     ];
-    //     // dd($data);
-    //     return view('laporan/v_printl', $data);
-    // }
+        ];
+        // dd($data);
+        return view('laporan/v_printl', $data);
+    }
 }

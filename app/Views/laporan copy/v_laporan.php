@@ -61,6 +61,9 @@
                         <button onclick="Printlaporan()" class="btn btn-success btn-flat">
                             <i class="fas fa-print"></i> Print Laporan
                         </button>
+                        <button onclick="Printpdf()" class="btn btn-dark btn-flat">
+                        <i class="fa-solid fa-file-pdf"></i> Ekspor PDF
+                        </button>
                     </span>
                 </div>
 
@@ -153,6 +156,25 @@
             swal("Tanggal belum diisi");
         }else {
             NewWin = window.open('<?= base_url('Laporan/Printlaporan') ?>/' + smt +"/" + nama_kelas + "/" + mapel + "/" + tgl_nilai);
+        }
+    }
+
+    function Printpdf() {
+        let smt = $('#smt').val();
+        let tgl_nilai = $('#tgl_nilai').val();
+        let mapel = $('#mapel').val();
+        let nama_kelas = $('#nama_kelas').val();
+
+        if (smt == "") {
+            swal("Semester belum diisi");
+        }else if (mapel == "") {
+            swal("Aspek Perkembangan belum diisi");
+        } else if (nama_kelas == "") {
+            swal("Kelas belum diisi");
+        }else if(tgl_nilai == "") {
+            swal("Tanggal belum diisi");
+        }else {
+            NewWin = window.open('<?= base_url('Laporan/Printpdf') ?>/' + smt +"/" + nama_kelas + "/" + mapel + "/" + tgl_nilai);
         }
     }
 </script>

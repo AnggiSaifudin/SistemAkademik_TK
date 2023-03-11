@@ -39,7 +39,11 @@
 <div class="col-sm-12">
     <a href="<?= base_url('loginsiswa/print'); ?>" target="_blank" class="btn btn-xs btn-success">
         <i class="fa fa-print"></i>
-        cetak Aspek Perkembangan
+        Print Aspek Perkembangan
+    </a>
+    <a href="<?= base_url('loginsiswa/pdf'); ?>" target="_blank" class="btn btn-xs btn-dark">
+        <i class="fa fa-file-pdf"></i>
+        Download
     </a>
 </div>
 

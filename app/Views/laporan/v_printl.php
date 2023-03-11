@@ -107,32 +107,32 @@
                     </div>
                     <!-- /.row -->
                     <br>
-                        <!-- accepted payments column -->
-                        <div class="col-md-6 text-center float-left">
-                            Mengetahui,<br>
-                            Kepala Sekolah <br>
-                            <br>
-                            <br>
-                            <br>ttd
-                            <br>
-                            <br>
-                            <b>Suningsih S.Pd</b> <br>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-6 text-center float-right">
-                            Pemalang, <?php 
-                                            $time_tamp = strtotime($tgl_nilai);
-                                            echo date('d-m-Y', $time_tamp);
-                            ?><br>
-                            Penanggung Jawab <br>
-                            <br>
-                            <br>
-                            <br>ttd
-                            <br>
-                            <br>
-                            <b><?= session()->get('nama') ?></b><br>
+                    <!-- accepted payments column -->
+                    <div class="col-md-6 text-center float-left">
+                        Mengetahui,<br>
+                        Kepala Sekolah <br>
+                        <br>
+                        <br>
+                        <br>ttd
+                        <br>
+                        <br>
+                        <b>Suningsih S.Pd</b> <br>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-6 text-center float-right">
+                        Pemalang, <?php
+                                    $time_tamp = strtotime($tgl_nilai);
+                                    echo date('d-m-Y', $time_tamp);
+                                    ?><br>
+                        Penanggung Jawab <br>
+                        <br>
+                        <br>
+                        <br>ttd
+                        <br>
+                        <br>
+                        <b><?= session()->get('nama') ?></b><br>
 
-                        </div>
+                    </div>
                 </div>
                 <!-- /.row -->
 

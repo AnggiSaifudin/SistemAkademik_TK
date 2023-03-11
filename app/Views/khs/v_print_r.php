@@ -100,8 +100,8 @@
                                 <thead class=" bg-blue">
                                     <tr>
                                         <th style="color:black" class="text-center"><b>#</b></th>
-                                        <th style="color:black" class="text-center"><b>Kode Mapel</b></th>
-                                        <th style="color:black" class="text-center"><b>Mata Pelajaran</b></th>
+                                        <th style="color:black" class="text-center"><b>Kode Aspek</b></th>
+                                        <th style="color:black" class="text-center"><b>Aspek Perkembangan</b></th>
                                         <th style="color:black" class="text-center"><b>Nilai Quis</b></th>
                                         <th style="color:black" class="text-center"><b>Ketrampilan</b></th>
                                         <th style="color:black" class="text-center"><b>Kerajinan</b></th>
@@ -153,7 +153,10 @@
                         </div>
                         <!-- /.col -->
                         <div class="col-6 text-center">
-                            Pemalang, <?= $tgl_nilai['tgl_nilai']; ?> <br>
+                            Pemalang, <?php 
+                                            $time_tamp = strtotime($tgl_nilai['tgl_nilai']);
+                                            echo date('d-m-Y', $time_tamp);
+                            ?> <br>
                             Guru Kelas <br>
                             <br>
                             <br>ttd

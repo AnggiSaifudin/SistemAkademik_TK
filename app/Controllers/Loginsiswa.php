@@ -7,6 +7,8 @@ use App\Models\ModelTa;
 use App\Models\ModelKrs;
 use App\Models\ModelKelas;
 use App\Models\LaporanModel;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 
 class loginsiswa extends BaseController
 {
@@ -83,5 +85,25 @@ class loginsiswa extends BaseController
             'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
         ];
         return view('khs/v_print_r', $data);
+    }
+    public function pdf()
+    {
+        $siswa = $this->ModelKrs->DataSiswa();
+        $ta = $this->ModelTa->ta_aktif();
+        $data = [
+            'title' => 'Hasil Penilaian',
+            'ta_aktif' => $this->ModelTa->ta_aktif(),
+            'siswa' => $this->ModelKrs->DataSiswa(),
+            'krs' => $this->ModelKrs->daftarap($ta['id_ta']),
+            'tgl_nilai' => $this->LaporanModel->Siswa(),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+        ];
+        $html= view('khs/v_pdf', $data);
+        $dompdf = new Dompdf();
+        $dompdf->set_option('isRemoteEnabled', TRUE);
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('Letter', 'potrait');
+        $dompdf->render();
+        $dompdf->stream("Hasil Penilaian Perkembangan anak.pdf", array('attachment' => false));
     }
 }
