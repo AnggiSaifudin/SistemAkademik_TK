@@ -44,7 +44,7 @@
                         <th width="50px">No</th>
                         <th>NIS</th>
                         <th>Nama Siswa</th>
-                        <th>TTL</th>
+                        <th>Tanggal Lahir</th>
                         <th>JK</th>
                         <th>Agama</th>
                         <th>Alamat</th>
@@ -60,17 +60,19 @@
                             <td><?= $no++; ?></td>
                             <td><?= $value['nis']; ?></td>
                             <td><?= $value['nama_siswa']; ?></td>
-                            <td><?= $value['ttl_siswa']; ?></td>
+                            <td width="150px"><?= $value['ttl_siswa']; ?></td>
                             <td><?= $value['jk_siswa']; ?></td>
                             <td><?= $value['agama']; ?></td>
                             <td><?= $value['alamat_siswa']; ?></td>
-                            <td><?= $value['password']; ?></td>
+                            <td><?= str_repeat('*', strlen($value['password'])); ?></td>
+                            <!-- <td><?= $value['password']; ?></td> -->
+
                             <td class="text-center"><img src="<?= base_url('fotosiswa/' . $value['foto_siswa']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">
-                                <a href="<?= base_url('siswa/edit/' . $value['id_siswa']); ?>" class="btn btn-primary btn-sm">
+                                <a href="<?= base_url('siswa/edit/' . $value['nis']); ?>" class="btn btn-primary btn-sm">
                                     <i class="fa-solid fa-pencil"></i>
                                 </a>
-                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id_siswa']; ?>">
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['nis']; ?>">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
                             </td>
@@ -87,7 +89,7 @@
 <!-- modal delete-->
 <?php foreach ($siswa as $key => $value) { ?>
 
-    <div class="modal fade" id="delete<?= $value['id_siswa']; ?>">
+    <div class="modal fade" id="delete<?= $value['nis']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -102,7 +104,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <a href="<?= base_url('siswa/delete/' . $value['id_siswa']); ?>" class="btn btn-success">Delete</a>
+                    <a href="<?= base_url('siswa/delete/' . $value['nis']); ?>" class="btn btn-success">Delete</a>
                 </div>
             </div>
             <!-- /.modal-content -->

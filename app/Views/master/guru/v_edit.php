@@ -27,7 +27,7 @@
 
             <?php
 
-            echo form_open_multipart('guru/update/' . $guru['id_guru']);
+            echo form_open_multipart('guru/update/' . $guru['nip']);
 
             ?>
             <div class="form-group">
@@ -43,8 +43,8 @@
                 <input name="nama_guru" value="<?= $guru['nama_guru']; ?>" class="form-control" placeholder="Nama Guru">
             </div>
             <div class="form-group">
-                <label>TTL</label>
-                <input name="ttl" value="<?= $guru['ttl']; ?>" class="form-control" placeholder="TTL">
+                <label>Tanggal Lahir</label>
+                <input name="ttl" value="<?= $guru['ttl']; ?>" class="form-control" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>

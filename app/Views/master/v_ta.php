@@ -13,6 +13,18 @@
         </div>
         <!-- /.card-header -->
         <div class="card-body">
+            <?php
+
+            $errors = session()->getFlashdata('errors');
+            if (!empty($errors)) { ?>
+                <div class="alert alert-danger" role="alert">
+                    <ul>
+                        <?php foreach ($errors as $key => $value) { ?>
+                            <li><?= esc($value); ?></li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            <?php } ?>
 
             <?php
 
@@ -28,7 +40,7 @@
                 <thead>
                     <tr>
                         <th width="50px">No</th>
-                        <th>Tahun Akademik</th>
+                        <th>Tahun Pelajaran</th>
                         <th>Semester</th>
                         <th class="text-center">Action</th>
                     </tr>
@@ -78,8 +90,8 @@
                 ?>
 
                 <div class="form-group">
-                    <label>Tahun Akademik</label>
-                    <input name="ta" class="form-control" placeholder="Ex: 2020/2021" required>
+                    <label>Tahun Pelajaran</label>
+                    <input name="ta" class="form-control" placeholder="Ex: 2020/2021">
                 </div>
                 <div class="form-group">
                     <label>Semester</label>
@@ -124,8 +136,8 @@
                     ?>
 
                     <div class="form-group">
-                        <label>Tahun Akademik</label>
-                        <input name="ta" value="<?= $value['ta'] ?>" class="form-control" placeholder="Tahun Akademik" required>
+                        <label>Tahun Pelajaran</label>
+                        <input name="ta" value="<?= $value['ta'] ?>" class="form-control" placeholder="Tahun Pelajaran">
                     </div>
                     <div class="form-group">
                         <label>Semester</label>
@@ -161,7 +173,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete Tahun Akademik</h4>
+                    <h4 class="modal-title">Delete Tahun Pelajaran</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

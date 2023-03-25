@@ -3,7 +3,7 @@
 
         <tr>
             <td rowspan="6"><img src="<?= base_url('fotosiswa/' . $siswa['foto_siswa']); ?>" height="150px" width="100px"></td>
-            <td width="150px">Tahun Akademik</td>
+            <td width="150px">Tahun Pelajaran</td>
             <td>:</td>
             <td>
                 <?= $ta_aktif['ta']; ?>/ <?= $ta_aktif['semester']; ?>
@@ -64,7 +64,6 @@
                 <th class="text-center">#</th>
                 <th class="text-center">Kode Mapel</th>
                 <th class="text-center">Mata Pelajaran</th>
-                <th class="text-center">SMT</th>
                 <th class="text-center">Nilai Quis</th>
                 <th class="text-center">Nilai Ketrampilan</th>
                 <th class="text-center">Nilai Kerajinan</th>
@@ -81,7 +80,6 @@
                     <td class="text-center"><?= $no++; ?></td>
                     <td class="text-center"><?= $value['kode_mapel']; ?></td>
                     <td class="text-center"><?= $value['mapel']; ?></td>
-                    <td class="text-center"><?= $value['smt']; ?></td>
                     <td class="text-center"><?= $value['nilai_quis']; ?></td>
                     <td class="text-center"><?= $value['nilai_ketrampilan']; ?></td>
                     <td class="text-center"><?= $value['nilai_kerajinan']; ?></td>

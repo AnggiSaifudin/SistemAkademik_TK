@@ -47,22 +47,20 @@ class Laporan extends BaseController
 
     public function Viewlaporan()
     {
-        $smt = $this->request->getPost('smt');
-        $tgl_nilai = $this->request->getPost('tgl_nilai');
-        // $tgl_nilai = date('d-m-Y');
-        $mapel = $this->request->getPost('mapel');
         $nama_kelas = $this->request->getPost('nama_kelas');
-
-
+        $tgl_nilai = $this->request->getPost('tgl_nilai');
+        $mapel = $this->request->getPost('mapel');
+        $semester = $this->request->getPost('semester');
+        $ta = $this->request->getPost('ta');
 
         $data = [
-            'laporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
-            'smt' => $smt,
+            'laporan' => $this->LaporanModel->DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta),
             'tgl_nilai' => $tgl_nilai,
             'mapel' => $mapel,
             'nama_kelas' => $nama_kelas,
+            'semester' => $semester,
+            'ta' => $ta,
         ];
-        // dd($data);
         $response = [
             'data' => view('laporan/v_tabel_laporan', $data)
         ];
@@ -70,21 +68,22 @@ class Laporan extends BaseController
     }
 
 
-    public function Printpdf($smt,$nama_kelas,$mapel,$tgl_nilai)
+    public function Printpdf($nama_kelas,$mapel,$tgl_nilai,$semester,$ta,$tahun_akhir)
     {
-        $ta = $this->ModelTa->ta_aktif();
+        // $ta = $this->ModelTa->ta_aktif();
         // $user = $this->ModelUser->User();
 
+        $ta = $ta.'/'.$tahun_akhir;
         $data = [
             'title' => 'Cetak Penilaian',
-            'smt' => $smt,
+            'semester' => $semester,
+            'ta' => $ta,
             'tgl_nilai' => $tgl_nilai,
             'mapel' => $mapel,
             'nama_kelas' => $nama_kelas,
             'siswa' => $this->LaporanModel->Siswa(),
-            'ta' => $ta,
             'user' => $this->ModelUser->User(),
-            'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
+            'printlaporan' => $this->LaporanModel->DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta)
 
         ];
         // dd($data);
@@ -100,23 +99,23 @@ class Laporan extends BaseController
             $dompdf->stream("Laporan Perkembangan anak.pdf", array('attachment' => false));
     }
 
-    public function Printlaporan($smt,$nama_kelas,$mapel,$tgl_nilai)
+    public function Printlaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta,$tahun_akhir)
     {
-        $ta = $this->ModelTa->ta_aktif();
-        // $user = $this->ModelUser->User();
-
+        $ta = $ta.'/'.$tahun_akhir;
         $data = [
             'title' => 'Cetak Penilaian',
-            'smt' => $smt,
+            'semester' => $semester,
+            'ta' => $ta,
             'tgl_nilai' => $tgl_nilai,
             'mapel' => $mapel,
             'nama_kelas' => $nama_kelas,
             'siswa' => $this->LaporanModel->Siswa(),
-            'ta' => $ta,
             'user' => $this->ModelUser->User(),
-            'printlaporan' => $this->LaporanModel->DataLaporan($smt,$nama_kelas,$mapel,$tgl_nilai),
+            'printlaporan' => $this->LaporanModel->DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta)
 
         ];
+        // echo($data['ta']);
+        // print_r($data['ta']);
         // dd($data);
         return view('laporan/v_printl', $data);
     }

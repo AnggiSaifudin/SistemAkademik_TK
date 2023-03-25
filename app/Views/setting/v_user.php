@@ -56,13 +56,15 @@
                             <td><?= $no++; ?></td>
                             <td><?= $value['nama_user']; ?></td>
                             <td><?= $value['username']; ?></td>
-                            <td><?= $value['password']; ?></td>
+                            <td><?= str_repeat('*', strlen($value['password'])); ?></td>
+                            <!-- <td><?= $value['password']; ?></td> -->
+                            
                             <td class="text-center"><img src="<?= base_url('foto/' . $value['foto']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">
-                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edit<?= $value['id_user']; ?>">
+                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edit<?= $value['username']; ?>">
                                     <i class="fa-solid fa-pencil"></i>
                                 </button>
-                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id_user']; ?>">
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['username']; ?>">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
                             </td>
@@ -128,7 +130,7 @@
 <!-- modal edit -->
 <?php foreach ($user as $key => $value) { ?>
 
-    <div class="modal fade" id="edit<?= $value['id_user']; ?>">
+    <div class="modal fade" id="edit<?= $value['username']; ?>">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -141,7 +143,7 @@
 
                     <?php
 
-                    echo form_open_multipart('user/edit/' . $value['id_user']);
+                    echo form_open_multipart('user/edit/' . $value['username']);
 
                     ?>
 
@@ -183,7 +185,7 @@
 <!-- modal delete-->
 <?php foreach ($user as $key => $value) { ?>
 
-    <div class="modal fade" id="delete<?= $value['id_user']; ?>">
+    <div class="modal fade" id="delete<?= $value['username']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -198,7 +200,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <a href="<?= base_url('user/delete/' . $value['id_user']); ?>" class="btn btn-success">Delete</a>
+                    <a href="<?= base_url('user/delete/' . $value['username']); ?>" class="btn btn-success">Delete</a>
                 </div>
             </div>
             <!-- /.modal-content -->

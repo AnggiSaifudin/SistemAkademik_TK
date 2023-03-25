@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\ModelMapel;
 use App\Models\ModelKelas;
 use App\Models\ModelGuru;
+use App\Models\ModelTa;
 
 class Mapel extends BaseController
 {
@@ -15,6 +16,7 @@ class Mapel extends BaseController
         $this->ModelMapel = new ModelMapel();
         $this->ModelKelas = new ModelKelas();
         $this->ModelGuru = new ModelGuru();
+        $this->ModelTa = new ModelTa();
     }
     public function index()
     {
@@ -24,6 +26,8 @@ class Mapel extends BaseController
             'page' => 'master/mapel/v_mapel',
             'kelas' => $this->ModelKelas->allData(),
             'guru' => $this->ModelGuru->allData(),
+            'ta_aktif' => $this->ModelTa->ta_aktif(),
+            'mapel' => $this->ModelMapel->allData(),
         ];
         return view('tampilan', $data);
     }
@@ -40,7 +44,7 @@ class Mapel extends BaseController
         return view('tampilan', $data);
     }
 
-    public function add($id_kelas)
+    public function add()
     {
         if ($this->validate([
             'kode_mapel' => [
@@ -48,57 +52,75 @@ class Mapel extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input kode lain!!'
+                    // 'is_unique' => '{field} sudah ada. input Kode Aspek lain!!'
                 ]
             ],
             'mapel' => [
                 'label' => 'Aspek Perkembangan',
                 'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    // 'is_unique' => '{field} sudah ada. input aspek lain!!'
                 ]
             ],
-            'smt' => [
-                'label' => 'Semester',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} wajib diisi!!!'
-                ]
-            ],
+            // 'smt' => [
+            //     'label' => 'Semester',
+            //     'rules' => 'required',
+            //     'errors' => [
+            //         'required' => '{field} wajib diisi!!!'
+            //     ]
+            // ],
 
         ])) {
             // jika valid
-            $smt = $this->request->getPost('smt');
-            if ($smt == 1 || $smt == 3) {
-                $semester = 'Ganjil';
-            } else {
-                $semester = 'Genap';
-            }
+            // $smt = $this->request->getPost('smt');
+            // if ($smt == 1 || $smt == 3) {
+            //     $semester = 'Ganjil';
+            // } else {
+            //     $semester = 'Genap';
+            // }
             $data = [
                 'kode_mapel' => $this->request->getPost('kode_mapel'),
                 'mapel' => $this->request->getPost('mapel'),
-                'smt' => $this->request->getPost('smt'),
-                'semester' => $semester,
-                'id_kelas' => $id_kelas,
                 //'id_kelas' => $id_kelas, berfungsi untuk menambahkan di kelas pada database mapel
             ];
+            $kode_mapel = $this->request->getPost('kode_mapel');
+            $mapel = $this->request->getPost('mapel');
+
+// mencontoh di chatgpt
+            $is_exist = $this->ModelMapel->where('kode_mapel', $kode_mapel)
+                                            ->first();
+
+                if ($is_exist) {
+                    session()->setFlashdata('error', 'mapel dengan kode ' . $kode_mapel . ' sudah ada ');
+                    return redirect()->to(base_url('mapel'));
+                }
+
+                $data = [
+                    'kode_mapel' => $kode_mapel,
+                    'mapel' => $mapel,
+                ];
+// akhir chat gpt
+            
+
             $this->ModelMapel->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');
-            return redirect()->to(base_url('mapel/detail/' . $id_kelas));
-        } else {
+            return redirect()->to(base_url('mapel'));
+        } 
+        else {
             // jika tidak valid
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('mapel/detail/' . $id_kelas));
+            return redirect()->to(base_url('mapel'));
         }
     }
 
-    public function delete($id_kelas, $id_mapel)
+    public function delete($kode_mapel)
     {
         $data = [
-            'id_mapel' => $id_mapel,
+            'kode_mapel' => $kode_mapel,
         ];
         $this->ModelMapel->delete_data($data);
         session()->setFlashdata('pesan', 'data berhasil Hapus');
-        return redirect()->to(base_url('mapel/detail/' . $id_kelas));
+        return redirect()->to(base_url('mapel'));
     }
 }

@@ -12,12 +12,26 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="form-group row">
-                        <label class="col-sm-4 col-form-label">Smt :</label>
+                        <label class="col-sm-4 col-form-label">Tahun Pelajaran</label>
                         <div class="col-10 input-group">
-                            <select name="smt" id="smt" class="form-control">
+                            <select name="ta" id="ta" class="form-control">
+                                <option value="">Pilih Tahun Pelajaran</option>
+                                <?php for($i = date('Y'); $i>= date('Y')-10; $i--) { 
+                            $tahun_awal = $i-1;
+                            $tahun_akhir = $i;
+                            $tahun = $tahun_awal .'/'.$tahun_akhir; ?>
+<option value="<?= $tahun; ?>"><?= $tahun; ?></option>
+                    <?php } ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-form-label">Semester</label>
+                        <div class="col-10 input-group">
+                            <select name="semester" id="semester" class="form-control">
                                 <option value="">Pilih Semester</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
+                                <option value="ganjil">Ganjil</option>
+                                <option value="genap">Genap</option>
                             </select>
                         </div>
                     </div>
@@ -50,7 +64,7 @@
                     <div class="form-group row">
                         <label class="col-sm-4 col-form-label">Tanggal :</label>
                         <div class="col-10 input-group">
-                        <input type="text" name="tgl_nilai" class="form-control" id="tgl_nilai" placeholder="dd-mm-yyyy">
+                        <input type="text" name="tgl_nilai" class="form-control" id="tgl_nilai" placeholder="yyyy-mm-dd">
                         </div>
                     </div>
 
@@ -104,12 +118,15 @@
 
 <script>
     function ViewTabelLaporan() {
-        let smt = $('#smt').val();
+        let semester = $('#semester').val();
+        let ta = $('#ta').val();
         let tgl_nilai = $('#tgl_nilai').val();
         let mapel = $('#mapel').val();
         let nama_kelas = $('#nama_kelas').val();
 
-        if (smt == "") {
+        if(ta == ""){
+            swal("Tahun Pelajaran belum diisi");
+        }else if (semester == "") {
             swal("Semester belum diisi");
         }else if (mapel == "") {
             swal("Aspek Perkembangan belum diisi");
@@ -123,7 +140,8 @@
                 type: "POST",
                 url: "<?= base_url('Laporan/Viewlaporan') ?>",
                 data: {
-                    smt: smt,
+                    semester: semester,
+                    ta: ta,
                     mapel: mapel,
                     nama_kelas: nama_kelas,
                     tgl_nilai:tgl_nilai,
@@ -141,12 +159,15 @@
     }
 
     function Printlaporan() {
-        let smt = $('#smt').val();
+        let semester = $('#semester').val();
+        let ta = $('#ta').val();
         let tgl_nilai = $('#tgl_nilai').val();
         let mapel = $('#mapel').val();
         let nama_kelas = $('#nama_kelas').val();
 
-        if (smt == "") {
+        if(ta == ""){
+            swal("Tahun Pelajaran belum diisi");
+        }else if (semester == "") {
             swal("Semester belum diisi");
         }else if (mapel == "") {
             swal("Aspek Perkembangan belum diisi");
@@ -155,17 +176,20 @@
         }else if(tgl_nilai == "") {
             swal("Tanggal belum diisi");
         }else {
-            NewWin = window.open('<?= base_url('Laporan/Printlaporan') ?>/' + smt +"/" + nama_kelas + "/" + mapel + "/" + tgl_nilai);
+            NewWin = window.open('<?= base_url('Laporan/Printlaporan') ?>/' + nama_kelas + "/" + mapel + "/" + tgl_nilai + "/" + semester + "/" + ta);
         }
     }
 
     function Printpdf() {
-        let smt = $('#smt').val();
+        let semester = $('#semester').val();
+        let ta = $('#ta').val();
         let tgl_nilai = $('#tgl_nilai').val();
         let mapel = $('#mapel').val();
         let nama_kelas = $('#nama_kelas').val();
 
-        if (smt == "") {
+        if(ta == ""){
+            swal("Tahun Pelajaran belum diisi");
+        }else if (semester == "") {
             swal("Semester belum diisi");
         }else if (mapel == "") {
             swal("Aspek Perkembangan belum diisi");
@@ -174,7 +198,7 @@
         }else if(tgl_nilai == "") {
             swal("Tanggal belum diisi");
         }else {
-            NewWin = window.open('<?= base_url('Laporan/Printpdf') ?>/' + smt +"/" + nama_kelas + "/" + mapel + "/" + tgl_nilai);
+            NewWin = window.open('<?= base_url('Laporan/Printpdf') ?>/' + nama_kelas + "/" + mapel + "/" + tgl_nilai + "/" + semester + "/" + ta);
         }
     }
 </script>

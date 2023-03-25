@@ -83,20 +83,18 @@
                                         <th>Kode Aspek</th>
                                         <th>Aspek Perkembangan</th>
                                         <th>Kelas</th>
-                                        <th>SMT</th>
                                         <th>guru</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <?php $no = 1;
-                                    foreach ($data_ap as $key => $value) { ?>
+                                    foreach ($krs as $key => $value) { ?>
                                         <tr>
                                             <td><?= $no++; ?></td>
                                             <td><?= $value['kode_mapel']; ?></td>
                                             <td><?= $value['mapel']; ?></td>
                                             <td><?= $value['nama_kelas']; ?></td>
-                                            <td><?= $value['smt']; ?></td>
                                             <td><?= $value['nama_guru']; ?></td>
                                         </tr>
                                     <?php } ?>

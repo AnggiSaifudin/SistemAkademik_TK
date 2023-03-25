@@ -21,9 +21,9 @@
                     <td><?= $kelas['nama_kelas']; ?> </td>
                 </tr>
                 <tr>
-                    <th>Tahun Angkatan</th>
+                    <th>Tahun Pelajaran</th>
                     <th> : </th>
-                    <td><?= $kelas['tahun']; ?> </td>
+                    <td><?= $ta_aktif['ta']; ?>/<?= $ta_aktif['semester']; ?></td>
                 </tr>
                 <tr>
 
@@ -60,11 +60,11 @@
                 <?php $no = 1;
                 foreach ($siswa as $key => $value) { ?>
                     <tr>
-                        <td class="text-center"><?= $no++; ?></td>
-                        <td class="text-center"><?= $value['nis']; ?></td>
-                        <td class="text-center"><?= $value['nama_siswa']; ?></td>
+                        <td class="text-left"><?= $no++; ?></td>
+                        <td class="text-left"><?= $value['nis']; ?></td>
+                        <td class="text-left"><?= $value['nama_siswa']; ?></td>
                         <td>
-                            <a href="<?= base_url('kelas/remove_anggota_kelas/' . $value['id_siswa'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-danger btn-sm">
+                            <a href="<?= base_url('kelas/remove_anggota_kelas/' . $value['nis'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-danger btn-sm">
                                 <i class="fa-solid fa-trash"></i>
                             </a>
                         </td>
@@ -106,7 +106,7 @@
                                 <td class="text-center"><?= $value['nis']; ?></td>
                                 <td class="text-center"><?= $value['nama_siswa']; ?></td>
                                 <td class="text-center">
-                                    <a href="<?= base_url('kelas/add_anggota_kelas/' . $value['id_siswa'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-success">
+                                    <a href="<?= base_url('kelas/add_anggota_kelas/' . $value['nis'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-success">
                                         <i class="fa-solid fa-plus"></i>
                                     </a>
                                 </td>

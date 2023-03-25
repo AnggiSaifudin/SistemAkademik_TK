@@ -38,12 +38,13 @@ class JadwalTk extends BaseController
 
     public function detail_jadwal($id_kelas)
     {
+        $ta = $this->ModelTa->ta_aktif();
         $data = [
             'title' => 'Detail Jadwal TK',
             'page' => 'jadwaltk/detail',
+            'jadwal' => $this->ModelJadwal->allData($id_kelas, $ta['id_ta']),
+            'mapel' => $this->ModelJadwal->ap(),
             'ta_aktif' => $this->ModelTa->ta_aktif(),
-            'jadwal' => $this->ModelJadwal->allData($id_kelas),
-            'mapel' => $this->ModelJadwal->ap($id_kelas),
             'kelas' => $this->ModelKelas->detail($id_kelas),
             'guru1' => $this->ModelGuru->allData(),
             'guru' => $this->ModelJadwal->gurumapel(),
@@ -51,34 +52,66 @@ class JadwalTk extends BaseController
         return view('tampilan', $data);
     }
 
-    public function add($id_kelas)
+    // chat gpt
+    // chat gpt
+
+    public function add($id_kelas) // terima parameter id_kelas dari URL
     {
         if ($this->validate([
-            'id_mapel' => [
+            'kode_mapel' => [
                 'label' => 'Aspek Perkembangan',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib Pilih!!!',
+                    // 'is_unique' => '{field} sudah ada. Pilih Aspek Perkembangan lain!!',
                 ]
             ],
-            'id_guru' => [
+            'nip' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib Pilih!!!',
                 ]
             ],
-
+    
         ])) {
             // jika valid
             $ta = $this->ModelTa->ta_aktif();
             $data = [
-                //'id_kelas' => $id_kelas, berfungsi untuk menambahkan id kelas ke tbl jadwal
-                'id_kelas' => $id_kelas,
+                'id_kelas' => $id_kelas, // set id_kelas sesuai dengan parameter
                 'id_ta' => $ta['id_ta'],
-                'id_mapel' => $this->request->getPost('id_mapel'),
-                'id_guru' => $this->request->getPost('id_guru'),
+                'kode_mapel' => $this->request->getPost('kode_mapel'),
+                'nip' => $this->request->getPost('nip'),
             ];
+
+// mencoba chatgpt
+                $kode_mapel = $this->request->getPost('kode_mapel');
+                $nip = $this->request->getPost('nip');
+                // 'id_kelas' = $id_kelas; // set id_kelas sesuai dengan parameter
+                // 'id_ta' = $ta['id_ta'];
+
+                $is_exist = $this->ModelJadwal
+                ->select('tbl_jadwal.*, tbl_mapel.kode_mapel')
+                ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel')
+                // ->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip')
+                ->where('tbl_jadwal.kode_mapel', $kode_mapel)
+                ->where('id_ta', $ta['id_ta'])
+                ->where('tbl_jadwal.id_kelas', $id_kelas)
+                ->first();
+
+                if ($is_exist) {
+                session()->setFlashdata('error', 'mapel dengan kode ' . $is_exist['kode_mapel'] . ' sudah ada ');
+                return redirect()->to(base_url('jadwaltk/detail_jadwal/' . $id_kelas));
+                }
+
+                $data = [
+                'kode_mapel' => $kode_mapel,
+                'nip' => $nip,
+                'id_kelas' => $id_kelas,// set id_kelas sesuai dengan parameter
+                'id_ta' => $ta['id_ta'],
+                ];
+// akhir chatgpt
+
             $this->ModelJadwal->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');
             return redirect()->to(base_url('jadwaltk/detail_jadwal/' . $id_kelas));

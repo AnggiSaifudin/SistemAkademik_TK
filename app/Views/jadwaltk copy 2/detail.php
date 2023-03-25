@@ -124,10 +124,10 @@
 
                 <div class="form-group">
                     <label>Mapel</label>
-                    <select name="id_mapel" class="form-control">
+                    <select name="kode_mapel" class="form-control">
                         <option value="">--Pilih Mapel--</option>
                         <?php foreach ($mapel as $key => $value) { ?>
-                            <option value="<?= $value['id_mapel']; ?>">
+                            <option value="<?= $value['kode_mapel']; ?>">
                                 <?= $value['kode_mapel']; ?>||<?= $value['mapel']; ?>
                             </option>
                         <?php } ?>

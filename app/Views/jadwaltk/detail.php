@@ -15,7 +15,7 @@
                     <td><?= $kelas['nama_guru']; ?></td>
                 </tr>
                 <tr>
-                    <th>Tahun Akademik</th>
+                    <th>Tahun Pelajaran</th>
                     <td>:</td>
                     <td><?= $ta_aktif['ta']; ?>/<?= $ta_aktif['semester']; ?></td>
                 </tr>
@@ -55,6 +55,16 @@
                 </div>
             <?php } ?>
 
+
+            <?php
+
+            if (session()->getFlashdata('error')) {
+                echo '<div class="alert alert-danger" role="alert">';
+                echo session()->getFlashdata('error');
+                echo '</div>';
+            }
+
+            ?>
 
             <?php
 
@@ -120,15 +130,15 @@
                 <?php
 
                 echo form_open('jadwaltk/add/' . $kelas['id_kelas']);
-
+                // echo form_hidden('id_kelas', $id_kelas);
                 ?>
 
                 <div class="form-group">
                     <label>Aspek</label>
-                    <select name="id_mapel" class="form-control">
+                    <select name="kode_mapel" class="form-control">
                         <option value="">--Pilih Aspek--</option>
                         <?php foreach ($mapel as $key => $value) { ?>
-                            <option value="<?= $value['id_mapel']; ?>">
+                            <option value="<?= $value['kode_mapel']; ?>">
                                 <?= $value['kode_mapel']; ?>||<?= $value['mapel']; ?>
                             </option>
                         <?php } ?>
@@ -136,10 +146,10 @@
                 </div>
                 <div class="form-group">
                     <label>Guru</label>
-                    <select name="id_guru" class="form-control">
+                    <select name="nip" class="form-control">
                     <option value="">--Pilih Guru--</option>
                         <?php foreach ($guru1 as $key => $value) { ?>
-                            <option value="<?= $value['id_guru']; ?>">
+                            <option value="<?= $value['nip']; ?>">
                                 <?= $value['nama_guru']; ?>
                             </option>
                         <?php } ?>

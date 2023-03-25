@@ -40,16 +40,18 @@ class Guru extends BaseController
         if ($this->validate([
             'kode_guru' => [
                 'label' => 'Kode Guru',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_guru.kode_guru]',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
                 ]
             ],
             'nip' => [
                 'label' => 'Nip',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_guru.nip]',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input NIP lain!!',
                 ]
             ],
             'nama_guru' => [
@@ -127,32 +129,34 @@ class Guru extends BaseController
         }
     }
 
-    public function edit($id_guru)
+    public function edit($nip)
     {
 
         $data = [
             'title' => 'Edit Guru',
             'page' => 'master/guru/v_edit',
-            'guru' => $this->ModelGuru->detailData($id_guru),
+            'guru' => $this->ModelGuru->detailData($nip),
         ];
         return view('tampilan', $data);
     }
 
-    public function update($id_guru)
+    public function update($nip)
     {
         if ($this->validate([
             'kode_guru' => [
                 'label' => 'Kode Guru',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_guru.kode_guru,nip,{nip}]',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
                 ]
             ],
             'nip' => [
                 'label' => 'Nip',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_guru.nip,nip,{nip}]',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input Nip lain!!',
                 ]
             ],
             'nama_guru' => [
@@ -207,7 +211,7 @@ class Guru extends BaseController
             if ($foto->getError() == 4) {
                 // jika foto tidak diganti
                 $data = array(
-                    'id_guru' => $id_guru,
+
                     'kode_guru' => $this->request->getPost('kode_guru'),
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
@@ -219,7 +223,7 @@ class Guru extends BaseController
                 $this->ModelGuru->edit($data);
             } else {
                 // menghapus foto lama yang ada difolder
-                $guru = $this->ModelGuru->detailData($id_guru);
+                $guru = $this->ModelGuru->detailData($nip);
                 if ($guru['foto_guru'] != "") {
                     unlink('fotoguru/' . $guru['foto_guru']);
                 }
@@ -227,7 +231,7 @@ class Guru extends BaseController
                 $nama_file = $foto->getRandomName();
                 // jika valid
                 $data = array(
-                    'id_guru' => $id_guru,
+
                     'kode_guru' => $this->request->getPost('kode_guru'),
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
@@ -248,21 +252,21 @@ class Guru extends BaseController
             // jika tidak valid
 
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('guru/edit/' . $id_guru));
+            return redirect()->to(base_url('guru/edit/' . $nip));
         }
     }
 
-    public function delete($id_guru)
+    public function delete($nip)
     {
 
         // menghapus foto lama yang ada difolder
-        $guru = $this->ModelGuru->detailData($id_guru);
+        $guru = $this->ModelGuru->detailData($nip);
         if ($guru['foto_guru'] != "") {
             unlink('fotoguru/' . $guru['foto_guru']);
         }
 
         $data = [
-            'id_guru' => $id_guru,
+            'nip' => $nip,
         ];
         $this->ModelGuru->delete_data($data);
         session()->setFlashdata('pesan', 'data berhasil Hapus');

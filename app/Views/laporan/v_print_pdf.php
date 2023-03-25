@@ -51,7 +51,7 @@
                     <br>
                     <div class="col-12">
                         <h3 class="judul">Data Laporan Hasil Penilaian <br>
-                            Perkembangan Anak Semester <?= $ta['semester']; ?> Tahun Akademik <?= $ta['ta']; ?><br>
+                            Perkembangan Anak Semester <?= $semester; ?> Tahun Akademik <?= $ta; ?><br>
                             Tanggal <?php
                                     $time_tamp = strtotime($tgl_nilai);
                                     echo date('d-m-Y', $time_tamp);

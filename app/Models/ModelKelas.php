@@ -9,9 +9,9 @@ class ModelKelas extends Model
     public function allData()
     {
         return $this->db->table('tbl_kelas')
-            ->join('tbl_guru', 'tbl_guru.id_guru = tbl_kelas.id_guru', 'left')
-            // ->join('tbl_mapel', 'tbl_mapel.id_kelas = tbl_kelas.id_kelas', 'left')
-            ->orderBy('tbl_kelas.id_guru', 'ASC')
+            ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
+            ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
+            ->orderBy('tbl_kelas.nip', 'ASC')
             ->get()->getResultArray();
     }
     public function add($data)
@@ -26,7 +26,8 @@ class ModelKelas extends Model
     public function detail($id_kelas)
     {
         return $this->db->table('tbl_kelas')
-            ->join('tbl_guru', 'tbl_guru.id_guru = tbl_kelas.id_guru', 'left')
+            ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
+            ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->where('id_kelas', $id_kelas)
             ->get()->getRowArray();
     }
@@ -37,8 +38,12 @@ class ModelKelas extends Model
     public function siswa($id_kelas)
     {
         // menampilkan siswa berdasarkan kelas
-        return $this->db->table('tbl_siswa')->orderBy('id_siswa', 'DESC')
-            ->where('id_kelas', $id_kelas)
+        return $this->db->table('tbl_siswa')
+        // ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_siswa.id_kelas', 'left')
+        // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
+        ->orderBy('nis', 'DESC')
+            ->where('tbl_siswa.id_kelas', $id_kelas)
+            // ->where('tbl_kelas.id_ta', $id_ta)
             ->get()->getResultArray();
     }
 
@@ -47,7 +52,7 @@ class ModelKelas extends Model
     {
         return $this->db->table('tbl_siswa')
             ->where('id_kelas', null)
-            ->orderBy('id_siswa', 'DESC')
+            ->orderBy('nis', 'DESC')
             ->get()->getResultArray();
     }
 
@@ -62,7 +67,7 @@ class ModelKelas extends Model
     public function update_siswa($data)
     {
         $this->db->table('tbl_siswa')
-            ->where('id_siswa', $data['id_siswa'])
+            ->where('nis', $data['nis'])
             ->update($data);
     }
     // public function DataKelas()

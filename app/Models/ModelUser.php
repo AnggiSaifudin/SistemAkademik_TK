@@ -8,12 +8,12 @@ class ModelUser extends Model
 {
     public function allData()
     {
-        return $this->db->table('tbl_user')->orderBy('id_user', 'DESC')->get()->getResultArray();
+        return $this->db->table('tbl_user')->orderBy('username', 'DESC')->get()->getResultArray();
     }
-    public function detail_data($id_user)
+    public function detail_data($username)
     {
         return $this->db->table('tbl_user')
-            ->where('id_user', $id_user)
+            ->where('username', $username)
             ->get()->getRowArray();
     }
 
@@ -24,12 +24,12 @@ class ModelUser extends Model
     }
     public function edit($data)
     {
-        $this->db->table('tbl_user')->where('id_user', $data['id_user'])->update($data);
+        $this->db->table('tbl_user')->where('username', $data['username'])->update($data);
     }
 
     public function delete_data($data)
     {
-        $this->db->table('tbl_user')->where('id_user', $data['id_user'])->delete($data);
+        $this->db->table('tbl_user')->where('username', $data['username'])->delete($data);
     }
     public function User(){
         return $this->db->table('tbl_user')

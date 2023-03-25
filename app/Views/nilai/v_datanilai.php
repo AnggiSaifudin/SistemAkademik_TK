@@ -15,7 +15,7 @@
                     <td><?= $jadwal['nama_guru']; ?></td>
                 </tr>
                 <tr>
-                    <th>Mapel</th>
+                    <th>Aspek Perkembangan</th>
                     <td>:</td>
                     <td><?= $jadwal['mapel']; ?></td>
                 </tr>
@@ -30,7 +30,7 @@
 
 <div class="col-12">
 
-    <a href="<?= base_url('loginguru/printnilai/' . $jadwal['id_jadwal']); ?>" target="_blank" class="btn btn-xs btn-success">
+    <a href="<?= base_url('loginguru/printnilai'); ?>" target="_blank" class="btn btn-xs btn-success">
         <i class="fa fa-print"></i>
         Print Nilai
     </a>
@@ -38,6 +38,16 @@
 
 
 <div class="col-sm-12">
+
+<?php
+
+if (session()->getFlashdata('error')) {
+    echo '<div class="alert alert-danger" role="alert">';
+    echo session()->getFlashdata('error');
+    echo '</div>';
+}
+
+?>
 
     <?php
 
@@ -50,8 +60,7 @@
     ?>
 
 
-    <?= form_open('loginguru1/simpannilai/' . $jadwal['id_jadwal']) ?>
-
+    <?= form_open('loginguru1/simpannilai/'. $jadwal['id_jadwal']) ?>
     <!-- uji coba -->
 <div class="form-group col-md-2"> 
     <label for="tgl_nilai">Tanggal Penilaian :</label>
@@ -81,10 +90,9 @@
 
         </thead>
 
+
         <?php $no = 1;
         foreach ($siswa as $key => $value) {
-
-            echo form_hidden($value['id_nilai'] . 'id_nilai', $value['id_nilai']);
         ?>
             <tr>
                 <td class="text-center"><?= $no++; ?></td>
@@ -95,11 +103,7 @@
 
 
                     <select name="<?= $value['id_nilai']; ?>nilai_quis" class="form-control text-center">
-                        <option value="0" <?php if ($value['nilai_quis'] == '0') {
-                                                echo 'selected';
-                                            } ?>>
-                            0
-                        </option>
+                    <option value="">  </option>
                         <option value="1" <?php if ($value['nilai_quis'] == '1') {
                                                 echo 'selected';
                                             } ?>>
@@ -126,11 +130,7 @@
                     <!-- <input value="<?= $value['nilai_ketrampilan']; ?>" class="form-control text-center" name="<?= $value['id_nilai']; ?>nilai_ketrampilan"> -->
 
                     <select name="<?= $value['id_nilai']; ?>nilai_ketrampilan" class="form-control text-center">
-                        <option value="0" <?php if ($value['nilai_ketrampilan'] == '0') {
-                                                echo 'selected';
-                                            } ?>>
-                            0
-                        </option>
+                    <option value="">  </option>
                         <option value="1" <?php if ($value['nilai_ketrampilan'] == '1') {
                                                 echo 'selected';
                                             } ?>>
@@ -157,11 +157,7 @@
                     <!-- <input value="<?= $value['nilai_kerajinan']; ?>" class="form-control text-center" name="<?= $value['id_nilai']; ?>nilai_kerajinan"> -->
 
                     <select name="<?= $value['id_nilai']; ?>nilai_kerajinan" class="form-control text-center">
-                        <option value="0" <?php if ($value['nilai_kerajinan'] == '0') {
-                                                echo 'selected';
-                                            } ?>>
-                            0
-                        </option>
+                    <option value="">  </option>
                         <option value="1" <?php if ($value['nilai_kerajinan'] == '1') {
                                                 echo 'selected';
                                             } ?>>

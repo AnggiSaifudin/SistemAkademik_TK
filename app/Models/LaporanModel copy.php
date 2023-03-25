@@ -11,7 +11,7 @@ public function DataLaporan($smt, $nama_kelas, $mapel, $tgl_nilai){
     ->join('tbl_ta', 'tbl_ta.id_ta = tbl_nilai.id_ta', 'left')
     ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
     ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
-    ->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+    ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
     ->join('tbl_siswa', 'tbl_siswa.id_siswa = tbl_nilai.id_siswa', 'left')
     ->select('tbl_siswa.nis')
     ->select('tbl_siswa.nama_siswa')
@@ -37,7 +37,7 @@ return $this->db->table('tbl_nilai')
 ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
 ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
 ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
-->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
 ->join('tbl_siswa', 'tbl_siswa.id_siswa = tbl_nilai.id_siswa', 'left')
 ->get()->getRowArray();
 ;

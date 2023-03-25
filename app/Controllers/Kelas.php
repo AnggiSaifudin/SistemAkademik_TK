@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ModelKelas;
 use App\Models\ModelGuru;
+use App\Models\ModelTa;
 
 class Kelas extends BaseController
 {
@@ -12,16 +13,18 @@ class Kelas extends BaseController
     {
         $this->ModelKelas = new ModelKelas();
         $this->ModelGuru = new ModelGuru();
+        $this->ModelTa = new ModelTa();
         helper('form');
     }
     public function index()
     {
-
+        // $ta = $this->ModelTa->ta_aktif();
         $data = [
             'title' => 'Rombongan Kelas',
             'page' => 'kelas/v_kelas',
             'kelas' => $this->ModelKelas->allData(),
             'guru' => $this->ModelGuru->allData(),
+            'ta' => $this->ModelTa->allData(),
         ];
         return view('tampilan', $data);
     }
@@ -31,12 +34,13 @@ class Kelas extends BaseController
         if ($this->validate([
             'nama_kelas' => [
                 'label' => 'Nama kelas',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_kelas.nama_kelas,id_kelas,{id_kelas}]',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input nama kelas lain!!',
                 ]
             ],
-            'id_guru' => [
+            'nip' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
@@ -44,19 +48,29 @@ class Kelas extends BaseController
                     'is_unique' => '{field} sudah ada. input kode lain!!'
                 ]
             ],
-            'tahun' => [
-                'label' => 'Tahun',
-                'rules' => 'required',
-                'errors' => [
-                    'required' => '{field} wajib diisi!!!'
-                ]
-            ],
+            //             'id_ta' => [
+            //     'label' => 'Tahun Pelajaran',
+            //     'rules' => 'required',
+            //     'errors' => [
+            //         'required' => '{field} wajib diisi!!!'
+            //     ]
+            // ],
+            // 'tahun' => [
+            //     'label' => 'Tahun Pelajaran',
+            //     'rules' => 'required',
+            //     'errors' => [
+            //         'required' => '{field} wajib diisi!!!'
+            //     ]
+            // ],
         ])) {
             // jika valid
+            $ta = $this->ModelTa->ta_aktif();
             $data = [
                 'nama_kelas' => $this->request->getPost('nama_kelas'),
-                'id_guru' => $this->request->getPost('id_guru'),
-                'tahun' => $this->request->getPost('tahun'),
+                'nip' => $this->request->getPost('nip'),
+                // 'id_ta' => $ta['id_ta'],
+                // 'id_ta' => $this->request->getPost('id_ta'),
+                // 'tahun' => $this->request->getPost('tahun'),
             ];
             $this->ModelKelas->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');
@@ -78,11 +92,11 @@ class Kelas extends BaseController
         return redirect()->to(base_url('kelas'));
     }
 
-    public function add_anggota_kelas($id_siswa, $id_kelas)
+    public function add_anggota_kelas($nis, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'id_siswa' => $id_siswa,
+            'nis' => $nis,
             'id_kelas' => $id_kelas,
         ];
         $this->ModelKelas->update_siswa($data);
@@ -91,9 +105,11 @@ class Kelas extends BaseController
     }
     public function rincian_kelas($id_kelas)
     {
+        // $ta = $this->ModelTa->ta_aktif();
         $data = [
             // melihat data siswa di tabel kelas
             'title' => 'Rombongan Kelas',
+            'ta_aktif' => $this->ModelTa->ta_aktif(),
             'kelas' => $this->ModelKelas->detail($id_kelas),
             'siswa' => $this->ModelKelas->siswa($id_kelas),
             'jml' => $this->ModelKelas->jumlah($id_kelas),
@@ -102,11 +118,11 @@ class Kelas extends BaseController
         ];
         return view('tampilan', $data);
     }
-    public function remove_anggota_kelas($id_siswa, $id_kelas)
+    public function remove_anggota_kelas($nis, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'id_siswa' => $id_siswa,
+            'nis' => $nis,
             'id_kelas' => null,
         ];
         $this->ModelKelas->update_siswa($data);

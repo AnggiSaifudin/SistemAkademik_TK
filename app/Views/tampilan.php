@@ -132,7 +132,7 @@
                                     <li class="nav-item">
                                         <a href="<?= base_url('ta'); ?>" class="nav-link">
                                         <i class="fa-solid fa-calendar-days nav-icon"></i>
-                                            <p>Tahun Akademik</p>
+                                            <p>Tahun Pelajaran</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">

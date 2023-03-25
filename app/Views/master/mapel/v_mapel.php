@@ -1,8 +1,13 @@
 <div class="col-md-12">
     <div class="card card-primary">
         <div class="card-header">
-            <h3 class="card-title">Data <?= $title; ?></h3>
-
+            <h3 class="card-title"><?= $title; ?></h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-toggle="modal" data-target="#add">
+                    <i class="fa-solid fa-plus"></i>
+                    <b>Add</b>
+                </button>
+            </div>
 
         </div>
         <!-- /.card-header -->
@@ -20,6 +25,14 @@
                     </ul>
                 </div>
             <?php } ?>
+            
+            <?php
+    if (session()->getFlashdata('error')) {
+        echo '<div class="alert alert-danger" role="alert">';
+        echo session()->getFlashdata('error');
+        echo '</div>';
+    }
+    ?>
 
 
             <?php
@@ -36,73 +49,103 @@
                 <thead>
                     <tr>
                         <th width="50px" class="text-center">No</th>
-                        <th class="text-center">Nama Kelas</th>
-                        <th class="text-center">Guru</th>
-                        <th class="text-center">Jumlah Aspek/Kelas</th>
-                        <th class="text-center">Tahun Angkatan</th>
-                        <th class="text-center">Action</th>
+                        <th class="text-center">Kode</th>
+                        <th class="text-center">Aspek Perkembangan</th>
+                        <th width="50px" class="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
 
-                    <?php
-                    $db = \Config\Database::connect();
-                    $no = 1;
-                    foreach ($kelas as $key => $value) {
-
-                        $jml = $db->table('tbl_mapel')->where('id_kelas', $value['id_kelas'])->countAllResults();
-                    ?>
-
+                    <?php $no = 1;
+                    foreach ($mapel as $key => $value) { ?>
                         <tr>
                             <td class="text-center"><?= $no++; ?></td>
-                            <td class="text-center"><?= $value['nama_kelas']; ?></td>
-                            <td class="text-center"><?= $value['nama_guru']; ?></td>
+                            <td class="text-center"><?= $value['kode_mapel']; ?></td>
+                            <td class="text-center"><?= $value['mapel']; ?></td>
                             <td class="text-center">
-                                <p">
-                                    <?= $jml; ?>
-                                    <br>
-                                    </p>
-                            </td>
-                            <td class="text-center"><?= $value['tahun']; ?></td>
-                            <td width="150px" class="text-center">
-                                <a href="<?= base_url('mapel/detail/'.$value['id_kelas']); ?>" class="btn btn-primary btn-sm">
-                                    <i class="fa fa-list"></i>
-                                    Detail Aspek
-                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['kode_mapel']; ?>">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
                             </td>
                         </tr>
                     <?php } ?>
 
                 </tbody>
             </table>
+
         </div>
         <!-- /.card-body -->
     </div>
     <!-- /.card -->
 </div>
 
+<!-- modal tambah data -->
+<div class="modal fade" id="add">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Aspek</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
+                <?php
 
+                echo form_open('mapel/add');
+
+                ?>
+
+                <div class="form-group">
+                    <label>Kode</label>
+                    <input name="kode_mapel" class="form-control" placeholder="Kode Aspek Perkembangan">
+                </div>
+                <div class="form-group">
+                    <label>Aspek Perkembangan</label>
+                    <input name="mapel" class="form-control" placeholder="Aspek Perkembangan">
+                </div>
+                <!-- <div class="form-group">
+                    <label>Tahun Pelajaran</label>
+                    <select name="smt" class="form-control">
+                        <option value="">--Pilih Tahun Pelajaran--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div> -->
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+            <?php echo form_close()  ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.end modal tambah data-->
 
 <!-- modal delete-->
-<?php foreach ($kelas as $key => $value) { ?>
+<?php foreach ($mapel as $key => $value) { ?>
 
-    <div class="modal fade" id="delete<?= $value['id_kelas']; ?>">
+    <div class="modal fade" id="delete<?= $value['kode_mapel']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete <?= $title; ?></h4>
+                    <h4 class="modal-title">Delete Aspek</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    apakah anda yakin ingin menghapus <b><?= $value['nama_kelas']; ?>.?</b>
+                    apakah anda yakin ingin menghapus <b><?= $value['mapel']; ?>.?</b>
 
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <a href="<?= base_url('kelas/delete/' . $value['id_kelas']); ?>" class="btn btn-success">Delete</a>
+                    <a href="<?= base_url('mapel/delete/' . $value['kode_mapel']); ?>" class="btn btn-success">Delete</a>
                 </div>
             </div>
             <!-- /.modal-content -->

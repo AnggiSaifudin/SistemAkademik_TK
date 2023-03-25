@@ -31,14 +31,15 @@ class User extends BaseController
                 'label' => 'Nama User',
                 'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} Wajib diisi!!!',
                 ]
             ],
             'username' => [
                 'label' => 'Username',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_user.username]',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} Sudah Ada. Input Yang Lain!!!'
                 ]
             ],
             'password' => [
@@ -83,21 +84,22 @@ class User extends BaseController
         }
     }
 
-    public function edit($id_user)
+    public function edit($username)
     {
         if ($this->validate([
             'nama_user' => [
                 'label' => 'Nama User',
                 'rules' => 'required',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
                 ]
             ],
             'username' => [
                 'label' => 'Username',
-                'rules' => 'required',
+                'rules' => 'required|is_unique[tbl_user.username]',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} Sudah Ada. Input Yang Lain!!!'
                 ]
             ],
             'password' => [
@@ -122,7 +124,6 @@ class User extends BaseController
 
             if ($foto->getError() == 4) {
                 $data = array(
-                    'id_user' => $id_user,
                     'nama_user' => $this->request->getPost('nama_user'),
                     'username' => $this->request->getPost('username'),
                     'password' => $this->request->getPost('password'),
@@ -130,7 +131,7 @@ class User extends BaseController
                 $this->ModelUser->edit($data);
             } else {
                 // menghapus foto lama yang ada difolder
-                $user = $this->ModelUser->detail_data($id_user);
+                $user = $this->ModelUser->detail_data($username);
                 if ($user['foto'] != "") {
                     unlink('foto/' . $user['foto']);
                 }
@@ -138,7 +139,6 @@ class User extends BaseController
                 $nama_file = $foto->getRandomName();
                 // jika valid
                 $data = array(
-                    'id_user' => $id_user,
                     'nama_user' => $this->request->getPost('nama_user'),
                     'username' => $this->request->getPost('username'),
                     'password' => $this->request->getPost('password'),
@@ -159,17 +159,17 @@ class User extends BaseController
         }
     }
 
-    public function delete($id_user)
+    public function delete($username)
     {
 
         // menghapus foto lama yang ada difolder
-        $user = $this->ModelUser->detail_data($id_user);
+        $user = $this->ModelUser->detail_data($username);
         if ($user['foto'] != "") {
             unlink('foto/' . $user['foto']);
         }
 
         $data = [
-            'id_user' => $id_user,
+            'username' => $username,
         ];
         $this->ModelUser->delete_data($data);
         session()->setFlashdata('pesan', 'data berhasil Hapus');

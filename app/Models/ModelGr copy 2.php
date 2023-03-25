@@ -45,7 +45,7 @@ class ModelGr extends Model
 
         return $this->db->table('tbl_jadwal')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
-            ->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+            ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
             // ->where('tbl_jadwal.id_kelas', $id_kelas)
             ->where('tbl_jadwal.id_guru', $id_guru)
@@ -56,7 +56,7 @@ class ModelGr extends Model
     public function DetailJadwal($id_jadwal)
     {
         return $this->db->table('tbl_jadwal')
-            ->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+            ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->where('tbl_jadwal.id_jadwal', $id_jadwal)

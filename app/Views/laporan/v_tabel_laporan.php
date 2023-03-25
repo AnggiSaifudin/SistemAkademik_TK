@@ -5,8 +5,7 @@
         <th class="text-center">Nis</th>
         <th class="text-center">Nama siswa</th>
         <th class="text-center">Kelas</th>
-        <th class="text-center">Smt</th>
-        <th class="text-center">Mata Pelajaran</th>
+        <th class="text-center">Tahun Pelajaran</th>
                 <th class="text-center">Nilai Quis</th>
                 <th class="text-center">Nilai Ketrampilan</th>
                 <th class="text-center">Nilai Kerajinan</th>
@@ -16,7 +15,8 @@
 
     </tr>
 
-    <b>SMT : <?= $smt; ?>, </b>
+    <b>Tahun Pelajaran : <?= $ta; ?>, </b>
+    <b>Semester : <?= $semester; ?>, </b>
     <b>mapel : <?= $mapel; ?>, </b>
     <b>kelas : <?= $nama_kelas; ?>, </b>
     <b>tanggal : <?= $tgl_nilai; ?></b>
@@ -28,7 +28,6 @@
         <td><?= $value['nis']; ?></td>
         <td><?= $value['nama_siswa']; ?></td>
         <td><?= $value['nama_kelas']; ?></td>
-        <td><?= $value['smt']; ?></td>
         <td><?= $value['mapel']; ?></td>
         <td><?= $value['nilai_quis']; ?></td>
         <td><?= $value['nilai_ketrampilan']; ?></td>

@@ -45,11 +45,11 @@
                     <th>Nama Kelas</th>
                     <th>:</th>
                     <td>
-                        <?= $siswa['nama_kelas']; ?>- <?= $siswa['tahun']; ?>
+                        <?= $siswa['nama_kelas']; ?>
                     </td>
                 </tr>
                 <tr>
-                    <th>Tahun Akademik</th>
+                    <th>Tahun Pelajaran</th>
                     <th>:</th>
                     <td>
                         <?= $ta_aktif['ta']; ?>/ <?= $ta_aktif['semester']; ?>

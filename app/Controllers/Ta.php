@@ -16,7 +16,7 @@ class Ta extends BaseController
     {
 
         $data = [
-            'title' => 'Tahun Akademik',
+            'title' => 'Tahun Pelajaran',
             'page' => 'master/v_ta',
             'ta' => $this->ModelTa->allData(),
         ];
@@ -25,6 +25,28 @@ class Ta extends BaseController
 
     public function add()
     {
+
+        if ($this->validate([
+            'ta' => [
+                'label' => 'Tahun Pelajaran',
+                'rules' => 'required|is_unique[tbl_ta.ta]|regex_match[/^[0-9]{4}\/[0-9]{4}$/]',
+                'errors' => [
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input Tahun Pelajaran lain!!',
+                    'regex_match' => '{field} tidak sesuai format'
+                ]
+            ],
+            'semester' => [
+                'label' => 'Semester',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input kode lain!!'
+                ]
+            ],
+
+        ])){
+
         $data = [
             'ta' => $this->request->getPost('ta'),
             'semester' => $this->request->getPost('semester'),
@@ -32,9 +54,35 @@ class Ta extends BaseController
         $this->ModelTa->add($data);
         session()->setFlashdata('pesan', 'data berhasil ditambahkan');
         return redirect()->to(base_url('ta'));
+    }else {
+        // jika tidak valid
+        session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+        return redirect()->to(base_url('ta'));
+    }
     }
     public function edit($id_ta)
     {
+
+        if ($this->validate([
+            'ta' => [
+                'label' => 'Tahun Pelajaran',
+                'rules' => 'required|is_unique[tbl_ta.ta]|regex_match[/^[0-9]{4}\/[0-9]{4}$/]',
+                'errors' => [
+                    'required' => '{field} wajib diisi!!!',
+                    'is_unique' => '{field} sudah ada. input Tahun Pelajaran lain!!',
+                    'regex_match' => '{field} tidak sesuai format'
+                ]
+            ],
+            'semester' => [
+                'label' => 'Semester',
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} wajib diisi!!!',
+                ]
+            ],
+
+        ])){
+
         $data = [
             'id_ta' => $id_ta,
             'ta' => $this->request->getPost('ta'),
@@ -43,6 +91,11 @@ class Ta extends BaseController
         $this->ModelTa->edit($data);
         session()->setFlashdata('pesan', 'data berhasil di Ubah');
         return redirect()->to(base_url('ta'));
+    }else {
+        // jika tidak valid
+        session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+        return redirect()->to(base_url('ta'));
+    }
     }
     public function delete($id_ta)
     {

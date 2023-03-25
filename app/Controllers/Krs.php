@@ -31,8 +31,8 @@ class Krs extends BaseController
             'page' => 'krs/v_krs',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'krs' => $this->ModelKrs->daftarap($siswa['id_kelas']),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'krs' => $this->ModelKrs->daftarap($siswa['id_kelas'], $ta['id_ta']),
+            // 'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
             // 'mapel' => $this->ModelKrs->alldata($kelas['id_kelas']),
         ];
         return view('tampilan', $data);
@@ -49,19 +49,33 @@ class Krs extends BaseController
         return redirect()->to(base_url('login/index'));
     }
 
-    public function tambah_ap($id_jadwal)
-    {
-        $siswa = $this->ModelKrs->DataSiswa();
-        $ta = $this->ModelTa->ta_aktif();
-        $data = [
-            'id_jadwal' => $id_jadwal,
-            'id_ta' => $ta['id_ta'],
-            'id_siswa' => $siswa['id_siswa'],
-        ];
-        $this->ModelKrs->add_ap($data);
-        session()->setFlashdata('pesan', 'Aspek Perkembangan Berhasil diTambahkan');
-        return redirect()->to(base_url('krs'));
-    }
+    // public function tambah_ap($id_jadwal)
+    // {
+    //     $siswa = $this->ModelKrs->DataSiswa();
+    //     $ta = $this->ModelTa->ta_aktif();
+
+
+    //     // cek apakah siswa sudah menambahkan jadwal dengan id yang sama sebelumnya
+    //     $ap_exists = $this->ModelKrs->where([
+    //         'id_jadwal' => $id_jadwal,
+    //         'id_ta' => $ta['id_ta'],
+    //         'nis' => $siswa['nis'],
+    //     ])->countAllResults() > 0;
+
+    // if ($ap_exists) {
+    //     session()->setFlashdata('error', 'Jadwal sudah ditambahkan sebelumnya');
+    //     return redirect()->to(base_url('krs'));
+    // }
+
+    //     $data = [
+    //         'id_jadwal' => $id_jadwal,
+    //         'id_ta' => $ta['id_ta'],
+    //         'nis' => $siswa['nis'],
+    //     ];
+    //     $this->ModelKrs->add_ap($data);
+    //     session()->setFlashdata('pesan', 'Aspek Perkembangan Berhasil diTambahkan');
+    //     return redirect()->to(base_url('krs'));
+    // }
 
     public function delete($id_nilai)
     {
@@ -81,7 +95,8 @@ class Krs extends BaseController
             'title' => 'Print Mata Pelajaran',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'krs' => $this->ModelKrs->daftarap($siswa['id_kelas']),
+            // 'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
         ];
         return view('krs/v_print_krs', $data);
     }

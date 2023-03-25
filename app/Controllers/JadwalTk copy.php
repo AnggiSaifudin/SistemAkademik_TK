@@ -39,13 +39,13 @@ class JadwalTk extends BaseController
     public function detail_jadwal($id_kelas)
     {
         $data = [
-            'title' => 'Jadwal TK',
+            'title' => 'Detail Jadwal TK',
             'page' => 'jadwaltk/detail',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'jadwal' => $this->ModelJadwal->allData($id_kelas),
             'mapel' => $this->ModelJadwal->ap($id_kelas),
             'kelas' => $this->ModelKelas->detail($id_kelas),
-            // 'guru' => $this->ModelGuru->allData(),
+            'guru1' => $this->ModelGuru->allData(),
             'guru' => $this->ModelJadwal->gurumapel(),
         ];
         return view('tampilan', $data);
@@ -54,7 +54,7 @@ class JadwalTk extends BaseController
     public function add($id_kelas)
     {
         if ($this->validate([
-            'id_mapel' => [
+            'kode_mapel' => [
                 'label' => 'Mata Pelajaran',
                 'rules' => 'required',
                 'errors' => [
@@ -90,7 +90,7 @@ class JadwalTk extends BaseController
                 //'id_kelas' => $id_kelas, berfungsi untuk menambahkan id kelas ke tbl jadwal
                 'id_kelas' => $id_kelas,
                 'id_ta' => $ta['id_ta'],
-                'id_mapel' => $this->request->getPost('id_mapel'),
+                'kode_mapel' => $this->request->getPost('kode_mapel'),
                 'id_guru' => $this->request->getPost('id_guru'),
                 'hari' => $this->request->getPost('hari'),
                 'waktu' => $this->request->getPost('waktu'),

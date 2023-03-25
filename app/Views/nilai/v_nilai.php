@@ -1,7 +1,7 @@
 <table class="table table-bordered table-striped">
     <tr class="bg-blue">
         <th class="text-center">No</th>
-        <th class="text-center">Mapel</th>
+        <th class="text-center">Aspek Perkembangan</th>
         <th class="text-center">Kelas</th>
         <th class="text-center">Nilai</th>
     </tr>

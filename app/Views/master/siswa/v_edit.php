@@ -27,7 +27,7 @@
 
             <?php
 
-            echo form_open_multipart('siswa/update/' . $siswa['id_siswa']);
+            echo form_open_multipart('siswa/update/' . $siswa['nis']);
 
             ?>
             <div class="form-group">
@@ -39,8 +39,8 @@
                 <input name="nama_siswa" class="form-control" value="<?= $siswa['nama_siswa']; ?>" placeholder="Nama siswa">
             </div>
             <div class="form-group">
-                <label>TTL</label>
-                <input name="ttl_siswa" class="form-control" value="<?= $siswa['ttl_siswa']; ?>" placeholder="TTL">
+                <label>Tanggal Lahir</label>
+                <input name="ttl_siswa" class="form-control" value="<?= $siswa['ttl_siswa']; ?>" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>

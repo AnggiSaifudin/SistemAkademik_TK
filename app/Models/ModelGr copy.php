@@ -19,7 +19,7 @@ class ModelGr extends Model
 
         return $this->db->table('tbl_jadwal')
             ->join('tbl_ap', 'tbl_ap.id_ap = tbl_jadwal.id_ap', 'left')
-            ->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+            ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_prodi', 'tbl_prodi.id_prodi = tbl_jadwal.id_prodi', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
@@ -32,7 +32,7 @@ class ModelGr extends Model
     {
         return $this->db->table('tbl_jadwal')
             ->join('tbl_ap', 'tbl_ap.id_ap = tbl_jadwal.id_ap', 'left')
-            ->join('tbl_mapel', 'tbl_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+            ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_prodi', 'tbl_prodi.id_prodi = tbl_jadwal.id_prodi', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')

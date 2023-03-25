@@ -55,7 +55,7 @@ class Loginguru extends BaseController
         $data = [
             'title' => 'Jadwal Mengajar',
             'page' => 'absen/v_jadwal_guru',
-            'jadwal' => $this->ModelGr->jadwalGuru($guru['id_guru'], $ta['id_ta']),
+            'jadwal' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
             'ta' => $ta,
             'page' => 'absen/v_jadwal_guru',
         ];
@@ -69,7 +69,7 @@ class Loginguru extends BaseController
         $data = [
             'title' => 'Absen Kelas',
             'page' => 'absen/v_absen_kelas',
-            'absen' => $this->ModelGr->jadwalGuru($guru['id_guru'], $ta['id_ta']),
+            'absen' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
         ];
         return view('tampilan', $data);
     }
@@ -137,7 +137,7 @@ class Loginguru extends BaseController
             'title' => 'Penilaian',
             'ta'    => $ta,
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'absen' => $this->ModelGr->jadwalGuru($guru['id_guru'], $ta['id_ta']),
+            'absen' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
             'page'    => 'nilai/v_nilai',
         ];
         return view('tampilan', $data);

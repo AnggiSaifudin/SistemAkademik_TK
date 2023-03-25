@@ -10,6 +10,10 @@ class ModelTa extends Model
     {
         return $this->db->table('tbl_ta')->orderBy('id_ta', 'DESC')->get()->getResultArray();
     }
+    public function Data()
+    {
+        return $this->db->table('tbl_ta')->orderBy('id_ta', 'DESC')->get()->getRowArray();
+    }
 
     public function add($data)
     {

@@ -8,12 +8,12 @@ class ModelGuru extends Model
 {
     public function allData()
     {
-        return $this->db->table('tbl_guru')->orderBy('id_guru', 'DESC')->get()->getResultArray();
+        return $this->db->table('tbl_guru')->orderBy('nip', 'DESC')->get()->getResultArray();
     }
-    public function detailData($id_guru)
+    public function detailData($nip)
     {
         return $this->db->table('tbl_guru')
-            ->where('id_guru', $id_guru)
+            ->where('nip', $nip)
             ->get()->getRowArray();
     }
     public function BioGuru()
@@ -30,11 +30,13 @@ class ModelGuru extends Model
     }
     public function edit($data)
     {
-        $this->db->table('tbl_guru')->where('id_guru', $data['id_guru'])->update($data);
+        $this->db->table('tbl_guru')
+        ->where('nip', $data['nip'])
+        ->update($data);
     }
 
     public function delete_data($data)
     {
-        $this->db->table('tbl_guru')->where('id_guru', $data['id_guru'])->delete($data);
+        $this->db->table('tbl_guru')->where('nip', $data['nip'])->delete($data);
     }
 }

@@ -39,8 +39,8 @@
                 <input name="nama_siswa" class="form-control" placeholder="Nama siswa">
             </div>
             <div class="form-group">
-                <label>TTL</label>
-                <input name="ttl_siswa" class="form-control" placeholder="TTL">
+                <label>Tanggal Lahir</label>
+                <input name="ttl_siswa" class="form-control" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>

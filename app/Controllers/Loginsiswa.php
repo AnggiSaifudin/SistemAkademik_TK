@@ -53,7 +53,7 @@ class loginsiswa extends BaseController
             'page' => 'absen/v_absen_siswa',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
         ];
         return view('tampilan', $data);
     }
@@ -67,8 +67,8 @@ class loginsiswa extends BaseController
             'page' => 'khs/v_khs',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'krs' => $this->ModelKrs->daftarap($ta['id_ta']),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'krs' => $this->ModelKrs->daftarap($siswa['id_kelas'],$ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
         ];
         return view('tampilan', $data);
     }
@@ -82,7 +82,7 @@ class loginsiswa extends BaseController
             'siswa' => $this->ModelKrs->DataSiswa(),
             'krs' => $this->ModelKrs->daftarap($ta['id_ta']),
             'tgl_nilai' => $this->LaporanModel->Siswa(),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
         ];
         return view('khs/v_print_r', $data);
     }
@@ -96,7 +96,7 @@ class loginsiswa extends BaseController
             'siswa' => $this->ModelKrs->DataSiswa(),
             'krs' => $this->ModelKrs->daftarap($ta['id_ta']),
             'tgl_nilai' => $this->LaporanModel->Siswa(),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['id_siswa'], $ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
         ];
         $html= view('khs/v_pdf', $data);
         $dompdf = new Dompdf();

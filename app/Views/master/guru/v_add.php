@@ -43,8 +43,8 @@
                 <input name="nama_guru" class="form-control" placeholder="Nama Guru" >
             </div>
             <div class="form-group">
-                <label>TTL</label>
-                <input name="ttl" class="form-control" placeholder="TTL" >
+                <label>Tanggal Lahir</label>
+                <input name="ttl" class="form-control" placeholder="Tanggal Lahir" >
             </div>
             <div class="form-group">
                 <label>JK</label>

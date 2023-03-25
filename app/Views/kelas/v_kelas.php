@@ -45,7 +45,7 @@
                         <th>Nama Kelas</th>
                         <th>Guru</th>
                         <th>Jumlah Siswa/Kelas</th>
-                        <th>Tahun Angkatan</th>
+                        <!-- <th>Tahun Pelajaran</th> -->
                         <th class="text-center">Action</th>
                     </tr>
                 </thead>
@@ -69,7 +69,7 @@
                                     <a href="<?= base_url('kelas/rincian_kelas/' . $value['id_kelas']); ?>">siswa</a>
                                     </p>
                             </td>
-                            <td><?= $value['tahun']; ?></td>
+                            <!-- <td><?= $value['ta']; ?>/<?= $value['semester']; ?></td> -->
                             <td width="150px" class="text-center">
                                 <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id_kelas']; ?>">
                                     <i class="fa-solid fa-trash"></i>
@@ -107,28 +107,33 @@
 
                 <div class="form-group">
                     <label>Nama Kelas</label>
-                    <input name="nama_kelas" class="form-control" placeholder="Nama kelas" required>
+                    <input name="nama_kelas" class="form-control" placeholder="Nama kelas">
                 </div>
                 <div class="form-group">
                     <label>Nama Guru</label>
-                    <select name="id_guru" class="form-control">
+                    <select name="nip" class="form-control">
                         <option value="">--pilih guru--</option>
 
                         <?php foreach ($guru as $key => $value) { ?>
-                            <option value="<?= $value['id_guru']; ?>"><?= $value['nama_guru']; ?></option>
+                            <option value="<?= $value['nip']; ?>"><?= $value['nama_guru']; ?></option>
                         <?php } ?>
 
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>Tahun Angkatan</label>
-                    <select name="tahun" class="form-control">
-                        <option value="">--pilih Tahun--</option>
-                        <?php for ($i = date('Y'); $i >= date('Y') - 5; $i--) { ?>
-                            <option value="<?= $i; ?>"><?= $i; ?></option>
-                        <?php } ?>
+                <!-- <div class="form-group">
+                    <label>Tahun Pelajaran</label>
+                    <select name="id_ta" class="form-control">
+                        <option value="">--pilih Tahun Pelajaran--</option>
+                        <?php for($i = date('Y'); $i>= date('Y')-10; $i--) { 
+                            $tahun_awal = $i-1;
+                            $tahun_akhir = $i;
+                            $tahun = $tahun_awal .'/'.$tahun_akhir;
+                            echo '<option value="'.$tahun.'">'.$tahun.'</option>';
+                            
+                        }
+                        ?>
                     </select>
-                </div>
+                </div> -->
 
             </div>
             <div class="modal-footer justify-content-between">
