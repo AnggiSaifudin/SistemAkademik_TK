@@ -12,7 +12,7 @@ class ModelKrs extends Model
         return $this->db->table('tbl_siswa')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_siswa.id_kelas', 'left')
             ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
-            // ->join('tbl_mapel', 'tbl_mapel.id_kelas = tbl_kelas.id_kelas', 'left')
+            // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->where('nis', session()
                 ->get('username'))
             ->get()->getRowArray();
@@ -31,11 +31,11 @@ class ModelKrs extends Model
             ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->join('tbl_siswa', 'tbl_siswa.nis = tbl_jadwal.id_kelas', 'left')
-            ->join('tbl_ta', 'tbl_ta.id_ta = tbl_jadwal.id_ta', 'left')
+            // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_jadwal.id_ta', 'left')
             // ->where('id_ta', $id_ta)
             // ->where('id_mapel=0')
             ->where('tbl_jadwal.id_kelas', $id_kelas)
-            ->where('tbl_jadwal.id_ta', $id_ta)
+            ->where('tbl_kelas.id_ta', $id_ta)
             // ->where('tbl_jadwal.id_jadwal', $id_jadwal)
 
             ->get()->getResultArray();
@@ -53,7 +53,7 @@ class ModelKrs extends Model
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip', 'left')
             ->where('nis', $nis)
-            ->where('tbl_nilai.id_ta', $id_ta)
+            ->where('tbl_kelas.id_ta', $id_ta)
             ->get()->getResultArray();
     }
 

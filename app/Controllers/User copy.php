@@ -12,6 +12,7 @@ class User extends BaseController
     {
         $this->ModelUser = new ModelUser();
         helper('form');
+        helper('password_hash');
     }
     public function index()
     {
@@ -44,10 +45,10 @@ class User extends BaseController
             ],
             'password' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    // 'numeric' => '{field} Password harus menggunakan angka'
+                    'numeric' => '{field} Password harus menggunakan angka'
                 ]
             ],
             'foto' => [
@@ -69,7 +70,7 @@ class User extends BaseController
             $data = array(
                 'nama_user' => $this->request->getPost('nama_user'),
                 'username' => $this->request->getPost('username'),
-                'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+                'password' => hash('sha256',$this->request->getPost('password')),
                 'foto' => $nama_file,
             );
             // memindahkan file foto dari form input ke folder foto directory
@@ -122,44 +123,49 @@ class User extends BaseController
                 ]
             ],
         ])) {
-  // mengambil file foto dari form input
-    $foto = $this->request->getFile('foto');
+            // mengambil file foto dari form input
+            $foto = $this->request->getFile('foto');
+            $password = hash('sha256',$this->request->getPost('password'));
+            $hashed_password = password_hash($password, PASSWORD_DEFAULT, ['cost' => 12]);
+            if(password_verify($password, $hashed_password)){
+                
+            }
 
-    if ($foto->getError() == 4) {
-        $data = array(
-            'nama_user' => $this->request->getPost('nama_user'),
-            'username' => $this->request->getPost('username'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-        );
-        $this->ModelUser->edit($data);
-    } else {
-        // menghapus foto lama yang ada difolder
-        $user = $this->ModelUser->detail_data($username);
-        if ($user['foto'] != "") {
-            unlink('foto/' . $user['foto']);
+            if ($foto->getError() == 4) {
+                $data = array(
+                    'nama_user' => $this->request->getPost('nama_user'),
+                    'username' => $this->request->getPost('username'),
+                    'password' => $hashed_password,
+                );
+                $this->ModelUser->edit($data);
+            } else {
+                // menghapus foto lama yang ada difolder
+                $user = $this->ModelUser->detail_data($username);
+                if ($user['foto'] != "") {
+                    unlink('foto/' . $user['foto']);
+                }
+                // rename nama file foto
+                $nama_file = $foto->getRandomName();
+                // jika valid
+                $data = array(
+                    'nama_user' => $this->request->getPost('nama_user'),
+                    'username' => $this->request->getPost('username'),
+                    'password' => $hashed_password,
+                    'foto' => $nama_file,
+                );
+                // memindahkan file foto dari form input ke folder foto directory
+                $foto->move('foto', $nama_file);
+                $this->ModelUser->edit($data);
+            }
+
+            session()->setFlashdata('pesan', 'data berhasil diubah');
+            return redirect()->to(base_url('user'));
+        } else {
+            // jika tidak valid
+
+            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+            return redirect()->to(base_url('user'));
         }
-        // rename nama file foto
-        $nama_file = $foto->getRandomName();
-        // jika valid
-        $data = array(
-            'nama_user' => $this->request->getPost('nama_user'),
-            'username' => $this->request->getPost('username'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'foto' => $nama_file,
-        );
-        // memindahkan file foto dari form input ke folder foto directory
-        $foto->move('foto', $nama_file);
-        $this->ModelUser->edit($data);
-    }
-
-    session()->setFlashdata('pesan', 'data berhasil diubah');
-    return redirect()->to(base_url('user'));
-    } else {
-    // jika tidak valid
-
-    session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-    return redirect()->to(base_url('user'));
-    }
     }
 
     public function delete($username)

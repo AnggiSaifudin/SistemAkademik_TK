@@ -34,24 +34,26 @@ class Guru extends BaseController
         ];
         return view('tampilan', $data);
     }
-
+// regex_match[/^GR\d{2}$/]
+// 'regex_match' => '{field} harus diawali dengan GR dan diikuti 2 digit angka.'
     public function insert()
     {
         if ($this->validate([
-            'kode_guru' => [
-                'label' => 'Kode Guru',
-                'rules' => 'required|is_unique[tbl_guru.kode_guru]',
-                'errors' => [
-                    'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
-                ]
-            ],
+            // 'kode_guru' => [
+            //     'label' => 'Kode Guru',
+            //     'rules' => 'required|is_unique[tbl_guru.kode_guru]',
+            //     'errors' => [
+            //         'required' => '{field} wajib diisi!!!',
+            //         'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
+            //     ]
+            // ],
             'nip' => [
                 'label' => 'Nip',
-                'rules' => 'required|is_unique[tbl_guru.nip]',
+                'rules' => 'required|is_unique[tbl_guru.nip]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
                     'is_unique' => '{field} sudah ada. input NIP lain!!',
+                    'numeric' => 'Nip harus berupa angka'
                 ]
             ],
             'nama_guru' => [
@@ -85,9 +87,12 @@ class Guru extends BaseController
             ],
             'password' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|min_length[8]|max_length[20]|numeric',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'min_length' => 'Password minimal harus 8 karakter',
+                    'max_length' => 'Password maksimal harus 20 karakter',
+                    'numeric' => 'Password harus berupa angka'
                 ]
             ],
             'foto_guru' => [
@@ -106,14 +111,15 @@ class Guru extends BaseController
             // rename nama file foto
             $nama_file = $foto->getRandomName();
             // jika valid
+            // $ttl = date('d M Y', strtotime($this->request->getPost('ttl')));
             $data = array(
-                'kode_guru' => $this->request->getPost('kode_guru'),
+                // 'kode_guru' => $this->request->getPost('kode_guru'),
                 'nip' => $this->request->getPost('nip'),
                 'nama_guru' => $this->request->getPost('nama_guru'),
                 'ttl' => $this->request->getPost('ttl'),
                 'jk' => $this->request->getPost('jk'),
                 'alamat' => $this->request->getPost('alamat'),
-                'password' => $this->request->getPost('password'),
+                'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 'foto_guru' => $nama_file,
             );
             // memindahkan file foto dari form input ke folder foto directory
@@ -143,20 +149,21 @@ class Guru extends BaseController
     public function update($nip)
     {
         if ($this->validate([
-            'kode_guru' => [
-                'label' => 'Kode Guru',
-                'rules' => 'required|is_unique[tbl_guru.kode_guru,nip,{nip}]',
-                'errors' => [
-                    'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
-                ]
-            ],
+            // 'kode_guru' => [
+            //     'label' => 'Kode Guru',
+            //     'rules' => 'required|is_unique[tbl_guru.kode_guru,nip,{nip}]',
+            //     'errors' => [
+            //         'required' => '{field} wajib diisi!!!',
+            //         'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
+            //     ]
+            // ],
             'nip' => [
                 'label' => 'Nip',
-                'rules' => 'required|is_unique[tbl_guru.nip,nip,{nip}]',
+                'rules' => 'required|is_unique[tbl_guru.nip,nip,{nip}]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
                     'is_unique' => '{field} sudah ada. input Nip lain!!',
+                    'numeric' => 'nip harus berupa angka'
                 ]
             ],
             'nama_guru' => [
@@ -191,9 +198,12 @@ class Guru extends BaseController
             ],
             'password' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|min_length[8]|max_length[20]|numeric',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'min_length' => 'Password minimal harus 8 karakter',
+                    'max_length' => 'Password maksimal harus 20 karakter',
+                    'numeric' => 'Password harus berupa angka'
                 ]
             ],
             'foto_guru' => [
@@ -212,13 +222,13 @@ class Guru extends BaseController
                 // jika foto tidak diganti
                 $data = array(
 
-                    'kode_guru' => $this->request->getPost('kode_guru'),
+                    // 'kode_guru' => $this->request->getPost('kode_guru'),
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'ttl' => $this->request->getPost('ttl'),
                     'jk' => $this->request->getPost('jk'),
                     'alamat' => $this->request->getPost('alamat'),
-                    'password' => $this->request->getPost('password'),
+                    'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 );
                 $this->ModelGuru->edit($data);
             } else {
@@ -230,15 +240,16 @@ class Guru extends BaseController
                 // rename nama file foto
                 $nama_file = $foto->getRandomName();
                 // jika valid
+                // $ttl = date('d M Y', strtotime($this->request->getPost('ttl')));
                 $data = array(
 
-                    'kode_guru' => $this->request->getPost('kode_guru'),
+                    // 'kode_guru' => $this->request->getPost('kode_guru'),
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'ttl' => $this->request->getPost('ttl'),
                     'jk' => $this->request->getPost('jk'),
                     'alamat' => $this->request->getPost('alamat'),
-                    'password' => $this->request->getPost('password'),
+                    'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                     'foto_guru' => $nama_file,
                 );
                 // memindahkan file foto dari form input ke folder foto directory

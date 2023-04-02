@@ -68,7 +68,7 @@ class Kelas extends BaseController
             $data = [
                 'nama_kelas' => $this->request->getPost('nama_kelas'),
                 'nip' => $this->request->getPost('nip'),
-                // 'id_ta' => $ta['id_ta'],
+                'id_ta' => $ta['id_ta'],
                 // 'id_ta' => $this->request->getPost('id_ta'),
                 // 'tahun' => $this->request->getPost('tahun'),
             ];
@@ -103,6 +103,9 @@ class Kelas extends BaseController
         session()->setFlashdata('pesan', 'data siswa berhasil ditambahkan');
         return redirect()->to(base_url('kelas/rincian_kelas/' . $id_kelas));
     }
+// uji coba
+
+// uji cobaend
     public function rincian_kelas($id_kelas)
     {
         // $ta = $this->ModelTa->ta_aktif();

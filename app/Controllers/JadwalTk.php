@@ -24,13 +24,15 @@ class JadwalTk extends BaseController
     }
     public function index()
     {
-
+$ta = $this->ModelTa->ta_aktif();
+$kelas = $this->ModelKelas->allData();
         $data = [
             'title' => 'Jadwal TK',
             'page' => 'jadwaltk/v_jadwal',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'prodi' => $this->ModelProdi->allData(),
             'kelas' => $this->ModelKelas->allData(),
+            // 'kelas1' => $this->ModelJadwal->sesuaiKelas($kelas['id_kelas'], $ta['id_ta']),
             'mapel' => $this->ModelMapel->allData(),
         ];
         return view('tampilan', $data);
@@ -79,7 +81,7 @@ class JadwalTk extends BaseController
             $ta = $this->ModelTa->ta_aktif();
             $data = [
                 'id_kelas' => $id_kelas, // set id_kelas sesuai dengan parameter
-                'id_ta' => $ta['id_ta'],
+                // 'id_ta' => $ta['id_ta'],
                 'kode_mapel' => $this->request->getPost('kode_mapel'),
                 'nip' => $this->request->getPost('nip'),
             ];
@@ -93,9 +95,10 @@ class JadwalTk extends BaseController
                 $is_exist = $this->ModelJadwal
                 ->select('tbl_jadwal.*, tbl_mapel.kode_mapel')
                 ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel')
-                // ->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip')
+                ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas')
+                // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta')
                 ->where('tbl_jadwal.kode_mapel', $kode_mapel)
-                ->where('id_ta', $ta['id_ta'])
+                // ->where('tbl_kelas.id_ta.status', 1)
                 ->where('tbl_jadwal.id_kelas', $id_kelas)
                 ->first();
 
@@ -108,7 +111,7 @@ class JadwalTk extends BaseController
                 'kode_mapel' => $kode_mapel,
                 'nip' => $nip,
                 'id_kelas' => $id_kelas,// set id_kelas sesuai dengan parameter
-                'id_ta' => $ta['id_ta'],
+                // 'id_ta' => $ta['id_ta'],
                 ];
 // akhir chatgpt
 

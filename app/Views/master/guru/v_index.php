@@ -42,13 +42,13 @@
                 <thead>
                     <tr>
                         <th width="50px">No</th>
-                        <th>Kode Guru</th>
+                        <!-- <th>Kode Guru</th> -->
                         <th>NIP</th>
                         <th>Nama Dosen</th>
                         <th>Tanggal Lahir</th>
                         <th>JK</th>
                         <th>Alamat</th>
-                        <th>Password</th>
+                        <!-- <th>Password</th> -->
                         <th>foto</th>
                         <th class="text-center">Action</th>
                     </tr>
@@ -58,14 +58,14 @@
                     foreach ($guru as $key => $value) { ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $value['kode_guru']; ?></td>
                             <td><?= $value['nip']; ?></td>
                             <td><?= $value['nama_guru']; ?></td>
-                            <td width="150px"><?= $value['ttl']; ?></td>
+                            <!-- <td width="150px"><?= $value['ttl']; ?></td> -->
+                            <td><?= date('d F Y', strtotime($value['ttl'])); ?></td>
                             <td><?= $value['jk']; ?></td>
                             <td><?= $value['alamat']; ?></td>
-                            <td><?= str_repeat('*', strlen($value['password'])); ?></td>
-                            <!-- <td><?= $value['password']; ?></td> -->
+                            <!-- <td><?= str_repeat('*', strlen($value['password'])); ?></td>
+                            <td type="password"><?= $value['password']; ?></td> -->
 
                             <td class="text-center"><img src="<?= base_url('fotoguru/' . $value['foto_guru']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">

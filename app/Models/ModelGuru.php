@@ -6,6 +6,9 @@ use CodeIgniter\Model;
 
 class ModelGuru extends Model
 {
+
+    protected $table = 'tbl_guru';
+
     public function allData()
     {
         return $this->db->table('tbl_guru')->orderBy('nip', 'DESC')->get()->getResultArray();
@@ -39,4 +42,15 @@ class ModelGuru extends Model
     {
         $this->db->table('tbl_guru')->where('nip', $data['nip'])->delete($data);
     }
+
+            // uji coba
+            // public function verifyPassword($password, $hashedPassword)
+            // {
+            //     return password_verify($password, $hashedPassword);
+            // }
+            // public function getByNip($nip)
+            // {
+            //     return $this->where('nip', $nip)->first();
+            // }
+            // end uji coba
 }

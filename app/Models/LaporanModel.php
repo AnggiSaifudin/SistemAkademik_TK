@@ -8,9 +8,9 @@ class LaporanModel extends Model
 {
 public function DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta){
     return $this->db->table('tbl_nilai')
-    ->join('tbl_ta', 'tbl_ta.id_ta = tbl_nilai.id_ta', 'left')
     ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
     ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
+    ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
     ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
     ->join('tbl_siswa', 'tbl_siswa.nis = tbl_nilai.nis', 'left')
     ->select('tbl_siswa.nis')

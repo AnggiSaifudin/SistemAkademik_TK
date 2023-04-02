@@ -1,12 +1,18 @@
 <?php
 namespace App\Controllers;
 use App\Models\ModelLogin;
+use App\Models\ModelUser;
+use App\Models\ModelGuru;
+use App\Models\ModelSiswa;
 class Login extends BaseController
 {
     public function __construct()
     {
         helper('form');
         $this->ModelLogin = new ModelLogin();
+        $this->ModelUser = new ModelUser();
+        $this->ModelUser = new ModelGuru();
+        $this->ModelUser = new ModelSiswa();
     }
     public function index()
     {
@@ -44,15 +50,32 @@ class Login extends BaseController
             $level = $this->request->getPost('level');
             $username = $this->request->getPost('username');
             $password = $this->request->getPost('password');
-            if ($level == 1) {
+            // if ($level == 1) {
+            //     $cek_user = $this->ModelLogin->login_user($username, $password);
+            //     if ($cek_user) {
+            //         // jika data cocok dgn database
+            //         session()->set('username', $cek_user['username']);
+            //         session()->set('password', $cek_user['password']);
+            //         session()->set('nama', $cek_user['nama_user']);
+            //         session()->set('foto', $cek_user['foto']);
+            //         session()->set('level', $level);
+            //         // login
+            //         return redirect()->to(base_url('admin'));
+            //     } else {
+            //         // jika data tidak cocok
+            //         session()->setFlashdata('pesan', 'login gagal, username atau password salah');
+            //         return redirect()->to(base_url('login/index'));
+            //     }
 
-                $cek_user = $this->ModelLogin->login_user($username, $password);
-                if ($cek_user) {
+            // } 
+            if ($level == 1) {
+                $user = $this->ModelLogin->verify_password($username, $password, $level);
+                if ($user) {
                     // jika data cocok dgn database
-                    session()->set('username', $cek_user['username']);
-                    session()->set('password', $cek_user['password']);
-                    session()->set('nama', $cek_user['nama_user']);
-                    session()->set('foto', $cek_user['foto']);
+                    session()->set('username', $user['username']);
+                    session()->set('password', $user['password']);
+                    session()->set('nama', $user['nama_user']);
+                    session()->set('foto', $user['foto']);
                     session()->set('level', $level);
                     // login
                     return redirect()->to(base_url('admin'));
@@ -61,39 +84,78 @@ class Login extends BaseController
                     session()->setFlashdata('pesan', 'login gagal, username atau password salah');
                     return redirect()->to(base_url('login/index'));
                 }
-            } elseif ($level == 2) {
-                $cek_guru = $this->ModelLogin->login_guru($username, $password);
-                if ($cek_guru) {
+            }
+            // elseif ($level == 2) {
+            //     $cek_guru = $this->ModelLogin->login_guru($username, $password);
+            //     if ($cek_guru) {
+            //         // jika data cocok dgn database
+            //         session()->set('username', $cek_guru['nip']);
+            //         session()->set('password', $cek_guru['password']);
+            //         session()->set('nama', $cek_guru['nama_guru']);
+            //         session()->set('foto', $cek_guru['foto_guru']);
+            //         session()->set('level', $level);
+            //         // login
+            //         return redirect()->to(base_url('loginguru'));
+            //     } else {
+            //         // jika data tidak cocok
+            //         session()->setFlashdata('pesan', 'login gagal, username atau password salah');
+            //         return redirect()->to(base_url('login/index'));
+            //     }
+
+
+                
+            // } 
+            elseif ($level == 2) {
+                $guru = $this->ModelLogin->verify_password($username, $password, $level);
+                if ($guru) {
                     // jika data cocok dgn database
-                    session()->set('username', $cek_guru['nip']);
-                    session()->set('password', $cek_guru['password']);
-                    session()->set('nama', $cek_guru['nama_guru']);
-                    session()->set('foto', $cek_guru['foto_guru']);
+                    session()->set('username', $guru['nip']);
+                    session()->set('password', $guru['password']);
+                    session()->set('nama', $guru['nama_guru']);
+                    session()->set('foto', $guru['foto_guru']);
                     session()->set('level', $level);
                     // login
                     return redirect()->to(base_url('loginguru'));
-                } else {
+                    } else {
                     // jika data tidak cocok
                     session()->setFlashdata('pesan', 'login gagal, username atau password salah');
                     return redirect()->to(base_url('login/index'));
+                    }
                 }
-            } elseif ($level == 3) {
-                $cek_siswa = $this->ModelLogin->login_siswa($username, $password);
-                if ($cek_siswa) {
-                    // jika data cocok dgn database
-                    session()->set('username', $cek_siswa['nis']);
-                    session()->set('password', $cek_siswa['password']);
-                    session()->set('nama', $cek_siswa['nama_siswa']);
-                    session()->set('foto', $cek_siswa['foto_siswa']);
-                    session()->set('level', $level);
-                    // login
-                    return redirect()->to(base_url('loginsiswa'));
+            // elseif ($level == 3) {
+            //     $cek_siswa = $this->ModelLogin->login_siswa($username, $password);
+            //     if ($cek_siswa) {
+            //         // jika data cocok dgn database
+            //         session()->set('username', $cek_siswa['nis']);
+            //         session()->set('password', $cek_siswa['password']);
+            //         session()->set('nama', $cek_siswa['nama_siswa']);
+            //         session()->set('foto', $cek_siswa['foto_siswa']);
+            //         session()->set('level', $level);
+            //         // login
+            //         return redirect()->to(base_url('loginsiswa'));
+            //     } else {
+            //         // jika data tidak cocok
+            //         session()->setFlashdata('pesan', 'login gagal, username atau password salah');
+            //         return redirect()->to(base_url('login/index'));
+            //     }
+            // }
+            elseif ($level == 3) {
+                $siswa = $this->ModelLogin->verify_password($username, $password, $level);
+                if ($siswa) {
+                // jika data cocok dgn database
+                session()->set('username', $siswa['nis']);
+                session()->set('password', $siswa['password']);
+                session()->set('nama', $siswa['nama_siswa']);
+                session()->set('foto', $siswa['foto_siswa']);
+                session()->set('level', $level);
+                // login
+                return redirect()->to(base_url('loginsiswa'));
                 } else {
-                    // jika data tidak cocok
-                    session()->setFlashdata('pesan', 'login gagal, username atau password salah');
-                    return redirect()->to(base_url('login/index'));
+                // jika data tidak cocok
+                session()->setFlashdata('pesan', 'login gagal, username atau password salah');
+                return redirect()->to(base_url('login/index'));
                 }
-            }
+                }              
         } else {
             // jika tidak valid
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());

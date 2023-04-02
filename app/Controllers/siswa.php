@@ -39,10 +39,11 @@ class Siswa extends BaseController
         if ($this->validate([
             'nis' => [
                 'label' => 'Nis',
-                'rules' => 'required|is_unique[tbl_siswa.nis]',
+                'rules' => 'required|is_unique[tbl_siswa.nis]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
                     'is_unique' => '{field} sudah ada. input Nis lain!!',
+                    'numeric' => 'Nis harus berupa angka'
                 ]
             ],
             'nama_siswa' => [
@@ -83,9 +84,12 @@ class Siswa extends BaseController
             ],
             'password' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|min_length[8]|max_length[20]|numeric',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'min_length' => 'Password minimal harus 8 karakter',
+                    'max_length' => 'Password maksimal harus 20 karakter',
+                    'numeric' => 'Password harus berupa angka'
                 ]
             ],
             'foto_siswa' => [
@@ -104,6 +108,7 @@ class Siswa extends BaseController
             // rename nama file foto
             $nama_file = $foto->getRandomName();
             // jika valid
+            // $ttl = date('d M Y', strtotime($this->request->getPost('ttl_siswa')));
             $data = array(
                 'nis' => $this->request->getPost('nis'),
                 'nama_siswa' => $this->request->getPost('nama_siswa'),
@@ -111,7 +116,7 @@ class Siswa extends BaseController
                 'jk_siswa' => $this->request->getPost('jk_siswa'),
                 'agama' => $this->request->getPost('agama'),
                 'alamat_siswa' => $this->request->getPost('alamat_siswa'),
-                'password' => $this->request->getPost('password'),
+                'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 'foto_siswa' => $nama_file,
             );
             // memindahkan file foto dari form input ke folder foto directory
@@ -142,10 +147,11 @@ class Siswa extends BaseController
         if ($this->validate([
             'nis' => [
                 'label' => 'Nis',
-                'rules' => 'required|is_unique[tbl_siswa.nis,nis,{nis}]',
+                'rules' => 'required|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input Nis lain!!',
+                    'numeric' => 'Nis harus berupa angka'
+                    // 'is_unique' => '{field} sudah ada. input Nis lain!!',
                 ]
             ],
             'nama_siswa' => [
@@ -186,9 +192,12 @@ class Siswa extends BaseController
             ],
             'password' => [
                 'label' => 'Password',
-                'rules' => 'required',
+                'rules' => 'required|min_length[8]|max_length[20]|numeric',
                 'errors' => [
-                    'required' => '{field} wajib diisi!!!'
+                    'required' => '{field} wajib diisi!!!',
+                    'min_length' => 'Password minimal harus 8 karakter',
+                    'max_length' => 'Password maksimal harus 20 karakter',
+                    'numeric' => 'Password harus berupa angka'
                 ]
             ],
             'foto_siswa' => [
@@ -213,7 +222,7 @@ class Siswa extends BaseController
                     'jk_siswa' => $this->request->getPost('jk_siswa'),
                     'agama' => $this->request->getPost('agama'),
                     'alamat_siswa' => $this->request->getPost('alamat_siswa'),
-                    'password' => $this->request->getPost('password'),
+                    'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 );
                 $this->ModelSiswa->edit($data);
             } else {
@@ -225,6 +234,7 @@ class Siswa extends BaseController
                 // rename nama file foto
                 $nama_file = $foto->getRandomName();
                 // jika valid
+                // $ttl = date('d M Y', strtotime($this->request->getPost('ttl_siswa')));
                 $data = array(
                     'nis' => $this->request->getPost('nis'),
                     'nama_siswa' => $this->request->getPost('nama_siswa'),
@@ -232,7 +242,7 @@ class Siswa extends BaseController
                     'jk_siswa' => $this->request->getPost('jk_siswa'),
                     'agama' => $this->request->getPost('agama'),
                     'alamat_siswa' => $this->request->getPost('alamat_siswa'),
-                    'password' => $this->request->getPost('password'),
+                    'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                     'foto_siswa' => $nama_file,
                 );
                 // memindahkan file foto dari form input ke folder foto directory

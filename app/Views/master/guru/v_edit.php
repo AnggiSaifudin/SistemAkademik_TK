@@ -31,10 +31,6 @@
 
             ?>
             <div class="form-group">
-                <label>Kode Guru</label>
-                <input name="kode_guru" value="<?= $guru['kode_guru']; ?>" class="form-control" placeholder="Kode Guru">
-            </div>
-            <div class="form-group">
                 <label>NIP</label>
                 <input name="nip" value="<?= $guru['nip']; ?>" class="form-control" placeholder="Nip">
             </div>
@@ -44,7 +40,7 @@
             </div>
             <div class="form-group">
                 <label>Tanggal Lahir</label>
-                <input name="ttl" value="<?= $guru['ttl']; ?>" class="form-control" placeholder="Tanggal Lahir">
+                <input type="date" name="ttl" value="<?= $guru['ttl']; ?>" class="form-control" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>
@@ -60,7 +56,7 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input name="password" value="<?= $guru['password']; ?>" class="form-control" placeholder="Password">
+                <input type="password" name="password" value="<?= $guru['password']; ?>" class="form-control" placeholder="Password" autocomplete="off">
             </div>
 
             <div class="form-group">

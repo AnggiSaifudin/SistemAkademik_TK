@@ -12,6 +12,7 @@ class ModelKelas extends Model
             ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
             ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->orderBy('tbl_kelas.nip', 'ASC')
+            ->where('tbl_ta.status', 1)
             ->get()->getResultArray();
     }
     public function add($data)
@@ -31,9 +32,25 @@ class ModelKelas extends Model
             ->where('id_kelas', $id_kelas)
             ->get()->getRowArray();
     }
+// uji coba
+// public function get_by_id($id_kelas)
+// {
+//     $query = $this->db->table('tbl_kelas')
+//                       ->where('id_kelas', $id_kelas)
+//                       ->get();
+//     return $query->getRowArray();
+// }
+// public function reset_kelas($id_kelas, $id_ta)
+// {
+//     // hapus semua siswa dari kelas
+//     $this->db->where('id_kelas', $id_kelas);
+//     $this->db->delete('tbl_siswa');
 
-
-
+//     // update tahun aktif pada kelas
+//     $this->db->where('id_kelas', $id_kelas);
+//     $this->db->update('tbl_kelas', ['id_ta' => $id_ta]);
+// }
+// end coba
 
     public function siswa($id_kelas)
     {

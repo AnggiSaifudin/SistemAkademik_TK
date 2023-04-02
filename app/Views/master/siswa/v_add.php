@@ -40,7 +40,7 @@
             </div>
             <div class="form-group">
                 <label>Tanggal Lahir</label>
-                <input name="ttl_siswa" class="form-control" placeholder="Tanggal Lahir">
+                <input type="date" name="ttl_siswa" class="form-control" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>
@@ -63,7 +63,7 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input name="password" class="form-control" placeholder="Password">
+                <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
             </div>
 
             <div class="form-group">

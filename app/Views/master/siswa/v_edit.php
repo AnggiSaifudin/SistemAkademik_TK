@@ -25,6 +25,7 @@
                 </div>
             <?php } ?>
 
+
             <?php
 
             echo form_open_multipart('siswa/update/' . $siswa['nis']);
@@ -40,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label>Tanggal Lahir</label>
-                <input name="ttl_siswa" class="form-control" value="<?= $siswa['ttl_siswa']; ?>" placeholder="Tanggal Lahir">
+                <input type="date" name="ttl_siswa" class="form-control" value="<?= $siswa['ttl_siswa']; ?>" placeholder="Tanggal Lahir">
             </div>
             <div class="form-group">
                 <label>JK</label>
@@ -63,7 +64,7 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input name="password" class="form-control" value="<?= $siswa['password']; ?>" placeholder="Password">
+                <input type="password" name="password" class="form-control" value="<?= $siswa['password']; ?>" placeholder="Password" autocomplete="off">
             </div>
 
             <div class="form-group">

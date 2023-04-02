@@ -44,7 +44,6 @@
                         <th width="50px">No</th>
                         <th>Nama User</th>
                         <th>Username</th>
-                        <th>Password</th>
                         <th>Foto</th>
                         <th class="text-center">Action</th>
                     </tr>
@@ -56,8 +55,6 @@
                             <td><?= $no++; ?></td>
                             <td><?= $value['nama_user']; ?></td>
                             <td><?= $value['username']; ?></td>
-                            <td><?= str_repeat('*', strlen($value['password'])); ?></td>
-                            <!-- <td><?= $value['password']; ?></td> -->
                             
                             <td class="text-center"><img src="<?= base_url('foto/' . $value['foto']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">
@@ -107,7 +104,7 @@
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input name="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
                 </div>
                 <div class="form-group">
                     <label>Foto</label>
@@ -158,7 +155,7 @@
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input name="password" value="<?= $value['password']; ?>" class="form-control" placeholder="Password">
+                        <input type="password" name="password" value="<?= $value['password']; ?>" class="form-control" placeholder="Password" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label>Ganti Foto</label>

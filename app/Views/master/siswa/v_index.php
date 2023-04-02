@@ -48,7 +48,7 @@
                         <th>JK</th>
                         <th>Agama</th>
                         <th>Alamat</th>
-                        <th>Password</th>
+                        <!-- <th>Password</th> -->
                         <th>Foto</th>
                         <th class="text-center">Action</th>
                     </tr>
@@ -60,11 +60,12 @@
                             <td><?= $no++; ?></td>
                             <td><?= $value['nis']; ?></td>
                             <td><?= $value['nama_siswa']; ?></td>
-                            <td width="150px"><?= $value['ttl_siswa']; ?></td>
+                            <!-- <td width="150px"><?= $value['ttl_siswa']; ?></td> -->
+                            <td><?= date('d F Y', strtotime($value['ttl_siswa'])); ?></td>
                             <td><?= $value['jk_siswa']; ?></td>
                             <td><?= $value['agama']; ?></td>
                             <td><?= $value['alamat_siswa']; ?></td>
-                            <td><?= str_repeat('*', strlen($value['password'])); ?></td>
+                            <!-- <td><?= str_repeat('*', strlen($value['password'])); ?></td> -->
                             <!-- <td><?= $value['password']; ?></td> -->
 
                             <td class="text-center"><img src="<?= base_url('fotosiswa/' . $value['foto_siswa']); ?>" class="img-circle" alt="User Image" width="50px"></td>

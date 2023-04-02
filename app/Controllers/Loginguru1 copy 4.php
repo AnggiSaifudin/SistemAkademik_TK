@@ -162,29 +162,6 @@ class loginguru1 extends BaseController
     public function simpannilai($id_jadwal)
     {
 
-    //         // Validasi jika tanggal nilai kosong
-    // if (!$this->request->getPost('tgl_nilai')) {
-    //     session()->setFlashdata('error', 'Tanggal nilai harus diisi');
-    //     return redirect()->back();
-    // }
-
-    // Validasi jika semua nilai kosong
-    // $is_all_empty = false;
-    // $siswa = $this->ModelGr->siswa($id_jadwal);
-    // foreach ($siswa as $key => $value) {
-    //     $quis = $this->request->getPost($value['id_nilai'].'nilai_quis');
-    //     $ketrampilan = $this->request->getPost($value['id_nilai'] . 'nilai_ketrampilan');
-    //     $kerajinan = $this->request->getPost($value['id_nilai'] . 'nilai_kerajinan');
-    //     if (empty($quis) || empty($ketrampilan) || empty($kerajinan)) {
-    //         $is_all_empty = true;
-    //         break;
-    //     }
-    // }
-    // if ($is_all_empty) {
-    //     session()->setFlashdata('error', 'Semua nilai harus diisi');
-    //     return redirect()->back();
-    // }
-// 
         // uji
         $ta = $this->ModelTa->ta_aktif();
 $siswa = $this->ModelGr->siswa($id_jadwal);
@@ -216,7 +193,7 @@ foreach ($siswa as $key => $value) {
 
     $data[] = [
         'id_jadwal' => $id_jadwal,
-        // 'id_ta'=> $ta['id_ta'],
+        'id_ta'=> $ta['id_ta'],
         'nis' => $value['nis'],
         'nilai_quis' => $this->request->getPost($value['nis'].'nilai_quis'),
         'nilai_ketrampilan' => $this->request->getPost($value['nis'] . 'nilai_ketrampilan'),
@@ -226,23 +203,94 @@ foreach ($siswa as $key => $value) {
         'deskripsi' => $desk,
         'tgl_nilai' => $tgl_nilai,
     ];
-    // Cek apakah data nilai siswa sudah ada di dalam database
-    // $data_nilai_siswa = $this->ModelGr->getNilaiSiswa($id_jadwal, $value['nis']);
-    // $is_edit = (is_array($data_nilai_siswa) && count($data_nilai_siswa) > 0);
-    
-    // // Jika data sudah ada di dalam database, gunakan fungsi update
-    // // Jika belum, gunakan fungsi insert
+}
+dd($data);
+        // coba
+
+    //         // Validasi jika tanggal nilai kosong
+    // if (!$this->request->getPost('tgl_nilai')) {
+    //     session()->setFlashdata('error', 'Tanggal nilai harus diisi');
+    //     return redirect()->back();
+    // }
+
+    // Validasi jika semua nilai kosong
+    // $is_all_empty = false;
+    // $siswa = $this->ModelGr->siswa($id_jadwal);
+    // foreach ($siswa as $key => $value) {
+    //     $quis = $this->request->getPost($value['id_nilai'].'nilai_quis');
+    //     $ketrampilan = $this->request->getPost($value['id_nilai'] . 'nilai_ketrampilan');
+    //     $kerajinan = $this->request->getPost($value['id_nilai'] . 'nilai_kerajinan');
+    //     if (empty($quis) || empty($ketrampilan) || empty($kerajinan)) {
+    //         $is_all_empty = true;
+    //         break;
+    //     }
+    // }
+    // if ($is_all_empty) {
+    //     session()->setFlashdata('error', 'Semua nilai harus diisi');
+    //     return redirect()->back();
+    // }
+// 
+    //     $ta = $this->ModelTa->ta_aktif();
+    //     $siswa = $this->ModelGr->siswa($id_jadwal);
+
+    // foreach ($siswa as $key => $value) {
+    //     $quis = $this->request->getPost($value['nis'].'nilai_quis');
+    //     $ketrampilan = $this->request->getPost($value['nis'] . 'nilai_ketrampilan');
+    //     $kerajinan = $this->request->getPost($value['nis'] . 'nilai_kerajinan');
+    //     $na =  ($quis + $ketrampilan + $kerajinan) / 3;
+    //     if ($na >= 4) {
+    //         $nh = 'A';
+    //         $desk = 'Berkembang Sangat Baik';
+    //         // $pendahuluan = 'Berkembang';
+    //     } elseif ($na < 4 && $na >= 3) {
+    //         $nh = 'B';
+    //         $desk = 'Berkembang Sesuai Harapan';
+    //         // $pendahuluan = 'Berkembang';
+    //     } elseif ($na < 3 && $na >= 2) {
+    //         $nh = 'C';
+    //         $desk = 'Mulai Berkembang';
+    //         // $pendahuluan = 'Berkembang';
+    //     } elseif ($na < 2 && $na >= 1) {
+    //         $nh = 'D';
+    //         $desk = 'Belum Berkembang';
+    //         // $pendahuluan = 'Berkembang';
+    //     } else {
+    //         $nh = '-';
+    //         $desk = '-';
+    //     }
+    //     $tgl_nilai = $this->request->getPost('tgl_nilai');
+    // //     // $tgl_nilai = date('d-m-y', strtotime($tgl_nilai));
+
+    //     $data = [
+    //         'id_jadwal' => $id_jadwal,
+    //         'id_ta'=> $ta['id_ta'],
+    //         'nis' => $value['nis'],
+    //         'nilai_quis' => $this->request->getPost($value['nis'].'nilai_quis'),
+    //         'nilai_ketrampilan' => $this->request->getPost($value['nis'] . 'nilai_ketrampilan'),
+    //         'nilai_kerajinan' => $this->request->getPost($value['nis'] . 'nilai_kerajinan'),
+    //         'na' => number_format($na, 0),
+    //         'nilai_huruf' => $nh,
+    //         'deskripsi' => $desk,
+    //         'tgl_nilai' => $tgl_nilai,
+    //     ];
+    // //                 // dari chatgpt
+        // Cek apakah data nilai siswa sudah ada di dalam database
+        // $data_nilai_siswa = $this->ModelGr->getNilaiSiswa($id_jadwal, $value['nis']);
+        // $is_edit = (is_array($data_nilai_siswa) && count($data_nilai_siswa) > 0);
+            // end cgpt
+    // Jika data sudah ada di dalam database, gunakan fungsi update
+    // Jika belum, gunakan fungsi insert
     // if ($is_edit) {
-    //     $this->ModelGr->updateNilai($data, $data_nilai_siswa['nis']);
+    //     $this->ModelGr->updateNilai($data, $value['nis'], $id_jadwal);
     // } else {
     //     $this->ModelGr->simpannilai($data);
     // }
-}
-$this->ModelGr->simpannilai($data);
-// dd($data);
-session()->setFlashdata('pesan', 'Nilai berhasil DISIMPAN');
-return redirect()->to(base_url('loginguru/datanilai/' . $id_jadwal));
+// }
 
+
+
+    // session()->setFlashdata('pesan', 'Nilai berhasil DISIMPAN');
+    // return redirect()->to(base_url('loginguru/datanilai/' . $id_jadwal));
     }
 
     public function printnilai($id_jadwal)

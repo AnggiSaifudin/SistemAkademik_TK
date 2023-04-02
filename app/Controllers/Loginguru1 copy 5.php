@@ -216,7 +216,7 @@ foreach ($siswa as $key => $value) {
 
     $data[] = [
         'id_jadwal' => $id_jadwal,
-        // 'id_ta'=> $ta['id_ta'],
+        'id_ta'=> $ta['id_ta'],
         'nis' => $value['nis'],
         'nilai_quis' => $this->request->getPost($value['nis'].'nilai_quis'),
         'nilai_ketrampilan' => $this->request->getPost($value['nis'] . 'nilai_ketrampilan'),
