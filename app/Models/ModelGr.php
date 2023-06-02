@@ -11,7 +11,7 @@ class ModelGr extends Model
     protected $allowedFields = [
         'id_jadwal',
         // 'id_ta',
-        'nis',
+        'nisn',
         'nilai_quis',
         'nilai_ketrampilan',
         'nilai_kerajinan',
@@ -23,7 +23,7 @@ class ModelGr extends Model
     public function DataGuru()
     {
         return $this->db->table('tbl_guru')
-            ->where('nip', session()->get('username'))
+            ->where('nuptk', session()->get('username'))
             ->get()->getRowArray();
     }
 
@@ -45,22 +45,22 @@ class ModelGr extends Model
     public function allData()
     {
         return $this->db->table('tbl_kelas')
-            ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_kelas.nuptk', 'left')
             // ->join('tbl_mapel', 'tbl_mapel.id_kelas = tbl_kelas.id_kelas', 'left')
-            ->orderBy('tbl_kelas.nip', 'ASC')
+            ->orderBy('tbl_kelas.nuptk', 'ASC')
             ->get()->getResultArray();
     }
 
 
-    public function jadwalGuru($nip, $id_ta)
+    public function jadwalGuru($nuptk, $id_ta)
     {
 
         return $this->db->table('tbl_jadwal')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
-            ->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip', 'left')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_jadwal.nuptk', 'left')
             // ->where('tbl_jadwal.id_kelas', $id_kelas)
-            ->where('tbl_jadwal.nip', $nip)
+            ->where('tbl_jadwal.nuptk', $nuptk)
             ->where('tbl_kelas.id_ta', $id_ta)
             ->get()->getResultArray();
     }
@@ -69,7 +69,7 @@ class ModelGr extends Model
     {
         return $this->db->table('tbl_jadwal')
             ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
-            ->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip', 'left')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_jadwal.nuptk', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->where('tbl_jadwal.id_jadwal', $id_jadwal)
             ->get()->getRowArray();
@@ -106,10 +106,10 @@ class ModelGr extends Model
         return $this->db->table('tbl_jadwal')
         ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
         ->join('tbl_siswa', 'tbl_siswa.id_kelas = tbl_kelas.id_kelas', 'left')
-        ->join('tbl_nilai', 'tbl_nilai.nis = tbl_siswa.nis AND tbl_nilai.id_jadwal = tbl_jadwal.id_jadwal', 'left')
+        ->join('tbl_nilai', 'tbl_nilai.nisn = tbl_siswa.nisn AND tbl_nilai.id_jadwal = tbl_jadwal.id_jadwal', 'left')
         ->where('tbl_jadwal.id_jadwal', $id_jadwal)
-        ->select('tbl_siswa.nis, tbl_siswa.nama_siswa, tbl_nilai.nilai_quis, tbl_nilai.nilai_ketrampilan, tbl_nilai.nilai_kerajinan, tbl_nilai.na, tbl_nilai.nilai_huruf, tbl_nilai.deskripsi')
-        ->groupBy('tbl_siswa.nis')
+        ->select('tbl_siswa.nisn, tbl_siswa.nama_siswa, tbl_nilai.nilai_quis, tbl_nilai.nilai_ketrampilan, tbl_nilai.nilai_kerajinan, tbl_nilai.na, tbl_nilai.nilai_huruf, tbl_nilai.deskripsi')
+        ->groupBy('tbl_siswa.nisn')
         ->get()->getResultArray();  
     }
         // end kode lumayan benar
@@ -144,12 +144,12 @@ class ModelGr extends Model
     //         ->update($data);
     // }
 
-    public function getNilaiSiswa($id_jadwal, $nis, $group_by = null) {
+    public function getNilaiSiswa($id_jadwal, $nisn, $group_by = null) {
         $query = $this->db->table('tbl_nilai')
-            ->join('tbl_siswa', 'tbl_siswa.nis = tbl_nilai.nis', 'left')
+            ->join('tbl_siswa', 'tbl_siswa.nisn = tbl_nilai.nisn', 'left')
             ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
             ->where('tbl_nilai.id_jadwal', $id_jadwal)
-            ->where('tbl_nilai.nis', $nis);
+            ->where('tbl_nilai.nisn', $nisn);
         if ($group_by != null) {
             $query->groupBy($group_by);
         }
@@ -159,7 +159,7 @@ class ModelGr extends Model
     public function simpannilai($data)
     {
         foreach ($data as $nilai) {
-            $is_exist = $this->getNilaiSiswa($nilai['id_jadwal'], $nilai['nis']);
+            $is_exist = $this->getNilaiSiswa($nilai['id_jadwal'], $nilai['nisn']);
             if ($is_exist) {
                 $this->updateNilai($nilai, $is_exist, $nilai['id_jadwal']);
             } else {

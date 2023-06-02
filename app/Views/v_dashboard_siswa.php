@@ -27,9 +27,9 @@
                     <td><?= $siswa['nama_siswa']; ?></td>
                 </tr>
                 <tr>
-                    <th>NIS</th>
+                    <th>NISN</th>
                     <th>:</th>
-                    <td><?= $siswa['nis']; ?></td>
+                    <td><?= $siswa['nisn']; ?></td>
                 </tr>
                 <tr>
                     <th>Jenis Kelamin</th>

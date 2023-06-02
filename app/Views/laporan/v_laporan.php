@@ -72,10 +72,10 @@
                         <button onclick="ViewTabelLaporan()" class="btn btn-primary btn-flat" data-toggle="modal" data-target="#cari-produk">
                             <i class="fas fa-file-alt"></i> view Laporan
                         </button>
-                        <button onclick="Printlaporan()" class="btn btn-success btn-flat">
+                        <!-- <button onclick="Printlaporan()" class="btn btn-success btn-flat">
                             <i class="fas fa-print"></i> Print Laporan
-                        </button>
-                        <button onclick="Printpdf()" class="btn btn-dark btn-flat">
+                        </button> -->
+                        <button onclick="Printpdf()" class="btn btn-success btn-flat">
                         <i class="fa-solid fa-file-pdf"></i> Ekspor PDF
                         </button>
                     </span>
@@ -158,27 +158,27 @@
 
     }
 
-    function Printlaporan() {
-        let semester = $('#semester').val();
-        let ta = $('#ta').val();
-        let tgl_nilai = $('#tgl_nilai').val();
-        let mapel = $('#mapel').val();
-        let nama_kelas = $('#nama_kelas').val();
+    // function Printlaporan() {
+    //     let semester = $('#semester').val();
+    //     let ta = $('#ta').val();
+    //     let tgl_nilai = $('#tgl_nilai').val();
+    //     let mapel = $('#mapel').val();
+    //     let nama_kelas = $('#nama_kelas').val();
 
-        if(ta == ""){
-            swal("Tahun Pelajaran belum diisi");
-        }else if (semester == "") {
-            swal("Semester belum diisi");
-        }else if (mapel == "") {
-            swal("Aspek Perkembangan belum diisi");
-        } else if (nama_kelas == "") {
-            swal("Kelas belum diisi");
-        }else if(tgl_nilai == "") {
-            swal("Tanggal belum diisi");
-        }else {
-            NewWin = window.open('<?= base_url('Laporan/Printlaporan') ?>/' + nama_kelas + "/" + mapel + "/" + tgl_nilai + "/" + semester + "/" + ta);
-        }
-    }
+    //     if(ta == ""){
+    //         swal("Tahun Pelajaran belum diisi");
+    //     }else if (semester == "") {
+    //         swal("Semester belum diisi");
+    //     }else if (mapel == "") {
+    //         swal("Aspek Perkembangan belum diisi");
+    //     } else if (nama_kelas == "") {
+    //         swal("Kelas belum diisi");
+    //     }else if(tgl_nilai == "") {
+    //         swal("Tanggal belum diisi");
+    //     }else {
+    //         NewWin = window.open('<?= base_url('Laporan/Printlaporan') ?>/' + nama_kelas + "/" + mapel + "/" + tgl_nilai + "/" + semester + "/" + ta);
+    //     }
+    // }
 
     function Printpdf() {
         let semester = $('#semester').val();

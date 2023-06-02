@@ -71,6 +71,9 @@
                             </td>
                             <!-- <td><?= $value['ta']; ?>/<?= $value['semester']; ?></td> -->
                             <td width="150px" class="text-center">
+                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#edit<?= $value['id_kelas']; ?>">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </button>
                                 <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['id_kelas']; ?>">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
@@ -92,7 +95,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add <?= $title; ?></h4>
+                <h4 class="modal-title">Add Kelas</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -111,11 +114,11 @@
                 </div>
                 <div class="form-group">
                     <label>Nama Guru</label>
-                    <select name="nip" class="form-control">
+                    <select name="nuptk" class="form-control">
                         <option value="">--pilih guru--</option>
 
                         <?php foreach ($guru as $key => $value) { ?>
-                            <option value="<?= $value['nip']; ?>"><?= $value['nama_guru']; ?></option>
+                            <option value="<?= $value['nuptk']; ?>"><?= $value['nama_guru']; ?></option>
                         <?php } ?>
 
                     </select>
@@ -147,6 +150,57 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.end modal tambah data-->
+
+
+<!-- modal edit -->
+<?php foreach ($kelas as $key => $value) { ?>
+
+<div class="modal fade" id="edit<?= $value['id_kelas']; ?>">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Kelas</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <?php
+
+                echo form_open('kelas/edit/' . $value['id_kelas']);
+
+                ?>
+
+                <div class="form-group">
+                    <label>Nama Kelas</label>
+                    <input name="nama_kelas" value="<?= $value['nama_kelas'] ?>" class="form-control" placeholder="Nama Kelas">
+                </div>
+                <div class="form-group">
+                    <label>Nama Guru</label>
+                    <select name="nuptk" class="form-control">
+                    <option value="<?= $value['nuptk']; ?>"><?= $value['nama_guru']; ?></option>
+                    <?php foreach ($guru as $key => $value) { ?>
+                            <option value="<?= $value['nuptk']; ?>"><?= $value['nama_guru']; ?></option>
+                        <?php } ?>
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+            <?php echo form_close()  ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.end modal edit-->
+
+<?php } ?>
+<!-- end edit -->
 
 <!-- modal delete-->
 <?php foreach ($kelas as $key => $value) { ?>

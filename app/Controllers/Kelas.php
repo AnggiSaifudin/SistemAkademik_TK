@@ -20,7 +20,7 @@ class Kelas extends BaseController
     {
         // $ta = $this->ModelTa->ta_aktif();
         $data = [
-            'title' => 'Rombongan Kelas',
+            'title' => 'Halaman Kelas',
             'page' => 'kelas/v_kelas',
             'kelas' => $this->ModelKelas->allData(),
             'guru' => $this->ModelGuru->allData(),
@@ -40,7 +40,7 @@ class Kelas extends BaseController
                     'is_unique' => '{field} sudah ada. input nama kelas lain!!',
                 ]
             ],
-            'nip' => [
+            'nuptk' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
@@ -48,29 +48,13 @@ class Kelas extends BaseController
                     'is_unique' => '{field} sudah ada. input kode lain!!'
                 ]
             ],
-            //             'id_ta' => [
-            //     'label' => 'Tahun Pelajaran',
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => '{field} wajib diisi!!!'
-            //     ]
-            // ],
-            // 'tahun' => [
-            //     'label' => 'Tahun Pelajaran',
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => '{field} wajib diisi!!!'
-            //     ]
-            // ],
         ])) {
             // jika valid
             $ta = $this->ModelTa->ta_aktif();
             $data = [
                 'nama_kelas' => $this->request->getPost('nama_kelas'),
-                'nip' => $this->request->getPost('nip'),
+                'nuptk' => $this->request->getPost('nuptk'),
                 'id_ta' => $ta['id_ta'],
-                // 'id_ta' => $this->request->getPost('id_ta'),
-                // 'tahun' => $this->request->getPost('tahun'),
             ];
             $this->ModelKelas->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');
@@ -82,6 +66,47 @@ class Kelas extends BaseController
         }
     }
 
+// edit
+public function edit($id_kelas)
+{
+
+    if ($this->validate([
+        'nama_kelas' => [
+            'label' => 'Nama kelas',
+            'rules' => 'required|is_unique[tbl_kelas.nama_kelas,id_kelas,{id_kelas}]',
+            'errors' => [
+                'required' => '{field} wajib diisi!!!',
+                'is_unique' => '{field} sudah ada. input nama kelas lain!!',
+            ]
+        ],
+        'nuptk' => [
+            'label' => 'Nama Guru',
+            'rules' => 'required',
+            'errors' => [
+                'required' => '{field} wajib diisi!!!',
+                'is_unique' => '{field} sudah ada. input kode lain!!'
+            ]
+        ],
+    ])) {
+        // jika valid
+        $ta = $this->ModelTa->ta_aktif();
+        $data = [
+            'id_kelas' => $id_kelas,
+            'nama_kelas' => $this->request->getPost('nama_kelas'),
+            'nuptk' => $this->request->getPost('nuptk'),
+            'id_ta' => $ta['id_ta'],
+        ];
+        $this->ModelKelas->edit($data);
+        session()->setFlashdata('pesan', 'data berhasil diubah');
+        return redirect()->to(base_url('kelas'));
+    } else {
+        // jika tidak valid
+        session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+        return redirect()->to(base_url('kelas'));
+    }
+}
+// endedit
+
     public function delete($id_kelas)
     {
         $data = [
@@ -92,11 +117,11 @@ class Kelas extends BaseController
         return redirect()->to(base_url('kelas'));
     }
 
-    public function add_anggota_kelas($nis, $id_kelas)
+    public function add_anggota_kelas($nisn, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'nis' => $nis,
+            'nisn' => $nisn,
             'id_kelas' => $id_kelas,
         ];
         $this->ModelKelas->update_siswa($data);
@@ -121,11 +146,11 @@ class Kelas extends BaseController
         ];
         return view('tampilan', $data);
     }
-    public function remove_anggota_kelas($nis, $id_kelas)
+    public function remove_anggota_kelas($nisn, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'nis' => $nis,
+            'nisn' => $nisn,
             'id_kelas' => null,
         ];
         $this->ModelKelas->update_siswa($data);

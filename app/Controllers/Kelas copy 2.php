@@ -40,7 +40,7 @@ class Kelas extends BaseController
                     'is_unique' => '{field} sudah ada. input nama kelas lain!!',
                 ]
             ],
-            'nip' => [
+            'nuptk' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
@@ -67,7 +67,7 @@ class Kelas extends BaseController
             $ta = $this->ModelTa->ta_aktif();
             $data = [
                 'nama_kelas' => $this->request->getPost('nama_kelas'),
-                'nip' => $this->request->getPost('nip'),
+                'nuptk' => $this->request->getPost('nuptk'),
                 // 'id_ta' => $ta['id_ta'],
                 // 'id_ta' => $this->request->getPost('id_ta'),
                 // 'tahun' => $this->request->getPost('tahun'),
@@ -92,11 +92,11 @@ class Kelas extends BaseController
         return redirect()->to(base_url('kelas'));
     }
 
-    public function add_anggota_kelas($nis, $id_kelas)
+    public function add_anggota_kelas($nisn, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'nis' => $nis,
+            'nisn' => $nisn,
             'id_kelas' => $id_kelas,
         ];
         $this->ModelKelas->update_siswa($data);
@@ -118,11 +118,11 @@ class Kelas extends BaseController
         ];
         return view('tampilan', $data);
     }
-    public function remove_anggota_kelas($nis, $id_kelas)
+    public function remove_anggota_kelas($nisn, $id_kelas)
     {
         // menambahkan siswa ke kelas
         $data = [
-            'nis' => $nis,
+            'nisn' => $nisn,
             'id_kelas' => null,
         ];
         $this->ModelKelas->update_siswa($data);

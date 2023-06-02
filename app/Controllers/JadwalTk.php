@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\ModelTa;
-use App\Models\ModelProdi;
 use App\Models\ModelJadwal;
 use App\Models\ModelGuru;
 use App\Models\ModelMapel;
@@ -15,7 +14,6 @@ class JadwalTk extends BaseController
     public function __construct()
     {
         $this->ModelTa = new ModelTa();
-        $this->ModelProdi = new ModelProdi();
         $this->ModelJadwal = new ModelJadwal();
         $this->ModelGuru = new ModelGuru();
         $this->ModelMapel = new ModelMapel();
@@ -30,7 +28,6 @@ $kelas = $this->ModelKelas->allData();
             'title' => 'Jadwal TK',
             'page' => 'jadwaltk/v_jadwal',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
-            'prodi' => $this->ModelProdi->allData(),
             'kelas' => $this->ModelKelas->allData(),
             // 'kelas1' => $this->ModelJadwal->sesuaiKelas($kelas['id_kelas'], $ta['id_ta']),
             'mapel' => $this->ModelMapel->allData(),
@@ -54,8 +51,7 @@ $kelas = $this->ModelKelas->allData();
         return view('tampilan', $data);
     }
 
-    // chat gpt
-    // chat gpt
+
 
     public function add($id_kelas) // terima parameter id_kelas dari URL
     {
@@ -68,7 +64,7 @@ $kelas = $this->ModelKelas->allData();
                     // 'is_unique' => '{field} sudah ada. Pilih Aspek Perkembangan lain!!',
                 ]
             ],
-            'nip' => [
+            'nuptk' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
@@ -83,12 +79,12 @@ $kelas = $this->ModelKelas->allData();
                 'id_kelas' => $id_kelas, // set id_kelas sesuai dengan parameter
                 // 'id_ta' => $ta['id_ta'],
                 'kode_mapel' => $this->request->getPost('kode_mapel'),
-                'nip' => $this->request->getPost('nip'),
+                'nuptk' => $this->request->getPost('nuptk'),
             ];
 
-// mencoba chatgpt
+// mencoba 
                 $kode_mapel = $this->request->getPost('kode_mapel');
-                $nip = $this->request->getPost('nip');
+                $nuptk = $this->request->getPost('nuptk');
                 // 'id_kelas' = $id_kelas; // set id_kelas sesuai dengan parameter
                 // 'id_ta' = $ta['id_ta'];
 
@@ -109,11 +105,11 @@ $kelas = $this->ModelKelas->allData();
 
                 $data = [
                 'kode_mapel' => $kode_mapel,
-                'nip' => $nip,
+                'nuptk' => $nuptk,
                 'id_kelas' => $id_kelas,// set id_kelas sesuai dengan parameter
                 // 'id_ta' => $ta['id_ta'],
                 ];
-// akhir chatgpt
+// akhir 
 
             $this->ModelJadwal->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');

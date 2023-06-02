@@ -32,7 +32,7 @@ class Krs extends BaseController
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
             'krs' => $this->ModelKrs->daftarap($siswa['id_kelas']),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nisn'], $ta['id_ta']),
             // 'mapel' => $this->ModelKrs->alldata($kelas['id_kelas']),
         ];
         return view('tampilan', $data);
@@ -59,7 +59,7 @@ class Krs extends BaseController
         $ap_exists = $this->ModelKrs->where([
             'id_jadwal' => $id_jadwal,
             'id_ta' => $ta['id_ta'],
-            'nis' => $siswa['nis'],
+            'nisn' => $siswa['nisn'],
         ])->countAllResults() > 0;
 
     if ($ap_exists) {
@@ -70,7 +70,7 @@ class Krs extends BaseController
         $data = [
             'id_jadwal' => $id_jadwal,
             'id_ta' => $ta['id_ta'],
-            'nis' => $siswa['nis'],
+            'nisn' => $siswa['nisn'],
         ];
         $this->ModelKrs->add_ap($data);
         session()->setFlashdata('pesan', 'Aspek Perkembangan Berhasil diTambahkan');
@@ -95,7 +95,7 @@ class Krs extends BaseController
             'title' => 'Print Mata Pelajaran',
             'ta_aktif' => $this->ModelTa->ta_aktif(),
             'siswa' => $this->ModelKrs->DataSiswa(),
-            'data_ap' => $this->ModelKrs->DataKrs($siswa['nis'], $ta['id_ta']),
+            'data_ap' => $this->ModelKrs->DataKrs($siswa['nisn'], $ta['id_ta']),
         ];
         return view('krs/v_print_krs', $data);
     }

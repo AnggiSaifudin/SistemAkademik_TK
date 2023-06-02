@@ -120,7 +120,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add Aspek</h4>
+                <h4 class="modal-title">Add Jadwal</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -146,10 +146,10 @@
                 </div>
                 <div class="form-group">
                     <label>Guru</label>
-                    <select name="nip" class="form-control">
+                    <select name="nuptk" class="form-control">
                     <option value="">--Pilih Guru--</option>
                         <?php foreach ($guru1 as $key => $value) { ?>
-                            <option value="<?= $value['nip']; ?>">
+                            <option value="<?= $value['nuptk']; ?>">
                                 <?= $value['nama_guru']; ?>
                             </option>
                         <?php } ?>

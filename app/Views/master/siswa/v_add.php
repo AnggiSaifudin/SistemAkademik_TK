@@ -31,8 +31,8 @@
 
             ?>
             <div class="form-group">
-                <label>Nis</label>
-                <input name="nis" class="form-control" placeholder="Nis">
+                <label>Nisn</label>
+                <input name="nisn" class="form-control" placeholder="Nisn">
             </div>
             <div class="form-group">
                 <label>Nama Siswa</label>

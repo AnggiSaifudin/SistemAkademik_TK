@@ -84,9 +84,9 @@
                                     <td rowspan="6"></td>
                                 </tr>
                                 <tr>
-                                    <td><b>Nis</b></td>
+                                    <td><b>Nisn</b></td>
                                     <td>:</td>
-                                    <td><?= $siswa['nis']; ?></td>
+                                    <td><?= $siswa['nisn']; ?></td>
                                 </tr>
 
                             </table>

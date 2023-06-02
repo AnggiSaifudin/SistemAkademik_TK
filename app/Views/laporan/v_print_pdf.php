@@ -63,7 +63,7 @@
                                 <thead class=" bg-blue">
                                     <tr>
                                         <th width="50px">No</th>
-                                        <th class="text-center">Nis</th>
+                                        <th class="text-center">Nisn</th>
                                         <th class="text-center">Nama Siswa</th>
                                         <th class="text-center">Kelas</th>
                                         <th class="text-center">Smt</th>
@@ -83,7 +83,7 @@
                                     foreach ($printlaporan as $key => $value) { ?>
                                         <tr>
                                             <td class="text-center"><?= $no++; ?></td>
-                                            <td class="text-center"><?= $value['nis']; ?></td>
+                                            <td class="text-center"><?= $value['nisn']; ?></td>
                                             <td class="text-center"><?= $value['nama_siswa']; ?></td>
                                             <td class="text-center"><?= $value['nama_kelas']; ?></td>
                                             <td class="text-center"><?= $value['smt']; ?></td>

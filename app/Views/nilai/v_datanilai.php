@@ -73,7 +73,7 @@ if (session()->getFlashdata('error')) {
         <thead class=" bg-blue">
             <tr>
                 <th rowspan="2" class="text-center">No</th>
-                <th rowspan="2" class="text-center">Nis</th>
+                <th rowspan="2" class="text-center">Nisn</th>
                 <th rowspan="2" class="text-center">Siswa</th>
                 <th colspan="18" class="text-center">Penilaian</th>
             </tr>
@@ -104,10 +104,10 @@ foreach ($siswa as $key => $value) {
         ?>
         <tr>
             <td class="text-center"><?= $no++; ?></td>
-            <td class="text-center"><?= $value['nis']; ?></td>
+            <td class="text-center"><?= $value['nisn']; ?></td>
             <td class="text-center"><?= $value['nama_siswa']; ?></td>
             <td class="text-center">
-            <select name="<?= $value['nis']; ?>nilai_quis" class="form-control text-center">
+            <select name="<?= $value['nisn']; ?>nilai_quis" class="form-control text-center">
                     <option value=""></option>
                     <option value="1" <?php if ($value['nilai_quis'] == '1') { echo 'selected'; } ?>>1</option>
                     <option value="2" <?php if ($value['nilai_quis'] == '2') { echo 'selected'; } ?>>2</option>
@@ -116,7 +116,7 @@ foreach ($siswa as $key => $value) {
                 </select>
             </td>
             <td class="text-center">
-            <select name="<?= $value['nis']; ?>nilai_ketrampilan" class="form-control text-center">
+            <select name="<?= $value['nisn']; ?>nilai_ketrampilan" class="form-control text-center">
                     <option value=""></option>
                     <option value="1" <?php if ($value['nilai_ketrampilan'] == '1') { echo 'selected'; } ?>>1</option>
                     <option value="2" <?php if ($value['nilai_ketrampilan'] == '2') { echo 'selected'; } ?>>2</option>
@@ -125,7 +125,7 @@ foreach ($siswa as $key => $value) {
                 </select>
             </td>
             <td class="text-center">
-            <select name="<?= $value['nis']; ?>nilai_kerajinan" class="form-control text-center">
+            <select name="<?= $value['nisn']; ?>nilai_kerajinan" class="form-control text-center">
                     <option value=""></option>
                     <option value="1" <?php if ($value['nilai_kerajinan'] == '1') { echo 'selected'; } ?>>1</option>
                     <option value="2" <?php if ($value['nilai_kerajinan'] == '2') { echo 'selected'; } ?>>2</option>

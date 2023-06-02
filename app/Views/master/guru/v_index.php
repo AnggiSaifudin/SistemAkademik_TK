@@ -43,8 +43,8 @@
                     <tr>
                         <th width="50px">No</th>
                         <!-- <th>Kode Guru</th> -->
-                        <th>NIP</th>
-                        <th>Nama Dosen</th>
+                        <th>NUPTK</th>
+                        <th>Nama Guru</th>
                         <th>Tanggal Lahir</th>
                         <th>JK</th>
                         <th>Alamat</th>
@@ -55,13 +55,24 @@
                 </thead>
                 <tbody>
                     <?php $no = 1;
-                    foreach ($guru as $key => $value) { ?>
+                    foreach ($guru as $key => $value) { 
+                        ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $value['nip']; ?></td>
+                            <td><?= $value['nuptk']; ?></td>
                             <td><?= $value['nama_guru']; ?></td>
                             <!-- <td width="150px"><?= $value['ttl']; ?></td> -->
-                            <td><?= date('d F Y', strtotime($value['ttl'])); ?></td>
+                            <!-- <td><?= date('d F Y', strtotime($value['ttl'])); ?></td> -->
+                            <td>
+                                <?php
+                                $tanggalLahir = $value['ttl'];
+
+                                $formatTanggal = new IntlDateFormatter('id_ID', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+                                $tanggalLahirIndonesia = $formatTanggal->format(strtotime($tanggalLahir));
+
+                                echo $tanggalLahirIndonesia;
+                                ?>
+                            </td>
                             <td><?= $value['jk']; ?></td>
                             <td><?= $value['alamat']; ?></td>
                             <!-- <td><?= str_repeat('*', strlen($value['password'])); ?></td>
@@ -69,10 +80,10 @@
 
                             <td class="text-center"><img src="<?= base_url('fotoguru/' . $value['foto_guru']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">
-                                <a href="<?= base_url('guru/edit/'. $value['nip']); ?>" class="btn btn-primary btn-sm">
+                                <a href="<?= base_url('guru/edit/'. $value['nuptk']); ?>" class="btn btn-primary btn-sm">
                                     <i class="fa-solid fa-pencil"></i>
                                 </a>
-                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['nip']; ?>">
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['nuptk']; ?>">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
                             </td>
@@ -90,7 +101,7 @@
 <!-- modal delete-->
 <?php foreach ($guru as $key => $value) { ?>
 
-<div class="modal fade" id="delete<?= $value['nip']; ?>">
+<div class="modal fade" id="delete<?= $value['nuptk']; ?>">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -105,7 +116,7 @@
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <a href="<?= base_url('guru/delete/' . $value['nip']); ?>" class="btn btn-success">Delete</a>
+                <a href="<?= base_url('guru/delete/' . $value['nuptk']); ?>" class="btn btn-success">Delete</a>
             </div>
         </div>
         <!-- /.modal-content -->

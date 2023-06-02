@@ -52,7 +52,6 @@ class Mapel extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    // 'is_unique' => '{field} sudah ada. input Kode Aspek lain!!'
                 ]
             ],
             'mapel' => [
@@ -60,25 +59,10 @@ class Mapel extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    // 'is_unique' => '{field} sudah ada. input aspek lain!!'
                 ]
             ],
-            // 'smt' => [
-            //     'label' => 'Semester',
-            //     'rules' => 'required',
-            //     'errors' => [
-            //         'required' => '{field} wajib diisi!!!'
-            //     ]
-            // ],
 
         ])) {
-            // jika valid
-            // $smt = $this->request->getPost('smt');
-            // if ($smt == 1 || $smt == 3) {
-            //     $semester = 'Ganjil';
-            // } else {
-            //     $semester = 'Genap';
-            // }
             $data = [
                 'kode_mapel' => $this->request->getPost('kode_mapel'),
                 'mapel' => $this->request->getPost('mapel'),
@@ -87,7 +71,7 @@ class Mapel extends BaseController
             $kode_mapel = $this->request->getPost('kode_mapel');
             $mapel = $this->request->getPost('mapel');
 
-// mencontoh di chatgpt
+// mencoba
             $is_exist = $this->ModelMapel->where('kode_mapel', $kode_mapel)
                                             ->first();
 
@@ -100,7 +84,7 @@ class Mapel extends BaseController
                     'kode_mapel' => $kode_mapel,
                     'mapel' => $mapel,
                 ];
-// akhir chat gpt
+// akhir 
             
 
             $this->ModelMapel->add($data);

@@ -56,7 +56,7 @@ class loginguru1 extends BaseController
         $data = [
             'title' => 'Jadwal Mengajar',
             'page' => 'absen/v_jadwal_guru',
-            'jadwal' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
+            'jadwal' => $this->ModelGr->jadwalGuru($guru['nuptk'], $ta['id_ta']),
             // 'mapel' => $this->ModelGr->JadwalMapel(),
             'ta' => $ta,
             'page' => 'absen/v_jadwal_guru',
@@ -142,7 +142,7 @@ class loginguru1 extends BaseController
         $data = [
             'title' => 'Nilai Kelas',
             'page' => 'nilai/v_nilai',
-            'absen' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
+            'absen' => $this->ModelGr->jadwalGuru($guru['nuptk'], $ta['id_ta']),
             // 'kelas' => $this->ModelGr->allData(),
             // 'kelas' => $this->ModelKelas->detail($id_kelas),
         ];
@@ -220,7 +220,7 @@ class loginguru1 extends BaseController
         $data = [
             'id_jadwal' => $id_jadwal,
             'id_ta'=> $ta['id_ta'],
-            'nis' => $value['nis'],
+            'nisn' => $value['nisn'],
             'nilai_quis' => $this->request->getPost($value['id_nilai'].'nilai_quis'),
             'nilai_ketrampilan' => $this->request->getPost($value['id_nilai'] . 'nilai_ketrampilan'),
             'nilai_kerajinan' => $this->request->getPost($value['id_nilai'] . 'nilai_kerajinan'),
@@ -232,13 +232,13 @@ class loginguru1 extends BaseController
 
                     // dari chatgpt
         // Cek apakah data nilai siswa sudah ada di dalam database
-        $data_nilai_siswa = $this->ModelGr->getNilaiSiswa($id_jadwal, $value['nis']);
+        $data_nilai_siswa = $this->ModelGr->getNilaiSiswa($id_jadwal, $value['nisn']);
         $is_edit = (is_array($data_nilai_siswa) && count($data_nilai_siswa) > 0);
             // end cgpt
     // Jika data sudah ada di dalam database, gunakan fungsi update
     // Jika belum, gunakan fungsi insert
     if ($is_edit) {
-        $this->ModelGr->updateNilai($data, $value['id_nilai'], $id_jadwal,$value['nis']);
+        $this->ModelGr->updateNilai($data, $value['id_nilai'], $id_jadwal,$value['nisn']);
     } else {
         $this->ModelGr->simpannilai($data);
     }

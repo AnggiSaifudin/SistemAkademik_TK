@@ -37,13 +37,13 @@ class Siswa extends BaseController
     public function insert()
     {
         if ($this->validate([
-            'nis' => [
-                'label' => 'Nis',
-                'rules' => 'required|is_unique[tbl_siswa.nis]|numeric',
+            'nisn' => [
+                'label' => 'Nisn',
+                'rules' => 'required|is_unique[tbl_siswa.nisn]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input Nis lain!!',
-                    'numeric' => 'Nis harus berupa angka'
+                    'is_unique' => '{field} sudah ada. input Nisn lain!!',
+                    'numeric' => 'Nisn harus berupa angka'
                 ]
             ],
             'nama_siswa' => [
@@ -110,7 +110,7 @@ class Siswa extends BaseController
             // jika valid
             // $ttl = date('d M Y', strtotime($this->request->getPost('ttl_siswa')));
             $data = array(
-                'nis' => $this->request->getPost('nis'),
+                'nisn' => $this->request->getPost('nisn'),
                 'nama_siswa' => $this->request->getPost('nama_siswa'),
                 'ttl_siswa' => $this->request->getPost('ttl_siswa'),
                 'jk_siswa' => $this->request->getPost('jk_siswa'),
@@ -131,27 +131,28 @@ class Siswa extends BaseController
             return redirect()->to(base_url('siswa/add'));
         }
     }
-    public function edit($nis)
+    public function edit($nisn)
     {
 
         $data = [
             'title' => 'Edit Siswa',
             'page' => 'master/siswa/v_edit',
-            'siswa' => $this->ModelSiswa->detailData($nis),
+            'siswa' => $this->ModelSiswa->detailData($nisn),
+            'siswa1' => $this->ModelSiswa->allData(),
         ];
         return view('tampilan', $data);
     }
 
-    public function update($nis)
+    public function update($nisn)
     {
         if ($this->validate([
-            'nis' => [
-                'label' => 'Nis',
-                'rules' => 'required|numeric',
+            'nisn' => [
+                'label' => 'Nisn',
+                'rules' => 'required|is_unique[tbl_siswa.nisn,nisn,{nisn}]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'numeric' => 'Nis harus berupa angka'
-                    // 'is_unique' => '{field} sudah ada. input Nis lain!!',
+                    'numeric' => 'Nisn harus berupa angka',
+                    'is_unique' => '{field} sudah ada. input Nisn lain!!',
                 ]
             ],
             'nama_siswa' => [
@@ -216,7 +217,7 @@ class Siswa extends BaseController
             if ($foto->getError() == 4) {
                 // jika foto tidak diganti
                 $data = array(
-                    'nis' => $this->request->getPost('nis'),
+                    'nisn' => $this->request->getPost('nisn'),
                     'nama_siswa' => $this->request->getPost('nama_siswa'),
                     'ttl_siswa' => $this->request->getPost('ttl_siswa'),
                     'jk_siswa' => $this->request->getPost('jk_siswa'),
@@ -227,7 +228,7 @@ class Siswa extends BaseController
                 $this->ModelSiswa->edit($data);
             } else {
                 // menghapus foto lama yang ada difolder
-                $siswa = $this->ModelSiswa->detailData($nis);
+                $siswa = $this->ModelSiswa->detailData($nisn);
                 if ($siswa['foto_siswa'] != "") {
                     unlink('fotosiswa/' . $siswa['foto_siswa']);
                 }
@@ -236,7 +237,7 @@ class Siswa extends BaseController
                 // jika valid
                 // $ttl = date('d M Y', strtotime($this->request->getPost('ttl_siswa')));
                 $data = array(
-                    'nis' => $this->request->getPost('nis'),
+                    'nisn' => $this->request->getPost('nisn'),
                     'nama_siswa' => $this->request->getPost('nama_siswa'),
                     'ttl_siswa' => $this->request->getPost('ttl_siswa'),
                     'jk_siswa' => $this->request->getPost('jk_siswa'),
@@ -256,21 +257,21 @@ class Siswa extends BaseController
             // jika tidak valid
 
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('siswa/edit/' . $nis));
+            return redirect()->to(base_url('siswa/edit/' . $nisn));
         }
     }
 
-    public function delete($nis)
+    public function delete($nisn)
     {
 
         // menghapus foto lama yang ada difolder
-        $siswa = $this->ModelSiswa->detailData($nis);
+        $siswa = $this->ModelSiswa->detailData($nisn);
         if ($siswa['foto_siswa'] != "") {
             unlink('fotosiswa/' . $siswa['foto_siswa']);
         }
 
         $data = [
-            'nis' => $nis,
+            'nisn' => $nisn,
         ];
         $this->ModelSiswa->delete_data($data);
         session()->setFlashdata('pesan', 'data berhasil Hapus');

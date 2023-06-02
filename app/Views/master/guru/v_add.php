@@ -31,8 +31,8 @@
 
             ?>
             <div class="form-group">
-                <label>NIP</label>
-                <input name="nip" class="form-control" placeholder="Nip" >
+                <label>NUPTK</label>
+                <input name="nuptk" class="form-control" placeholder="NUPTK" >
             </div>
             <div class="form-group">
                 <label>Nama Guru</label>

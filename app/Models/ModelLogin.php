@@ -17,13 +17,13 @@ class ModelLogin extends Model{
 
     public function login_siswa($username, $password){
         return $this->db->table('tbl_siswa')->where([
-            'nis'=> $username,
+            'nisn'=> $username,
             'password' => $password
         ])->get()->getRowArray();
     }
     public function login_guru($username, $password){
         return $this->db->table('tbl_guru')->where([
-            'nip'=> $username,
+            'nuptk'=> $username,
             'password' => $password
         ])->get()->getRowArray();
     }
@@ -39,11 +39,11 @@ class ModelLogin extends Model{
                 $hashed_password = $user ? $user->password : '';
                 break;
             case 2:
-                $guru = $this->db->table('tbl_guru')->where('nip', $username)->get()->getRow();
+                $guru = $this->db->table('tbl_guru')->where('nuptk', $username)->get()->getRow();
                 $hashed_password = $guru ? $guru->password : '';
                 break;
             case 3:
-                $siswa = $this->db->table('tbl_siswa')->where('nis', $username)->get()->getRow();
+                $siswa = $this->db->table('tbl_siswa')->where('nisn', $username)->get()->getRow();
                 $hashed_password = $siswa ? $siswa->password : '';
                 break;
         }
@@ -55,9 +55,9 @@ class ModelLogin extends Model{
                 case 1:
                     return $this->db->table('tbl_user')->where('username', $username)->get()->getRowArray();
                 case 2:
-                    return $this->db->table('tbl_guru')->where('nip', $username)->get()->getRowArray();
+                    return $this->db->table('tbl_guru')->where('nuptk', $username)->get()->getRowArray();
                 case 3:
-                    return $this->db->table('tbl_siswa')->where('nis', $username)->get()->getRowArray();
+                    return $this->db->table('tbl_siswa')->where('nisn', $username)->get()->getRowArray();
             }
         }
     

@@ -2,10 +2,10 @@
     <tr class="bg-blue">
         <th>No</th>
         <!-- <th>Hari</th> -->
-        <th>Mapel</th>
+        <th>Aspek Perkembangan</th>
         <!-- <th>Kelas</th> -->
         <th>kelas</th>
-        <th>Tahun</th>
+        <th>Tahun Pelajaran</th>
     </tr>
     <?php
     $no = 1;

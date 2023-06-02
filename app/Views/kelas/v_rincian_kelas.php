@@ -53,7 +53,7 @@
             <table class="table table-bordered">
                 <tr class="">
                     <th width="50px" class="bg-blue text-center">No</th>
-                    <th width="100px" class="bg-blue text-center">NIS</th>
+                    <th width="100px" class="bg-blue text-center">NISN</th>
                     <th class="bg-blue text-center">Nama Siswa</th>
                     <th width="50px" class="bg-blue text-center">Action</th>
                 </tr>
@@ -61,10 +61,10 @@
                 foreach ($siswa as $key => $value) { ?>
                     <tr>
                         <td class="text-left"><?= $no++; ?></td>
-                        <td class="text-left"><?= $value['nis']; ?></td>
+                        <td class="text-left"><?= $value['nisn']; ?></td>
                         <td class="text-left"><?= $value['nama_siswa']; ?></td>
                         <td>
-                            <a href="<?= base_url('kelas/remove_anggota_kelas/' . $value['nis'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-danger btn-sm">
+                            <a href="<?= base_url('kelas/remove_anggota_kelas/' . $value['nisn'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-danger btn-sm">
                                 <i class="fa-solid fa-trash"></i>
                             </a>
                         </td>
@@ -93,7 +93,7 @@
                     <thead>
                         <tr>
                             <th class="text-center">No</th>
-                            <th class="text-center">Nis</th>
+                            <th class="text-center">Nisn</th>
                             <th class="text-center">Nama Siswa</th>
                             <th class="text-center" width="50px"></th>
                         </tr>
@@ -103,10 +103,10 @@
                         foreach ($siswa_nokel as $key => $value) { ?>
                             <tr>
                                 <td class="text-center"><?= $no++; ?></td>
-                                <td class="text-center"><?= $value['nis']; ?></td>
+                                <td class="text-center"><?= $value['nisn']; ?></td>
                                 <td class="text-center"><?= $value['nama_siswa']; ?></td>
                                 <td class="text-center">
-                                    <a href="<?= base_url('kelas/add_anggota_kelas/' . $value['nis'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-success">
+                                    <a href="<?= base_url('kelas/add_anggota_kelas/' . $value['nisn'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-success">
                                         <i class="fa-solid fa-plus"></i>
                                     </a>
                                 </td>

@@ -13,7 +13,7 @@ public function DataLaporan($smt, $nama_kelas, $mapel, $tgl_nilai){
     ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
     ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
     ->join('tbl_siswa', 'tbl_siswa.id_siswa = tbl_nilai.id_siswa', 'left')
-    ->select('tbl_siswa.nis')
+    ->select('tbl_siswa.nisn')
     ->select('tbl_siswa.nama_siswa')
     ->select('tbl_mapel.smt')
     ->select('tbl_kelas.nama_kelas')

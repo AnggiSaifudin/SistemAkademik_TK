@@ -28,12 +28,11 @@
 
             <?php
 
-            echo form_open_multipart('siswa/update/' . $siswa['nis']);
-
+            echo form_open_multipart('siswa/update/' . $siswa['nisn']);
             ?>
             <div class="form-group">
-                <label>Nis</label>
-                <input name="nis" class="form-control" value="<?= $siswa['nis']; ?>" placeholder="Nis">
+                <label>Nisn</label>
+                <input name="nisn" class="form-control" value="<?= $siswa['nisn']; ?>" placeholder="Nisn">
             </div>
             <div class="form-group">
                 <label>Nama</label>
@@ -64,7 +63,14 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" class="form-control" value="<?= $siswa['password']; ?>" placeholder="Password" autocomplete="off">
+                <!-- uji coba -->
+                <?php foreach ($siswa1 as $key => $value) { 
+                    if ($key === 0) { // Menampilkan form input hanya untuk elemen pertama
+                        $password = isset($siswa1['password']) ? $siswa1['password'] : '';
+                ?>
+                    <input type="password" name="password" value="<?= $password ?>" class="form-control" placeholder="Password" autocomplete="off">
+                <?php } } ?>
+                <!-- end uji coba -->
             </div>
 
             <div class="form-group">

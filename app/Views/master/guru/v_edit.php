@@ -27,12 +27,12 @@
 
             <?php
 
-            echo form_open_multipart('guru/update/' . $guru['nip']);
+            echo form_open_multipart('guru/update/' . $guru['nuptk']);
 
             ?>
             <div class="form-group">
-                <label>NIP</label>
-                <input name="nip" value="<?= $guru['nip']; ?>" class="form-control" placeholder="Nip">
+                <label>NUPTK</label>
+                <input name="nuptk" value="<?= $guru['nuptk']; ?>" class="form-control" placeholder="NUPTK">
             </div>
             <div class="form-group">
                 <label>Nama Guru</label>
@@ -56,7 +56,14 @@
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input type="password" name="password" value="<?= $guru['password']; ?>" class="form-control" placeholder="Password" autocomplete="off">
+                <!-- uji coba -->
+                <?php foreach ($guru1 as $key => $value) { 
+                    if ($key === 0) { // Menampilkan form input hanya untuk elemen pertama
+                        $password = isset($guru1['password']) ? $guru1['password'] : '';
+                ?>
+                    <input type="password" name="password" value="<?= $password ?>" class="form-control" placeholder="Password" autocomplete="off">
+                <?php } } ?>
+                <!-- end uji coba -->
             </div>
 
             <div class="form-group">

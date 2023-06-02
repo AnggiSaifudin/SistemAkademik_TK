@@ -56,7 +56,7 @@ class loginguru1 extends BaseController
         $data = [
             'title' => 'Jadwal Mengajar',
             'page' => 'absen/v_jadwal_guru',
-            'jadwal' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
+            'jadwal' => $this->ModelGr->jadwalGuru($guru['nuptk'], $ta['id_ta']),
             // 'mapel' => $this->ModelGr->JadwalMapel(),
             'ta' => $ta,
             'page' => 'absen/v_jadwal_guru',
@@ -142,7 +142,7 @@ class loginguru1 extends BaseController
         $data = [
             'title' => 'Nilai Kelas',
             'page' => 'nilai/v_nilai',
-            'absen' => $this->ModelGr->jadwalGuru($guru['nip'], $ta['id_ta']),
+            'absen' => $this->ModelGr->jadwalGuru($guru['nuptk'], $ta['id_ta']),
             // 'kelas' => $this->ModelGr->allData(),
             // 'kelas' => $this->ModelKelas->detail($id_kelas),
         ];
@@ -192,9 +192,9 @@ $siswa = $this->ModelGr->siswa($id_jadwal);
 $data = [];
 
 foreach ($siswa as $key => $value) {
-    $quis = $this->request->getPost($value['nis'].'nilai_quis');
-    $ketrampilan = $this->request->getPost($value['nis'] . 'nilai_ketrampilan');
-    $kerajinan = $this->request->getPost($value['nis'] . 'nilai_kerajinan');
+    $quis = $this->request->getPost($value['nisn'].'nilai_quis');
+    $ketrampilan = $this->request->getPost($value['nisn'] . 'nilai_ketrampilan');
+    $kerajinan = $this->request->getPost($value['nisn'] . 'nilai_kerajinan');
     $na =  ($quis + $ketrampilan + $kerajinan) / 3;
     if ($na >= 4) {
         $nh = 'A';
@@ -217,10 +217,10 @@ foreach ($siswa as $key => $value) {
     $data[] = [
         'id_jadwal' => $id_jadwal,
         'id_ta'=> $ta['id_ta'],
-        'nis' => $value['nis'],
-        'nilai_quis' => $this->request->getPost($value['nis'].'nilai_quis'),
-        'nilai_ketrampilan' => $this->request->getPost($value['nis'] . 'nilai_ketrampilan'),
-        'nilai_kerajinan' => $this->request->getPost($value['nis'] . 'nilai_kerajinan'),
+        'nisn' => $value['nisn'],
+        'nilai_quis' => $this->request->getPost($value['nisn'].'nilai_quis'),
+        'nilai_ketrampilan' => $this->request->getPost($value['nisn'] . 'nilai_ketrampilan'),
+        'nilai_kerajinan' => $this->request->getPost($value['nisn'] . 'nilai_kerajinan'),
         'na' => number_format($na, 0),
         'nilai_huruf' => $nh,
         'deskripsi' => $desk,

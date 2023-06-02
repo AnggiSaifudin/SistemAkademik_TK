@@ -8,12 +8,12 @@ class ModelSiswa extends Model
 {
     public function allData()
     {
-        return $this->db->table('tbl_siswa')->orderBy('nis', 'DESC')->get()->getResultArray();
+        return $this->db->table('tbl_siswa')->orderBy('nisn', 'DESC')->get()->getResultArray();
     }
-    public function detailData($nis)
+    public function detailData($nisn)
     {
         return $this->db->table('tbl_siswa')
-            ->where('nis', $nis)
+            ->where('nisn', $nisn)
             ->get()->getRowArray();
     }
 
@@ -23,12 +23,12 @@ class ModelSiswa extends Model
     }
     public function edit($data)
     {
-        $this->db->table('tbl_siswa')->where('nis', $data['nis'])->update($data);
+        $this->db->table('tbl_siswa')->where('nisn', $data['nisn'])->update($data);
     }
 
     public function delete_data($data)
     {
-        $this->db->table('tbl_siswa')->where('nis', $data['nis'])->delete($data);
+        $this->db->table('tbl_siswa')->where('nisn', $data['nisn'])->delete($data);
     }
     // public function ambiltgl(){
     //     $this->db->table('tbl_siswa')

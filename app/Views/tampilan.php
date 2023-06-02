@@ -147,6 +147,12 @@
                                             <p>Siswa</p>
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="<?= base_url('kelas'); ?>" class="nav-link">
+                                            <i class="fa-solid fa-landmark nav-icon"></i>
+                                            <p>Kelas</p>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
 
@@ -159,12 +165,12 @@
                                     </p>
                                 </a>
                                 <ul class="nav nav-treeview">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                         <a href="<?= base_url('kelas'); ?>" class="nav-link">
                                             <i class="fa-solid fa-landmark nav-icon"></i>
                                             <p>Kelas</p>
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <a href="<?= base_url('mapel'); ?>" class="nav-link">
                                         <i class="fa-solid fa-book nav-icon"></i>
@@ -189,7 +195,7 @@
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon fa-solid fa-gear"></i>
                                     <p>
-                                        Pengaturan
+                                        Setting
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
                                 </a>
@@ -456,7 +462,7 @@
     <!-- AdminLTE App -->
     <script src="<?= base_url(); ?>/halaman/dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="<?= base_url(); ?>/halaman/dist/js/demo.js"></script>
+    <!-- <script src="<?= base_url(); ?>/halaman/dist/js/demo.js"></script> -->
     <!-- Page specific script -->
 
 

@@ -2,7 +2,7 @@
 
     <tr class="text-center">
         <th width="50px">No</th>
-        <th class="text-center">Nis</th>
+        <th class="text-center">Nisn</th>
         <th class="text-center">Nama siswa</th>
         <th class="text-center">Kelas</th>
         <th class="text-center">Tahun Pelajaran</th>
@@ -25,7 +25,7 @@
      foreach($laporan as $key => $value) { ?>
     <tr>
         <td><?= $no++ ?></td>
-        <td><?= $value['nis']; ?></td>
+        <td><?= $value['nisn']; ?></td>
         <td><?= $value['nama_siswa']; ?></td>
         <td><?= $value['nama_kelas']; ?></td>
         <td><?= $value['mapel']; ?></td>

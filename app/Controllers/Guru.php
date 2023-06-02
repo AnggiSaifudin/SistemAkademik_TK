@@ -34,26 +34,17 @@ class Guru extends BaseController
         ];
         return view('tampilan', $data);
     }
-// regex_match[/^GR\d{2}$/]
-// 'regex_match' => '{field} harus diawali dengan GR dan diikuti 2 digit angka.'
+
     public function insert()
     {
         if ($this->validate([
-            // 'kode_guru' => [
-            //     'label' => 'Kode Guru',
-            //     'rules' => 'required|is_unique[tbl_guru.kode_guru]',
-            //     'errors' => [
-            //         'required' => '{field} wajib diisi!!!',
-            //         'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
-            //     ]
-            // ],
-            'nip' => [
-                'label' => 'Nip',
-                'rules' => 'required|is_unique[tbl_guru.nip]|numeric',
+            'nuptk' => [
+                'label' => 'Nuptk',
+                'rules' => 'required|is_unique[tbl_guru.nuptk]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input NIP lain!!',
-                    'numeric' => 'Nip harus berupa angka'
+                    'is_unique' => '{field} sudah ada. input Nuptk lain!!',
+                    'numeric' => 'Nuptk harus berupa angka'
                 ]
             ],
             'nama_guru' => [
@@ -114,7 +105,7 @@ class Guru extends BaseController
             // $ttl = date('d M Y', strtotime($this->request->getPost('ttl')));
             $data = array(
                 // 'kode_guru' => $this->request->getPost('kode_guru'),
-                'nip' => $this->request->getPost('nip'),
+                'nuptk' => $this->request->getPost('nuptk'),
                 'nama_guru' => $this->request->getPost('nama_guru'),
                 'ttl' => $this->request->getPost('ttl'),
                 'jk' => $this->request->getPost('jk'),
@@ -135,35 +126,28 @@ class Guru extends BaseController
         }
     }
 
-    public function edit($nip)
+    public function edit($nuptk)
     {
 
         $data = [
             'title' => 'Edit Guru',
             'page' => 'master/guru/v_edit',
-            'guru' => $this->ModelGuru->detailData($nip),
+            'guru' => $this->ModelGuru->detailData($nuptk),
+            'guru1' => $this->ModelGuru->allData(),
         ];
         return view('tampilan', $data);
     }
 
-    public function update($nip)
+    public function update($nuptk)
     {
         if ($this->validate([
-            // 'kode_guru' => [
-            //     'label' => 'Kode Guru',
-            //     'rules' => 'required|is_unique[tbl_guru.kode_guru,nip,{nip}]',
-            //     'errors' => [
-            //         'required' => '{field} wajib diisi!!!',
-            //         'is_unique' => '{field} sudah ada. input Kode Guru lain!!',
-            //     ]
-            // ],
-            'nip' => [
-                'label' => 'Nip',
-                'rules' => 'required|is_unique[tbl_guru.nip,nip,{nip}]|numeric',
+            'nuptk' => [
+                'label' => 'Nuptk',
+                'rules' => 'required|is_unique[tbl_guru.nuptk,nuptk,{nuptk}]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input Nip lain!!',
-                    'numeric' => 'nip harus berupa angka'
+                    'is_unique' => '{field} sudah ada. input Nuptk lain!!',
+                    'numeric' => 'Nuptk harus berupa angka'
                 ]
             ],
             'nama_guru' => [
@@ -223,17 +207,18 @@ class Guru extends BaseController
                 $data = array(
 
                     // 'kode_guru' => $this->request->getPost('kode_guru'),
-                    'nip' => $this->request->getPost('nip'),
+                    'nuptk' => $this->request->getPost('nuptk'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'ttl' => $this->request->getPost('ttl'),
                     'jk' => $this->request->getPost('jk'),
                     'alamat' => $this->request->getPost('alamat'),
                     'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
                 );
+
                 $this->ModelGuru->edit($data);
             } else {
                 // menghapus foto lama yang ada difolder
-                $guru = $this->ModelGuru->detailData($nip);
+                $guru = $this->ModelGuru->detailData($nuptk);
                 if ($guru['foto_guru'] != "") {
                     unlink('fotoguru/' . $guru['foto_guru']);
                 }
@@ -244,7 +229,7 @@ class Guru extends BaseController
                 $data = array(
 
                     // 'kode_guru' => $this->request->getPost('kode_guru'),
-                    'nip' => $this->request->getPost('nip'),
+                    'nuptk' => $this->request->getPost('nuptk'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'ttl' => $this->request->getPost('ttl'),
                     'jk' => $this->request->getPost('jk'),
@@ -263,21 +248,21 @@ class Guru extends BaseController
             // jika tidak valid
 
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('guru/edit/' . $nip));
+            return redirect()->to(base_url('guru/edit/' . $nuptk));
         }
     }
 
-    public function delete($nip)
+    public function delete($nuptk)
     {
 
         // menghapus foto lama yang ada difolder
-        $guru = $this->ModelGuru->detailData($nip);
+        $guru = $this->ModelGuru->detailData($nuptk);
         if ($guru['foto_guru'] != "") {
             unlink('fotoguru/' . $guru['foto_guru']);
         }
 
         $data = [
-            'nip' => $nip,
+            'nuptk' => $nuptk,
         ];
         $this->ModelGuru->delete_data($data);
         session()->setFlashdata('pesan', 'data berhasil Hapus');

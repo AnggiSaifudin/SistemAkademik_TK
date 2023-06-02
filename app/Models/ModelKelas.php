@@ -9,9 +9,9 @@ class ModelKelas extends Model
     public function allData()
     {
         return $this->db->table('tbl_kelas')
-            ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_kelas.nuptk', 'left')
             ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
-            ->orderBy('tbl_kelas.nip', 'ASC')
+            ->orderBy('tbl_kelas.nuptk', 'ASC')
             ->where('tbl_ta.status', 1)
             ->get()->getResultArray();
     }
@@ -27,10 +27,14 @@ class ModelKelas extends Model
     public function detail($id_kelas)
     {
         return $this->db->table('tbl_kelas')
-            ->join('tbl_guru', 'tbl_guru.nip = tbl_kelas.nip', 'left')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_kelas.nuptk', 'left')
             ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->where('id_kelas', $id_kelas)
             ->get()->getRowArray();
+    }
+    public function edit($data)
+    {
+        $this->db->table('tbl_kelas')->where('id_kelas', $data['id_kelas'])->update($data);
     }
 // uji coba
 // public function get_by_id($id_kelas)
@@ -58,7 +62,7 @@ class ModelKelas extends Model
         return $this->db->table('tbl_siswa')
         // ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_siswa.id_kelas', 'left')
         // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
-        ->orderBy('nis', 'DESC')
+        ->orderBy('nisn', 'DESC')
             ->where('tbl_siswa.id_kelas', $id_kelas)
             // ->where('tbl_kelas.id_ta', $id_ta)
             ->get()->getResultArray();
@@ -69,7 +73,7 @@ class ModelKelas extends Model
     {
         return $this->db->table('tbl_siswa')
             ->where('id_kelas', null)
-            ->orderBy('nis', 'DESC')
+            ->orderBy('nisn', 'DESC')
             ->get()->getResultArray();
     }
 
@@ -84,7 +88,7 @@ class ModelKelas extends Model
     public function update_siswa($data)
     {
         $this->db->table('tbl_siswa')
-            ->where('nis', $data['nis'])
+            ->where('nisn', $data['nisn'])
             ->update($data);
     }
     // public function DataKelas()

@@ -12,10 +12,9 @@ public function DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta){
     ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
     ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
     ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
-    ->join('tbl_siswa', 'tbl_siswa.nis = tbl_nilai.nis', 'left')
-    ->select('tbl_siswa.nis')
+    ->join('tbl_siswa', 'tbl_siswa.nisn = tbl_nilai.nisn', 'left')
+    ->select('tbl_siswa.nisn')
     ->select('tbl_siswa.nama_siswa')
-    ->select('tbl_mapel.smt')
     ->select('tbl_kelas.nama_kelas')
     ->select('tbl_mapel.mapel')
     ->select('tbl_nilai.nilai_quis')
@@ -35,10 +34,10 @@ public function DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta){
 public function Siswa(){
 return $this->db->table('tbl_nilai')
 ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
-->join('tbl_guru', 'tbl_guru.nip = tbl_jadwal.nip', 'left')
+->join('tbl_guru', 'tbl_guru.nuptk = tbl_jadwal.nuptk', 'left')
 ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
 ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
-->join('tbl_siswa', 'tbl_siswa.nis = tbl_nilai.nis', 'left')
+->join('tbl_siswa', 'tbl_siswa.nisn = tbl_nilai.nisn', 'left')
 ->get()->getRowArray();
 ;
 }

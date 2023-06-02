@@ -22,24 +22,25 @@
         <div class="card-body">
             <table class="table table-responsive">
                 <tr>
-                    <th width="300px">Nama Guru</th>
+                    <th width="250px">Nama Guru</th>
                     <th width="50px">:</th>
                     <td><?= $guru['nama_guru']; ?></td>
                 </tr>
                 <tr>
-                    <th>NIP</th>
+                    <th>NUPTK</th>
                     <th>:</th>
-                    <td><?= $guru['nip']; ?></td>
+                    <td><?= $guru['nuptk']; ?></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th>E-Mail</th>
                     <th>:</th>
                     <td>-</td>
-                </tr>
+                </tr> -->
                 <tr>
                     <th>TTL</th>
                     <th>:</th>
-                    <td><?= $guru['ttl']; ?></td>
+                    <!-- <td><?= $guru['alamat']; ?>,<?= $guru['ttl']; ?></td> -->
+                    <td><?= $guru['alamat']; ?>,<?= date('d M Y', strtotime($guru['ttl'])); ?></td>
                 </tr>
             </table>
         </div>

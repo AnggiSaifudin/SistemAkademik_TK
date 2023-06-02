@@ -23,7 +23,7 @@
                 <thead>
                     <tr>
                         <th width="50px">No</th>
-                        <th class="text-center">Tahun Akademik</th>
+                        <th class="text-center">Tahun Pelajaran</th>
                         <th class="text-center">Semester</th>
                         <th class="text-center">Status</th>
                         <th class="text-center">Action</th>

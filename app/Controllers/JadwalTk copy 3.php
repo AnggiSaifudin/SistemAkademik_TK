@@ -62,7 +62,7 @@ class JadwalTk extends BaseController
                     'is_unique' => '{field} sudah ada. Pilih Aspek Perkembangan lain!!',
                 ]
             ],
-            'nip' => [
+            'nuptk' => [
                 'label' => 'Nama Guru',
                 'rules' => 'required',
                 'errors' => [
@@ -78,7 +78,7 @@ class JadwalTk extends BaseController
                 'id_kelas' => $id_kelas,
                 'id_ta' => $ta['id_ta'],
                 'kode_mapel' => $this->request->getPost('kode_mapel'),
-                'nip' => $this->request->getPost('nip'),
+                'nuptk' => $this->request->getPost('nuptk'),
             ];
             $this->ModelJadwal->add($data);
             session()->setFlashdata('pesan', 'data berhasil ditambahkan');

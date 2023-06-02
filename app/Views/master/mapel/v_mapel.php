@@ -45,7 +45,7 @@
 
             ?>
 
-            <table class="table table-bordered table-striped table-responsive-lg">
+            <table class="table table-bordered table-striped ">
                 <thead>
                     <tr>
                         <th width="50px" class="text-center">No</th>

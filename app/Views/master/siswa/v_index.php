@@ -42,7 +42,7 @@
                 <thead>
                     <tr>
                         <th width="50px">No</th>
-                        <th>NIS</th>
+                        <th>NISN</th>
                         <th>Nama Siswa</th>
                         <th>Tanggal Lahir</th>
                         <th>JK</th>
@@ -58,10 +58,20 @@
                     foreach ($siswa as $key => $value) { ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $value['nis']; ?></td>
+                            <td><?= $value['nisn']; ?></td>
                             <td><?= $value['nama_siswa']; ?></td>
                             <!-- <td width="150px"><?= $value['ttl_siswa']; ?></td> -->
-                            <td><?= date('d F Y', strtotime($value['ttl_siswa'])); ?></td>
+                            <!-- <td><?= date('d F Y', strtotime($value['ttl_siswa'])); ?></td> -->
+                            <td>
+                                <?php
+                                $tanggalLahir = $value['ttl_siswa'];
+
+                                $formatTanggal = new IntlDateFormatter('id_ID', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+                                $tanggalLahirIndonesia = $formatTanggal->format(strtotime($tanggalLahir));
+
+                                echo $tanggalLahirIndonesia;
+                                ?>
+                            </td>
                             <td><?= $value['jk_siswa']; ?></td>
                             <td><?= $value['agama']; ?></td>
                             <td><?= $value['alamat_siswa']; ?></td>
@@ -70,10 +80,10 @@
 
                             <td class="text-center"><img src="<?= base_url('fotosiswa/' . $value['foto_siswa']); ?>" class="img-circle" alt="User Image" width="50px"></td>
                             <td width="150px" class="text-center">
-                                <a href="<?= base_url('siswa/edit/' . $value['nis']); ?>" class="btn btn-primary btn-sm">
+                                <a href="<?= base_url('siswa/edit/' . $value['nisn']); ?>" class="btn btn-primary btn-sm">
                                     <i class="fa-solid fa-pencil"></i>
                                 </a>
-                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['nis']; ?>">
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete<?= $value['nisn']; ?>">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
                             </td>
@@ -90,7 +100,7 @@
 <!-- modal delete-->
 <?php foreach ($siswa as $key => $value) { ?>
 
-    <div class="modal fade" id="delete<?= $value['nis']; ?>">
+    <div class="modal fade" id="delete<?= $value['nisn']; ?>">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -105,7 +115,7 @@
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    <a href="<?= base_url('siswa/delete/' . $value['nis']); ?>" class="btn btn-success">Delete</a>
+                    <a href="<?= base_url('siswa/delete/' . $value['nisn']); ?>" class="btn btn-success">Delete</a>
                 </div>
             </div>
             <!-- /.modal-content -->

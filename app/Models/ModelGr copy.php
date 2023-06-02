@@ -10,7 +10,7 @@ class ModelGr extends Model
     public function DataGuru()
     {
         return $this->db->table('tbl_guru')
-            ->where('nip', session()->get('username'))
+            ->where('nuptk', session()->get('username'))
             ->get()->getRowArray();
     }
 

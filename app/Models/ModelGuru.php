@@ -11,18 +11,18 @@ class ModelGuru extends Model
 
     public function allData()
     {
-        return $this->db->table('tbl_guru')->orderBy('nip', 'DESC')->get()->getResultArray();
+        return $this->db->table('tbl_guru')->orderBy('nuptk', 'DESC')->get()->getResultArray();
     }
-    public function detailData($nip)
+    public function detailData($nuptk)
     {
         return $this->db->table('tbl_guru')
-            ->where('nip', $nip)
+            ->where('nuptk', $nuptk)
             ->get()->getRowArray();
     }
     public function BioGuru()
     {
         return $this->db->table('tbl_guru')
-            ->where('nip', session()
+            ->where('nuptk', session()
                 ->get('username'))
             ->get()->getResultArray();
     }
@@ -34,23 +34,14 @@ class ModelGuru extends Model
     public function edit($data)
     {
         $this->db->table('tbl_guru')
-        ->where('nip', $data['nip'])
+        ->where('nuptk', $data['nuptk'])
         ->update($data);
     }
 
     public function delete_data($data)
     {
-        $this->db->table('tbl_guru')->where('nip', $data['nip'])->delete($data);
+        $this->db->table('tbl_guru')->where('nuptk', $data['nuptk'])->delete($data);
     }
 
-            // uji coba
-            // public function verifyPassword($password, $hashedPassword)
-            // {
-            //     return password_verify($password, $hashedPassword);
-            // }
-            // public function getByNip($nip)
-            // {
-            //     return $this->where('nip', $nip)->first();
-            // }
-            // end uji coba
+
 }

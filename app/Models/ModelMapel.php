@@ -11,8 +11,8 @@ class ModelMapel extends Model
     public function allData()
     {
         return $this->db->table('tbl_mapel')
-        ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_mapel.id_kelas', 'left')
-        ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
+        // ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_mapel.id_kelas', 'left')
+        // ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->orderBy('kode_mapel', 'DESC')
             ->get()->getResultArray();
     }

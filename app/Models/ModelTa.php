@@ -6,6 +6,8 @@ use CodeIgniter\Model;
 
 class ModelTa extends Model
 {
+    protected $table = 'tbl_ta';
+    protected $primaryKey = 'id_ta';
     public function allData()
     {
         return $this->db->table('tbl_ta')->orderBy('id_ta', 'DESC')->get()->getResultArray();

@@ -141,7 +141,8 @@
                     <?php
 
                     echo form_open_multipart('user/edit/' . $value['username']);
-
+                    // Mengatur nilai default password asli jika ada
+                    $password = isset($user['password']) ? $user['password'] : '';
                     ?>
 
                     <div class="form-group">
@@ -155,14 +156,14 @@
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" name="password" value="<?= $value['password']; ?>" class="form-control" placeholder="Password" autocomplete="off">
+                        <input type="password" name="password" value="<?= $password; ?>" class="form-control" placeholder="Password" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <img src="<?= base_url('foto/' . $value['foto']); ?>" class="img-circle" width="50px">
                     </div>
                     <div class="form-group">
                         <label>Ganti Foto</label>
                         <input type="file" name="foto" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <img src="<?= base_url('foto/' . $value['foto']); ?>" class="img-circle" width="50px">
                     </div>
 
                 </div>
