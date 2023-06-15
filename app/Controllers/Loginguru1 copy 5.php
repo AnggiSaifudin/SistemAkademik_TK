@@ -188,7 +188,6 @@ class loginguru1 extends BaseController
         // uji
         $ta = $this->ModelTa->ta_aktif();
 $siswa = $this->ModelGr->siswa($id_jadwal);
-
 $data = [];
 
 foreach ($siswa as $key => $value) {

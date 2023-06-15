@@ -39,10 +39,12 @@ class Siswa extends BaseController
         if ($this->validate([
             'nisn' => [
                 'label' => 'Nisn',
-                'rules' => 'required|is_unique[tbl_siswa.nisn]|numeric',
+                'rules' => 'required|is_unique[tbl_siswa.nisn]|min_length[10]|max_length[11]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
                     'is_unique' => '{field} sudah ada. input Nisn lain!!',
+                    'min_length' => 'Nisn minimal harus 10 angka',
+                    'max_length' => 'Nisn maksimal harus 11 angka',
                     'numeric' => 'Nisn harus berupa angka'
                 ]
             ],
@@ -148,10 +150,12 @@ class Siswa extends BaseController
         if ($this->validate([
             'nisn' => [
                 'label' => 'Nisn',
-                'rules' => 'required|is_unique[tbl_siswa.nisn,nisn,{nisn}]|numeric',
+                'rules' => 'required|is_unique[tbl_siswa.nisn,nisn,{nisn}]|min_length[10]|max_length[11]|numeric',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
                     'numeric' => 'Nisn harus berupa angka',
+                    'min_length' => 'Nisn minimal harus 10 angka',
+                    'max_length' => 'Nisn maksimal harus 11 angka',
                     'is_unique' => '{field} sudah ada. input Nisn lain!!',
                 ]
             ],

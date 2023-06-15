@@ -161,7 +161,6 @@ class loginguru1 extends BaseController
     }
     public function simpannilai($id_jadwal)
     {
-
         // uji
         $ta = $this->ModelTa->ta_aktif();
 $siswa = $this->ModelGr->siswa($id_jadwal);
