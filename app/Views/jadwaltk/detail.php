@@ -80,9 +80,9 @@
                 <thead>
                     <tr>
                         <th width="50px" class="text-center">No</th>
-                        <th class="text-center">Kode</th>
-                        <th class="text-center">Aspek</th>
-                        <th class="text-center">Nama Guru</th>
+                        <th class="text-left">Kode</th>
+                        <th class="text-left">Aspek</th>
+                        <th class="text-left">Nama Guru</th>
                         <!-- <th class="text-center">Hari</th>
                         <th class="text-center">Waktu</th> -->
                         <th width="50px" class="text-center">Action</th>
@@ -94,9 +94,9 @@
                     foreach ($jadwal as $key => $value) { ?>
                         <tr>
                             <td class="text-center"><?= $no++; ?></td>
-                            <td class="text-center"><?= $value['kode_mapel']; ?></td>
-                            <td class="text-center"><?= $value['mapel']; ?></td>
-                            <td class="text-center"><?= $value['nama_guru']; ?></td>
+                            <td class="text-left"><?= $value['kode_mapel']; ?></td>
+                            <td class="text-left"><?= $value['mapel']; ?></td>
+                            <td class="text-left"><?= $value['nama_guru']; ?></td>
 
 
 

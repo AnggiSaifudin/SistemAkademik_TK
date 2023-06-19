@@ -58,10 +58,10 @@
     }
     ?>
 
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-responsive-lg">
         <thead class=" bg-blue">
             <tr>
-                <th class="text-center">#</th>
+                <th class="text-center">No</th>
                 <th class="text-center">Kode Mapel</th>
                 <th class="text-center">Mata Pelajaran</th>
                 <th class="text-center">Nilai Quis</th>
@@ -69,7 +69,7 @@
                 <th class="text-center">Nilai Kerajinan</th>
                 <th class="text-center">Nilai Akhir</th>
                 <th class="text-center">GRADE</th>
-                <th class="text-center">Deskripsi</th>
+                <th width="50px" class="text-center">Deskripsi</th>
             </tr>
         </thead>
         <tbody>

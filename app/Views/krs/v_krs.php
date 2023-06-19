@@ -47,10 +47,10 @@
 <div class="col-sm-12">
 
 
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-responsive-lg">
         <thead class=" bg-blue">
             <tr>
-                <th>#</th>
+                <th class="text-left">No</th>
                 <th>Kode Aspek</th>
                 <th>Aspek Perkembangan</th>
                 <th>Kelas</th>

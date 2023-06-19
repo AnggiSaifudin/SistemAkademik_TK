@@ -50,11 +50,11 @@
 
             ?>
 
-            <table class="table table-bordered">
+            <table class="table table-bordered table-responsive-md">
                 <tr class="">
                     <th width="50px" class="bg-blue text-center">No</th>
-                    <th width="100px" class="bg-blue text-center">NISN</th>
-                    <th class="bg-blue text-center">Nama Siswa</th>
+                    <th class="bg-blue text-left">Nisn</th>
+                    <th class="bg-blue text-left">Nama Siswa</th>
                     <th width="50px" class="bg-blue text-center">Action</th>
                 </tr>
                 <?php $no = 1;
@@ -89,22 +89,22 @@
                 </button>
             </div>
             <div class="modal-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped table-responsive-lg">
                     <thead>
                         <tr>
-                            <th class="text-center">No</th>
-                            <th class="text-center">Nisn</th>
-                            <th class="text-center">Nama Siswa</th>
-                            <th class="text-center" width="50px"></th>
+                            <th width="50px" class="text-center">No</th>
+                            <th class="text-left">Nisn</th>
+                            <th class="text-left">Nama Siswa</th>
+                            <th class="text-left" width="50px"></th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $no = 1;
                         foreach ($siswa_nokel as $key => $value) { ?>
                             <tr>
-                                <td class="text-center"><?= $no++; ?></td>
-                                <td class="text-center"><?= $value['nisn']; ?></td>
-                                <td class="text-center"><?= $value['nama_siswa']; ?></td>
+                                <td class="text-left"><?= $no++; ?></td>
+                                <td class="text-left"><?= $value['nisn']; ?></td>
+                                <td class="text-left"><?= $value['nama_siswa']; ?></td>
                                 <td class="text-center">
                                     <a href="<?= base_url('kelas/add_anggota_kelas/' . $value['nisn'] . '/' . $kelas['id_kelas']); ?>" class="btn btn-success">
                                         <i class="fa-solid fa-plus"></i>

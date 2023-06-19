@@ -9,14 +9,14 @@
         <div class="card-body">
 
 
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped table-responsive">
                 <thead>
                     <tr>
                         <th width="50px" class="text-center">No</th>
-                        <th class="text-center">Nama Kelas</th>
-                        <th class="text-center">Guru</th>
-                        <th class="text-center">Tahun Pelajaran</th>
-                        <th class="text-center">Mengajar</th>
+                        <th class="text-left">Nama Kelas</th>
+                        <th class="text-left">Guru</th>
+                        <th class="text-left">Tahun Pelajaran</th>
+                        <th class="text-center" width="50px">Mengajar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,13 +29,13 @@
                             <td class="text-center">
                                 <?= $no++; ?>
                             </td>
-                            <td class="text-center">
+                            <td class="text-left">
                                 <?= $value['nama_kelas']; ?>
                             </td>
-                            <td class="text-center">
+                            <td class="text-left">
                                 <?= $value['nama_guru']; ?>
                             </td>
-                            <td class="text-center"><?= $ta_aktif['ta']; ?>/<?= $ta_aktif['semester']; ?></td>
+                            <td class="text-left"><?= $ta_aktif['ta']; ?>/<?= $ta_aktif['semester']; ?></td>
                             <td class="text-center">
                                 <a href="<?= base_url('jadwaltk/detail_jadwal/' . $value['id_kelas']); ?>" class="btn btn-primary btn-sm">
                                     <i class="fa fa-calendar"></i>
