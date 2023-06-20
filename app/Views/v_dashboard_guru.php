@@ -41,6 +41,17 @@
                     <th>:</th>
                     <!-- <td><?= $guru['alamat']; ?>,<?= $guru['ttl']; ?></td> -->
                     <td><?= $guru['alamat']; ?>,<?= date('d M Y', strtotime($guru['ttl'])); ?></td>
+                    <!-- <td>
+                    <?= $guru['alamat']; ?>,
+                                <?php
+                                $tanggalLahir = $guru['ttl'];
+
+                                $formatTanggal = new IntlDateFormatter('id_ID', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+                                $tanggalLahirIndonesia = $formatTanggal->format(strtotime($tanggalLahir));
+
+                                echo $tanggalLahirIndonesia;
+                                ?>
+                            </td> -->
                 </tr>
             </table>
         </div>

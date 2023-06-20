@@ -108,7 +108,7 @@ margin: 80px 0 0 0;
     <div class="rt_kanan">
         <table class="">
             <tr>
-                <td width="140px"><b>Tahun Akademik</b></td>
+                <td width="140px"><b>Tahun Pelajaran</b></td>
                 <td width="20px">:</td>
                 <td>
                     <?= $ta_aktif['ta']; ?>/ <?= $ta_aktif['semester']; ?>

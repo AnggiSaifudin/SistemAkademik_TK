@@ -1,4 +1,4 @@
-                   <style>
+<style>
                     table, td, th {
                         border : 1px solid #333;
                     }
@@ -51,7 +51,7 @@
                     <br>
                     <div class="col-12">
                         <h3 class="judul">Data Laporan Hasil Penilaian <br>
-                            Perkembangan Anak Semester <?= $semester; ?> Tahun Akademik <?= $ta; ?><br>
+                            Perkembangan Anak Semester <?= $semester; ?> Tahun Pelajaran <?= $ta; ?><br>
                             Tanggal <?php
                                     $time_tamp = strtotime($tgl_nilai);
                                     echo date('d-m-Y', $time_tamp);
@@ -66,7 +66,6 @@
                                         <th class="text-center">Nisn</th>
                                         <th class="text-center">Nama Siswa</th>
                                         <th class="text-center">Kelas</th>
-                                        <th class="text-center">Smt</th>
                                         <th class="text-center">Mata Pelajaran</th>
                                         <th class="text-center">Nilai Quis</th>
                                         <th class="text-center">Nilai Ketrampilan</th>
@@ -86,8 +85,7 @@
                                             <td class="text-center"><?= $value['nisn']; ?></td>
                                             <td class="text-center"><?= $value['nama_siswa']; ?></td>
                                             <td class="text-center"><?= $value['nama_kelas']; ?></td>
-                                            <td class="text-center"><?= $value['smt']; ?></td>
-                                            <td class="text-center"><?= $value['mapel']; ?></td>
+                                                                                    <td class="text-center"><?= $value['mapel']; ?></td>
                                             <td class="text-center"><?= $value['nilai_quis']; ?></td>
                                             <td class="text-center"><?= $value['nilai_ketrampilan']; ?></td>
                                             <td class="text-center"><?= $value['nilai_kerajinan']; ?></td>

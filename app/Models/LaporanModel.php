@@ -16,6 +16,8 @@ public function DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta){
     ->select('tbl_siswa.nisn')
     ->select('tbl_siswa.nama_siswa')
     ->select('tbl_kelas.nama_kelas')
+    ->select('tbl_ta.ta')
+    ->select('tbl_ta.semester')
     ->select('tbl_mapel.mapel')
     ->select('tbl_nilai.nilai_quis')
     ->select('tbl_nilai.nilai_ketrampilan')

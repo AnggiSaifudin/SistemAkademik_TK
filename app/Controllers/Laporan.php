@@ -98,6 +98,40 @@ class Laporan extends BaseController
             $dompdf->render();
             $dompdf->stream("Laporan Perkembangan anak.pdf", array('attachment' => false));
     }
+    // public function Printpdf($nama_kelas,$mapel,$tgl_nilai,$semester,$ta,$tahun_akhir)
+    // {
+    //     // $ta = $this->ModelTa->ta_aktif();
+    //     // $user = $this->ModelUser->User();
+    //     set_time_limit(0); // Memperpanjang batas waktu eksekusi PHP menjadi tidak terbatas (0 detik)
+
+    //     $ta = $ta.'/'.$tahun_akhir;
+    //     $data = [
+    //         'title' => 'Cetak Penilaian',
+    //         'semester' => $semester,
+    //         'ta' => $ta,
+    //         'tgl_nilai' => $tgl_nilai,
+    //         'mapel' => $mapel,
+    //         'nama_kelas' => $nama_kelas,
+    //         'siswa' => $this->LaporanModel->Siswa(),
+    //         'user' => $this->ModelUser->User(),
+    //         'printlaporan' => $this->LaporanModel->DataLaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta)
+
+    //     ];
+    //     // dd($data);
+    //     $html = view('laporan/v_print_pdf', $data);
+
+    //     $dompdf = new Dompdf();
+    //     // $dompdf->set_option('isRemoteEnabled', TRUE); YG BERMASALAH INI TERNYATA TIDAK MENAMPILKAN GAMBAR ICON
+    //     $dompdf->set_option('isRemoteEnabled', TRUE);
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('F4', 'portrait');
+    
+    //     // Render the HTML as PDF
+    //     $dompdf->render();
+    
+    //     // Output the generated PDF to the browser for download
+    //     $dompdf->stream("Laporan Perkembangan anak.pdf", array("Attachment" => true));
+    // }
 
     // public function Printlaporan($nama_kelas,$mapel,$tgl_nilai,$semester,$ta,$tahun_akhir)
     // {

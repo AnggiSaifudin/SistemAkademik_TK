@@ -76,7 +76,7 @@
                         <div class="col-6">
                             <table class="float-right">
                                 <tr>
-                                    <td width="140px"><b>Tahun Akademik</b></td>
+                                    <td width="140px"><b>Tahun Pelajaran</b></td>
                                     <td width="20px">:</td>
                                     <td>
                                         <?= $ta_aktif['ta']; ?>/ <?= $ta_aktif['semester']; ?>
