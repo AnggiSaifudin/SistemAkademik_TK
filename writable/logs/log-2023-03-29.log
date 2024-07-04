@@ -1,0 +1,792 @@
+CRITICAL - 2023-03-29 08:08:55 --> Undefined index: kode_guru
+in APPPATH\Views\master\guru\v_index.php on line 61.
+ 1 APPPATH\Views\master\guru\v_index.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode_guru', 'APPPATH\\Views\\master\\guru\\v_index.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\guru\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('master/guru/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('master/guru/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Guru.php(24): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:09:52 --> Undefined index: kode_guru
+in APPPATH\Views\master\guru\v_edit.php on line 35.
+ 1 APPPATH\Views\master\guru\v_edit.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode_guru', 'APPPATH\\Views\\master\\guru\\v_edit.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\guru\\v_edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('master/guru/v_edit', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('master/guru/v_edit')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Guru.php(146): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->edit('0928343323444')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 08:29:11 --> mysqli_sql_exception: Unknown column 'tbl_ta.id_ta.status' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_jad...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_jad...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_jad...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jad...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-29 08:29:11 --> Unknown column 'tbl_ta.id_ta.status' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jadwal`.*, `tbl_mapel`.`kode_mapel`
+FROM `tbl_jadwal`
+JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+WHERE `tbl_jadwal`.`kode_mapel` = :tbl_jadwal.kode_mapel:
+AND `tbl_ta`.`id_ta`.`status` = :tbl_ta.id_ta.status:
+AND `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 08:29:37 --> mysqli_sql_exception: Unknown column 'id_ta.status' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_jad...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_jad...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_jad...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jad...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-29 08:29:37 --> Unknown column 'id_ta.status' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jadwal`.*, `tbl_mapel`.`kode_mapel`
+FROM `tbl_jadwal`
+JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+WHERE `tbl_jadwal`.`kode_mapel` = :tbl_jadwal.kode_mapel:
+AND `id_ta`.`status` = :id_ta.status:
+AND `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 08:30:07 --> mysqli_sql_exception: Unknown column 'tbl_kelas.id_ta.status' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_jad...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_jad...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_jad...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jad...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-29 08:30:07 --> Unknown column 'tbl_kelas.id_ta.status' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_jadwal`.*, `tbl_mapel`.`kode_mapel`
+FROM `tbl_jadwal`
+JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+WHERE `tbl_jadwal`.`kode_mapel` = :tbl_jadwal.kode_mapel:
+AND `tbl_kelas`.`id_ta`.`status` = :tbl_kelas.id_ta.status:
+AND `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(101): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:36:44 --> Undefined index: id_kelas
+in APPPATH\Controllers\JadwalTk.php on line 35.
+ 1 APPPATH\Controllers\JadwalTk.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Controllers\\JadwalTk.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:38:34 --> Undefined index: id_kelas
+in APPPATH\Controllers\JadwalTk.php on line 35.
+ 1 APPPATH\Controllers\JadwalTk.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Controllers\\JadwalTk.php', 35, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 08:39:57 --> Undefined variable: kelas1
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 25.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas1', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 08:52:05 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(59): App\Models\ModelGr->jadwalGuru('0928343323766', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->jadwal()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 08:52:05 --> Unknown column 'tbl_jadwal.id_ta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `tbl_jadwal`.`nip` = :tbl_jadwal.nip:
+AND `tbl_jadwal`.`id_ta` = :tbl_jadwal.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru1.php(59): App\Models\ModelGr->jadwalGuru('0928343323766', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->jadwal()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:45:03 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(59): App\Models\ModelGr->jadwalGuru('0928343323766', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->jadwal()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:45:03 --> Unknown column 'tbl_jadwal.id_ta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `tbl_jadwal`.`nip` = :tbl_jadwal.nip:
+AND `tbl_jadwal`.`id_ta` = :tbl_jadwal.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru1.php(59): App\Models\ModelGr->jadwalGuru('0928343323766', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->jadwal()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:54:46 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:54:46 --> Unknown column 'tbl_jadwal.id_ta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_jadwal`.`id_ta`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+AND `tbl_jadwal`.`id_ta` = :tbl_jadwal.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:55:42 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:55:42 --> Unknown column 'tbl_jadwal.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_jadwal`.`id_ta`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:56:43 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:56:43 --> Unknown column 'tbl_jadwal.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_jadwal`.`id_ta`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:57:52 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:57:52 --> Unknown column 'tbl_jadwal.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_jadwal`.`id_ta`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 09:57:56 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 09:57:56 --> Unknown column 'tbl_jadwal.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_jadwal`.`id_ta`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Krs.php(34): App\Models\ModelKrs->daftarap('30', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 10:01:48 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_ta' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(71): App\Models\ModelKrs->DataKrs('4323', '1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginsiswa->khs()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 10:01:48 --> Unknown column 'tbl_nilai.id_ta' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `nis` = :nis:
+AND `tbl_nilai`.`id_ta` = :tbl_nilai.id_ta:', [...], false)
+ 2 APPPATH\Models\ModelKrs.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginsiswa.php(71): App\Models\ModelKrs->DataKrs('4323', '1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginsiswa->khs()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:07:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Loginsiswa.php on line 70.
+ 1 APPPATH\Controllers\Loginsiswa.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Loginsiswa.php', 70, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginsiswa->khs()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 10:27:17 --> hash(): Unknown hashing algorithm: sha265
+in APPPATH\Controllers\User.php on line 72.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'hash(): Unknown hashing algorithm: sha265', 'APPPATH\\Controllers\\User.php', 72, [...])
+ 2 APPPATH\Controllers\User.php(72): hash('sha265', '12345')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->add()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:01:01 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 11:01:01 --> Unknown column 'tbl_nilai.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_nilai`.`id_ta`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:01:05 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 11:01:05 --> Unknown column 'tbl_nilai.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_nilai`.`id_ta`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-29 11:01:11 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(114): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023', '2023')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-29 11:01:11 --> Unknown column 'tbl_nilai.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_nilai`.`id_ta`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(114): App\Models\LaporanModel->DataLaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas D', 'kognitif', '2022-02-21', 'ganjil', '2022/2023', '2023')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:19:56 --> Undefined variable: ModelUser
+in APPPATH\Controllers\User.php on line 137.
+ 1 APPPATH\Controllers\User.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ModelUser', 'APPPATH\\Controllers\\User.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:22:44 --> Undefined variable: ModelUser
+in APPPATH\Controllers\User.php on line 136.
+ 1 APPPATH\Controllers\User.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ModelUser', 'APPPATH\\Controllers\\User.php', 136, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:24:15 --> Undefined variable: ModelUser
+in APPPATH\Controllers\User.php on line 137.
+ 1 APPPATH\Controllers\User.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ModelUser', 'APPPATH\\Controllers\\User.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:25:45 --> Undefined variable: userModel
+in APPPATH\Controllers\User.php on line 137.
+ 1 APPPATH\Controllers\User.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: userModel', 'APPPATH\\Controllers\\User.php', 137, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:26:08 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\User.php(137): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 16:26:43 --> Call to undefined method App\Models\ModelUser::verifyPassword
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\User.php(140): CodeIgniter\Model->__call('verifyPassword', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:16:53 --> Undefined variable: W8Zv5BtLzHQUF5w5EfhNVO3qKjM9STaGLYssimF
+in APPPATH\Controllers\User.php on line 129.
+ 1 APPPATH\Controllers\User.php(129): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: W8Zv5BtLzHQUF5w5EfhNVO3qKjM9STaGLYssimF', 'APPPATH\\Controllers\\User.php', 129, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->edit('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:18:53 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\User.php on line 223.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('user/edit/admin123')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('user/edit/admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('user/edit/admin123')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:35:32 --> Undefined variable: cek_user
+in APPPATH\Controllers\login.php on line 47.
+ 1 APPPATH\Controllers\login.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: cek_user', 'APPPATH\\Controllers\\login.php', 47, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:37:09 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\login.php on line 49.
+ 1 APPPATH\Controllers\login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\login.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:38:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\login.php on line 49.
+ 1 APPPATH\Controllers\login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\login.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:38:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\login.php on line 49.
+ 1 APPPATH\Controllers\login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\login.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:40:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\login.php on line 49.
+ 1 APPPATH\Controllers\login.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\login.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:52:37 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(34): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(49): App\Models\ModelLogin->getByUsername('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:53:36 --> Cannot redeclare App\Models\ModelLogin::$table
+in APPPATH\Models\ModelLogin.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-29 17:55:55 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(37): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(49): App\Models\ModelLogin->getByUsername('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 17:56:19 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(37): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(49): App\Models\ModelLogin->getByUsername('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:00:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(37): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(49): App\Models\ModelLogin->getByUsername('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:10:49 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(37): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(49): App\Models\ModelLogin->getByUsername('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:14:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Models\ModelLogin.php(37): CodeIgniter\Model->__call('where', [...])
+ 4 APPPATH\Controllers\login.php(103): App\Models\ModelLogin->getByUsername('092834332344')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:14:28 --> Undefined property: App\Controllers\Login::$ModelGuru
+in APPPATH\Controllers\login.php on line 104.
+ 1 APPPATH\Controllers\login.php(104): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$ModelGuru', 'APPPATH\\Controllers\\login.php', 104, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:15:17 --> Undefined property: App\Controllers\Login::$ModelGuru
+in APPPATH\Controllers\login.php on line 108.
+ 1 APPPATH\Controllers\login.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$ModelGuru', 'APPPATH\\Controllers\\login.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:15:24 --> Undefined property: App\Controllers\Login::$ModelGuru
+in APPPATH\Controllers\login.php on line 108.
+ 1 APPPATH\Controllers\login.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$ModelGuru', 'APPPATH\\Controllers\\login.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:16:34 --> Undefined property: App\Controllers\Login::$ModelGuru
+in APPPATH\Controllers\login.php on line 108.
+ 1 APPPATH\Controllers\login.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$ModelGuru', 'APPPATH\\Controllers\\login.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:17:58 --> Undefined property: App\Controllers\Login::$ModelGuru
+in APPPATH\Controllers\login.php on line 108.
+ 1 APPPATH\Controllers\login.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$ModelGuru', 'APPPATH\\Controllers\\login.php', 108, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:20:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(55): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:21:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(55): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:21:16 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(55): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:23:22 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(55): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:23:24 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(55): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:31:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(72): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:35:35 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(72): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:39:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(72): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:39:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(72): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:44:42 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\login.php(73): CodeIgniter\Model->__call('getByUsername', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->cek_login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-29 18:48:23 --> Undefined property: App\Controllers\Login::$db
+in APPPATH\Controllers\login.php on line 184.
+ 1 APPPATH\Controllers\login.php(184): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Login::$db', 'APPPATH\\Controllers\\login.php', 184, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

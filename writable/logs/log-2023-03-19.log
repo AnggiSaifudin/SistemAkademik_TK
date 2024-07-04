@@ -1,0 +1,194 @@
+CRITICAL - 2023-03-19 08:05:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Krs.php on line 34.
+ 1 APPPATH\Controllers\Krs.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Krs.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:05:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Krs.php on line 34.
+ 1 APPPATH\Controllers\Krs.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Krs.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:05:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_dashboard_siswa.php on line 6.
+ 1 APPPATH\Views\v_dashboard_siswa.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_dashboard_siswa.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_dashboard_siswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_dashboard_siswa', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('v_dashboard_siswa')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginsiswa.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginsiswa->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:06:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\v_dashboard_siswa.php on line 6.
+ 1 APPPATH\Views\v_dashboard_siswa.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\v_dashboard_siswa.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_dashboard_siswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('v_dashboard_siswa', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('v_dashboard_siswa')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginsiswa.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginsiswa->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:24:55 --> Too few arguments to function App\Controllers\Krs::tambah_ap(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Krs.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:25:19 --> Too few arguments to function App\Controllers\Krs::tambah_ap(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Krs.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-19 08:31:47 --> mysqli_sql_exception: Table 'db_siakadtk.tabel_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(NULL, 'id_siswa', Array, NULL, 'id_siswa')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', NULL, Array, Array)
+#7 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-19 08:31:48 --> Table 'db_siakadtk.tabel_krs' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tabel_krs`
+WHERE `id_siswa` IS NULL
+AND `id_jadwal` != :id_jadwal:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(null, 'id_siswa', [...], null, 'id_siswa')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', null, [...], [...])
+ 5 APPPATH\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-19 08:32:30 --> mysqli_sql_exception: Table 'db_siakadtk.tabel_nilai' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(NULL, 'id_siswa', Array, NULL, 'id_siswa')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', NULL, Array, Array)
+#7 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-19 08:32:30 --> Table 'db_siakadtk.tabel_nilai' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tabel_nilai`
+WHERE `id_siswa` IS NULL
+AND `id_jadwal` != :id_jadwal:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(null, 'id_siswa', [...], null, 'id_siswa')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', null, [...], [...])
+ 5 APPPATH\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-19 08:32:33 --> mysqli_sql_exception: Table 'db_siakadtk.tabel_nilai' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(NULL, 'id_siswa', Array, NULL, 'id_siswa')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', NULL, Array, Array)
+#7 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-03-19 08:32:33 --> Table 'db_siakadtk.tabel_nilai' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tabel_nilai`
+WHERE `id_siswa` IS NULL
+AND `id_jadwal` != :id_jadwal:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique(null, 'id_siswa', [...], null, 'id_siswa')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('id_siswa', 'id_siswa', null, [...], [...])
+ 5 APPPATH\Controllers\Krs.php(66): CodeIgniter\Validation\Validation->run()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:55:09 --> Undefined variable: ta
+in APPPATH\Controllers\Krs.php on line 58.
+ 1 APPPATH\Controllers\Krs.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta', 'APPPATH\\Controllers\\Krs.php', 58, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:55:27 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Krs.php(60): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:56:04 --> Undefined variable: ap_exists
+in APPPATH\Controllers\Krs.php on line 57.
+ 1 APPPATH\Controllers\Krs.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ap_exists', 'APPPATH\\Controllers\\Krs.php', 57, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:58:02 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Krs.php(62): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:58:32 --> Too few arguments to function App\Models\ModelKrs::add_ap(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Krs.php on line 59 and exactly 1 expected
+in APPPATH\Models\ModelKrs.php on line 57.
+ 1 APPPATH\Controllers\Krs.php(59): App\Models\ModelKrs->add_ap()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-19 08:58:52 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Krs.php(62): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->tambah_ap('39')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

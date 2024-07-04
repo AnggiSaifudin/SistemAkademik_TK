@@ -1,0 +1,464 @@
+CRITICAL - 2023-03-25 00:01:05 --> Undefined variable: session
+in APPPATH\Views\nilai\v_datanilai.php on line 17.
+ 1 APPPATH\Views\nilai\v_datanilai.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'APPPATH\\Views\\nilai\\v_datanilai.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:02:06 --> Invalid argument supplied for foreach()
+in APPPATH\Views\nilai\v_datanilai.php on line 18.
+ 1 APPPATH\Views\nilai\v_datanilai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\nilai\\v_datanilai.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:02:29 --> Invalid argument supplied for foreach()
+in APPPATH\Views\nilai\v_datanilai.php on line 18.
+ 1 APPPATH\Views\nilai\v_datanilai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\nilai\\v_datanilai.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:04:31 --> Invalid argument supplied for foreach()
+in APPPATH\Views\nilai\v_datanilai.php on line 18.
+ 1 APPPATH\Views\nilai\v_datanilai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\nilai\\v_datanilai.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:13:14 --> Invalid argument supplied for foreach()
+in APPPATH\Views\nilai\v_datanilai.php on line 18.
+ 1 APPPATH\Views\nilai\v_datanilai.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\nilai\\v_datanilai.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:36:14 --> Undefined variable: tgl_nilai
+in APPPATH\Views\nilai\v_datanilai.php on line 40.
+ 1 APPPATH\Views\nilai\v_datanilai.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tgl_nilai', 'APPPATH\\Views\\nilai\\v_datanilai.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:40:12 --> Undefined variable: data
+in APPPATH\Views\nilai\v_datanilai.php on line 40.
+ 1 APPPATH\Views\nilai\v_datanilai.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\nilai\\v_datanilai.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:40:13 --> Undefined variable: data
+in APPPATH\Views\nilai\v_datanilai.php on line 40.
+ 1 APPPATH\Views\nilai\v_datanilai.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\nilai\\v_datanilai.php', 40, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:41:10 --> Undefined variable: data
+in APPPATH\Views\nilai\v_datanilai.php on line 39.
+ 1 APPPATH\Views\nilai\v_datanilai.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\nilai\\v_datanilai.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:41:12 --> Undefined variable: data
+in APPPATH\Views\nilai\v_datanilai.php on line 39.
+ 1 APPPATH\Views\nilai\v_datanilai.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\nilai\\v_datanilai.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 00:41:13 --> Undefined variable: data
+in APPPATH\Views\nilai\v_datanilai.php on line 39.
+ 1 APPPATH\Views\nilai\v_datanilai.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH\\Views\\nilai\\v_datanilai.php', 39, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('108')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:19:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Loginguru1.php on line 59.
+ 1 APPPATH\Controllers\Loginguru1.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Loginguru1.php', 59, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->jadwal()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:19:34 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Loginguru1.php on line 145.
+ 1 APPPATH\Controllers\Loginguru1.php(145): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Loginguru1.php', 145, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->nilaisiswa()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:33:27 --> Undefined variable: ta_aktif
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 26.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta_aktif', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(117): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('3')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:33:39 --> Undefined variable: ta_aktif
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 26.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta_aktif', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(117): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('3')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:34:35 --> Undefined variable: ta_aktif
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 26.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta_aktif', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(118): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('3')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 08:35:14 --> Undefined variable: ta_aktif
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 26.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta_aktif', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(118): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('3')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:00:08 --> Undefined variable: ta_aktif
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 26.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta_aktif', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(118): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:07:31 --> Trying to get property 'id_ta' of non-object
+in APPPATH\Controllers\Kelas.php on line 111.
+ 1 APPPATH\Controllers\Kelas.php(111): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_ta\' of non-object', 'APPPATH\\Controllers\\Kelas.php', 111, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:12:31 --> Trying to get property 'id_ta' of non-object
+in APPPATH\Controllers\Kelas.php on line 112.
+ 1 APPPATH\Controllers\Kelas.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_ta\' of non-object', 'APPPATH\\Controllers\\Kelas.php', 112, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:23:02 --> Trying to get property 'id_ta' of non-object
+in APPPATH\Controllers\JadwalTk.php on line 60.
+ 1 APPPATH\Controllers\JadwalTk.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id_ta\' of non-object', 'APPPATH\\Controllers\\JadwalTk.php', 60, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:28:28 --> syntax error, unexpected '=', expecting ']'
+in APPPATH\Controllers\JadwalTk.php on line 47.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('jadwaltk/detail_jadwal/25')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('jadwaltk/detail_jadwal/25')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('jadwaltk/detail_jadwal/25')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:44:36 --> Too few arguments to function App\Models\ModelKrs::daftarap(), 1 passed in C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php on line 70 and exactly 2 expected
+in APPPATH\Models\ModelKrs.php on line 27.
+ 1 APPPATH\Controllers\Loginsiswa.php(70): App\Models\ModelKrs->daftarap('10')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginsiswa->khs()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 09:57:46 --> Too few arguments to function App\Models\ModelKelas::siswa(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Kelas.php on line 109 and exactly 1 expected
+in APPPATH\Models\ModelKelas.php on line 38.
+ 1 APPPATH\Controllers\Kelas.php(109): App\Models\ModelKelas->siswa()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 10:01:12 --> Too few arguments to function App\Models\ModelKelas::siswa(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Kelas.php on line 109 and exactly 2 expected
+in APPPATH\Models\ModelKelas.php on line 38.
+ 1 APPPATH\Controllers\Kelas.php(109): App\Models\ModelKelas->siswa()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 10:01:25 --> Too few arguments to function App\Controllers\Kelas::rincian_kelas(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Kelas.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-25 10:01:55 --> Too few arguments to function App\Controllers\Kelas::rincian_kelas(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Kelas.php on line 106.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 10:07:20 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-25 10:07:20 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+WHERE `tbl_siswa`.`id_kelas` = :tbl_siswa.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:
+ORDER BY `nis` DESC', [...], false)
+ 2 APPPATH\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 10:08:56 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-25 10:08:56 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+WHERE `tbl_kelas`.`id_kelas` = :tbl_kelas.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:
+ORDER BY `nis` DESC', [...], false)
+ 2 APPPATH\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 10:08:58 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-25 10:08:58 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+WHERE `tbl_kelas`.`id_kelas` = :tbl_kelas.id_kelas:
+AND `tbl_kelas`.`id_ta` = :tbl_kelas.id_ta:
+ORDER BY `nis` DESC', [...], false)
+ 2 APPPATH\Models\ModelKelas.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kelas.php(114): App\Models\ModelKelas->siswa('25', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->rincian_kelas('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 23:29:08 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('1800', 'nis', Array, NULL, 'nis')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nis', 'Nis', '1800', Array, Array)
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\siakad2\app\Controllers\siswa.php(147): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Siswa->update('4323')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-25 23:29:08 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tbl_guru`
+WHERE `nis` = :nis:
+AND `nis` != :nis.1:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('1800', 'nis', [...], null, 'nis')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nis', 'Nis', '1800', [...], [...])
+ 5 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\siswa.php(147): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Siswa->update('4323')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-25 23:29:23 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('1800', 'nis', Array, NULL, 'nis')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nis', 'Nis', '1800', Array, Array)
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\siakad2\app\Controllers\siswa.php(147): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Siswa->update('4323')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-03-25 23:29:23 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `tbl_guru`
+WHERE `nis` = :nis:
+AND `nis` != :nis.1:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\Rules.php(156): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(312): CodeIgniter\Validation\Rules->is_unique('1800', 'nis', [...], null, 'nis')
+ 4 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nis', 'Nis', '1800', [...], [...])
+ 5 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\siswa.php(147): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Siswa->update('4323')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,970 @@
+CRITICAL - 2023-02-16 07:11:42 --> Undefined index: kerajinan
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kerajinan', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:11:43 --> Undefined index: kerajinan
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kerajinan', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:11:44 --> Undefined index: kerajinan
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kerajinan', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:11:45 --> Undefined index: kerajinan
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kerajinan', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:28:55 --> Undefined index: nama_siswa
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_siswa', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:28:56 --> Undefined index: nama_siswa
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_siswa', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:34:09 --> Undefined index: nama_guru
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 22.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_guru', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:34:10 --> Undefined index: nama_guru
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 22.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_guru', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 22, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:30 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:30 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:31 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:31 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:31 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:31 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:48 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:48 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:49 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:49 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:59 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:59 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:35:59 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:35:59 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:36:00 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:36:00 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:36:00 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:36:00 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:36:00 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:36:00 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 07:36:02 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 07:36:02 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_jadwal`.`id_mapel`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:36:38 --> Undefined index: mapel
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 23.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: mapel', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:36:39 --> Undefined index: mapel
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 23.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: mapel', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:39:42 --> Undefined index: nama_siswa
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_siswa', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 07:39:43 --> Undefined index: nama_siswa
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 20.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_siswa', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 08:00:15 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_siswa.deskripsi' in 'group statement' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 08:00:15 --> Unknown column 'tbl_nilai.id_siswa.deskripsi' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 08:00:15 --> mysqli_sql_exception: Unknown column 'tbl_nilai.id_siswa.deskripsi' in 'group statement' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 08:00:15 --> Unknown column 'tbl_nilai.id_siswa.deskripsi' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`id_siswa`.`deskripsi`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 08:01:41 --> mysqli_sql_exception: Unknown column 'tbl_nilai.nama_siswa' in 'group statement' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 08:01:41 --> Unknown column 'tbl_nilai.nama_siswa' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-16 08:01:41 --> mysqli_sql_exception: Unknown column 'tbl_nilai.nama_siswa' in 'group statement' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-16 08:01:41 --> Unknown column 'tbl_nilai.nama_siswa' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+GROUP BY `tbl_nilai`.`nama_siswa`', [], false)
+ 5 APPPATH\Models\LaporanModel.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(38): App\Models\LaporanModel->DataLaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:28:10 --> Undefined variable: id_siswa
+in APPPATH\Controllers\Laporan.php on line 39.
+ 1 APPPATH\Controllers\Laporan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_siswa', 'APPPATH\\Controllers\\Laporan.php', 39, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 08:28:11 --> Undefined variable: id_siswa
+in APPPATH\Controllers\Laporan.php on line 39.
+ 1 APPPATH\Controllers\Laporan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_siswa', 'APPPATH\\Controllers\\Laporan.php', 39, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 19:21:14 --> Undefined index: grade
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 26.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: grade', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(43): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 19:21:15 --> Undefined index: grade
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 26.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: grade', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(43): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 19:21:16 --> Undefined index: grade
+in APPPATH\Views\laporan\v_tabel_laporan.php on line 26.
+ 1 APPPATH\Views\laporan\v_tabel_laporan.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: grade', 'APPPATH\\Views\\laporan\\v_tabel_laporan.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_tabel_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_tabel_laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(43): view('laporan/v_tabel_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:09:36 --> Undefined variable: smt
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:11:35 --> Undefined variable: smt
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:11:36 --> Undefined variable: smt
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:11:39 --> Undefined variable: smt
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:12:27 --> Undefined variable: mapel
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mapel', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:14:01 --> Undefined variable: mapel
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mapel', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:14:47 --> Undefined variable: laporan
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: laporan', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:15:26 --> Undefined variable: laporan
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: laporan', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 20:16:29 --> Undefined variable: mapel
+in APPPATH\Views\laporan\v_laporan.php on line 18.
+ 1 APPPATH\Views\laporan\v_laporan.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mapel', 'APPPATH\\Views\\laporan\\v_laporan.php', 18, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(34): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:32 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:33 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:35 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:35 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:35 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:36 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:37 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:08:53 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 45 and exactly 1 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(45): App\Models\LaporanModel->DataLaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:09:35 --> Too few arguments to function App\Controllers\Laporan::Viewlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 925 and exactly 1 expected
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:09:50 --> Undefined variable: smt
+in APPPATH\Controllers\Laporan.php on line 45.
+ 1 APPPATH\Controllers\Laporan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Controllers\\Laporan.php', 45, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-16 21:10:01 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 45 and exactly 1 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(45): App\Models\LaporanModel->DataLaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,66 @@
+CRITICAL - 2023-03-08 06:32:15 --> Illegal string offset 'tgl_nilai'
+in APPPATH\Views\laporan\v_printl.php on line 130.
+ 1 APPPATH\Views\laporan\v_printl.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'tgl_nilai\'', 'APPPATH\\Views\\laporan\\v_printl.php', 130, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:36:01 --> Array to string conversion
+in APPPATH\Views\laporan\v_printl.php on line 139.
+ 1 APPPATH\Views\laporan\v_printl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\laporan\\v_printl.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:36:18 --> Undefined index: user
+in APPPATH\Views\laporan\v_printl.php on line 139.
+ 1 APPPATH\Views\laporan\v_printl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user', 'APPPATH\\Views\\laporan\\v_printl.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:38:09 --> Undefined index: user
+in APPPATH\Views\laporan\v_printl.php on line 139.
+ 1 APPPATH\Views\laporan\v_printl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user', 'APPPATH\\Views\\laporan\\v_printl.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:39:01 --> Array to string conversion
+in APPPATH\Views\laporan\v_printl.php on line 139.
+ 1 APPPATH\Views\laporan\v_printl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\laporan\\v_printl.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-08 06:39:41 --> Array to string conversion
+in APPPATH\Views\laporan\v_printl.php on line 139.
+ 1 APPPATH\Views\laporan\v_printl.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\laporan\\v_printl.php', 139, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

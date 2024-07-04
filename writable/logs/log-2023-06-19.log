@@ -1,0 +1,346 @@
+CRITICAL - 2023-06-19 04:07:06 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:11:09 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:13:27 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:14:50 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:17:16 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:35:50 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:37:43 --> Maximum execution time of 60 seconds exceeded
+in VENDORPATH\dompdf\dompdf\src\Helpers.php on line 578.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 04:46:33 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 126.
+ 1 APPPATH\Controllers\Laporan.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 126, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 04:48:31 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 126.
+ 1 APPPATH\Controllers\Laporan.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 126, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-27', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 04:49:29 --> syntax error, unexpected 'use' (T_USE)
+in APPPATH\Controllers\Laporan.php on line 125.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('Laporan/Printpdf/Kelas B2/kognitif/2023-06-27/ganjil/2022/2023')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('Laporan/Printpdf/Kelas B2/kognitif/2023-06-27/ganjil/2022/2023')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Laporan/Printpdf/Kelas B2/kognitif/2023-06-27/ganjil/2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 04:49:50 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 126.
+ 1 APPPATH\Controllers\Laporan.php(126): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 126, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-27', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:02:50 --> Undefined variable: output
+in APPPATH\Controllers\Laporan.php on line 141.
+ 1 APPPATH\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: output', 'APPPATH\\Controllers\\Laporan.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:03:01 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 262148096 bytes)
+【Previous Exception】
+ErrorException
+Undefined variable: output
+#0 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 05:03:03 --> Undefined variable: output
+in APPPATH\Controllers\Laporan.php on line 141.
+ 1 APPPATH\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: output', 'APPPATH\\Controllers\\Laporan.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:03:15 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264245248 bytes)
+【Previous Exception】
+ErrorException
+Undefined variable: output
+#0 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 05:03:21 --> Undefined variable: output
+in APPPATH\Controllers\Laporan.php on line 141.
+ 1 APPPATH\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: output', 'APPPATH\\Controllers\\Laporan.php', 141, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:03:34 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 266342400 bytes)
+【Previous Exception】
+ErrorException
+Undefined variable: output
+#0 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 141, Array)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B1', 'kognitif', '2023-06-13', 'ganjil', '2022/2023', '2023')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-06-19 05:45:27 --> Call to undefined function base_path()
+in APPPATH\Views\laporan\v_print_pdf.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 4 APPPATH\Controllers\Laporan.php(121): view('laporan/v_print_pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:45:28 --> Call to undefined function base_path()
+in APPPATH\Views\laporan\v_print_pdf.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 4 APPPATH\Controllers\Laporan.php(121): view('laporan/v_print_pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:45:30 --> Call to undefined function base_path()
+in APPPATH\Views\laporan\v_print_pdf.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 4 APPPATH\Controllers\Laporan.php(121): view('laporan/v_print_pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:45:31 --> Call to undefined function base_path()
+in APPPATH\Views\laporan\v_print_pdf.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 4 APPPATH\Controllers\Laporan.php(121): view('laporan/v_print_pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:46:22 --> Call to undefined function base_path()
+in APPPATH\Views\laporan\v_print_pdf.php on line 39.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 4 APPPATH\Controllers\Laporan.php(121): view('laporan/v_print_pdf', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-30', 'genap', '2022/2023', '2023')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:47:06 --> Undefined variable: options
+in APPPATH\Controllers\Laporan.php on line 123.
+ 1 APPPATH\Controllers\Laporan.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: options', 'APPPATH\\Controllers\\Laporan.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:48:17 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 123.
+ 1 APPPATH\Controllers\Laporan.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-30', 'genap', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:49:25 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 123.
+ 1 APPPATH\Controllers\Laporan.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 123, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-29', 'genap', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:53:48 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 125.
+ 1 APPPATH\Controllers\Laporan.php(125): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 125, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-30', 'genap', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 05:56:50 --> Undefined variable: dompdf
+in APPPATH\Controllers\Laporan.php on line 124.
+ 1 APPPATH\Controllers\Laporan.php(124): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: dompdf', 'APPPATH\\Controllers\\Laporan.php', 124, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas B2', 'kognitif', '2023-06-30', 'genap', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-06-19 07:06:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:16 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:51 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:07:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:08:11 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 20:35:34 --> Trying to access array offset on value of type null
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('FCPATH\\gambar', 'yayasan.png')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,426 @@
+CRITICAL - 2023-05-30 21:37:59 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 176.
+ 1 APPPATH\Controllers\Loginguru1.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 176, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 21:43:49 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 176.
+ 1 APPPATH\Controllers\Loginguru1.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 176, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 21:47:25 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 176.
+ 1 APPPATH\Controllers\Loginguru1.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 176, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 21:48:24 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 176.
+ 1 APPPATH\Controllers\Loginguru1.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 176, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:11:42 --> mysqli_sql_exception: Unknown column 'tbl_mapel.id_kelas' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(30): App\Models\ModelMapel->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:11:42 --> Unknown column 'tbl_mapel.id_kelas' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_mapel`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+ORDER BY `kode_mapel` DESC', [], false)
+ 2 APPPATH\Models\ModelMapel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Mapel.php(30): App\Models\ModelMapel->allData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:12:28 --> mysqli_sql_exception: Unknown column 'tbl_kelas.id_ta' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(30): App\Models\ModelMapel->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:12:28 --> Unknown column 'tbl_kelas.id_ta' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+ORDER BY `kode_mapel` DESC', [], false)
+ 2 APPPATH\Models\ModelMapel.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Mapel.php(30): App\Models\ModelMapel->allData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:49 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:49 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:53 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:53 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:54 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:54 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:55 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:55 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:55 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:55 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:56 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:56 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(57): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:18:58 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(86): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023', '2023')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:18:58 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(86): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023', '2023')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:20:58 --> mysqli_sql_exception: Unknown column 'tbl_mapel.smt' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(86): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023', '2023')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:20:58 --> Unknown column 'tbl_mapel.smt' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`nis` = `tbl_nilai`.`nis`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(86): App\Models\LaporanModel->DataLaporan('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas A', 'bahasa', '2023-05-31', 'ganjil', '2022/2023', '2023')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 22:25:24 --> Undefined index: smt
+in APPPATH\Views\krs\v_krs.php on line 69.
+ 1 APPPATH\Views\krs\v_krs.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: smt', 'APPPATH\\Views\\krs\\v_krs.php', 69, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('krs/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:28:51 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_prodi' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(33): App\Models\ModelProdi->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:28:51 --> Table 'db_siakadtk.tbl_prodi' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', [], false)
+ 2 APPPATH\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(33): App\Models\ModelProdi->allData()
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 22:39:22 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGuru.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Guru.php(127): App\Models\ModelGuru->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Guru->insert()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 22:39:22 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_guru` (`nip`, `nama_guru`, `ttl`, `jk`, `alamat`, `password`, `foto_guru`) VALUES (:nip:, :nama_guru:, :ttl:, :jk:, :alamat:, :password:, :foto_guru:)', [...], false)
+ 2 APPPATH\Models\ModelGuru.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Guru.php(127): App\Models\ModelGuru->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 23:06:44 --> mysqli_sql_exception: Duplicate entry '2147483647' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGuru.php(32): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Guru.php(119): App\Models\ModelGuru->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Guru->insert()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 23:06:44 --> Duplicate entry '2147483647' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_guru` (`nip`, `nama_guru`, `ttl`, `jk`, `alamat`, `password`, `foto_guru`) VALUES (:nip:, :nama_guru:, :ttl:, :jk:, :alamat:, :password:, :foto_guru:)', [...], false)
+ 2 APPPATH\Models\ModelGuru.php(32): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Guru.php(119): App\Models\ModelGuru->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

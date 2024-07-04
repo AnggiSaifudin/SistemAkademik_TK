@@ -1,0 +1,762 @@
+CRITICAL - 2022-12-08 00:02:28 --> Undefined variable: kelas
+in APPPATH\Views\master\prodi\v_index.php on line 57.
+ 1 APPPATH\Views\master\prodi\v_index.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\master\\prodi\\v_index.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\prodi\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/prodi/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/prodi/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Prodi.php(30): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Prodi->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prodi))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:03:36 --> Undefined index: id_kelas
+in APPPATH\Views\master\prodi\v_index.php on line 59.
+ 1 APPPATH\Views\master\prodi\v_index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Views\\master\\prodi\\v_index.php', 59, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\prodi\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/prodi/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/prodi/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Prodi.php(31): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Prodi->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prodi))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:04:15 --> Undefined index: nama_kelas
+in APPPATH\Views\master\prodi\v_index.php on line 64.
+ 1 APPPATH\Views\master\prodi\v_index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_kelas', 'APPPATH\\Views\\master\\prodi\\v_index.php', 64, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\prodi\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/prodi/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/prodi/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Prodi.php(31): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Prodi->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prodi))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:05:03 --> Undefined variable: guru
+in APPPATH\Views\master\prodi\v_index.php on line 118.
+ 1 APPPATH\Views\master\prodi\v_index.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: guru', 'APPPATH\\Views\\master\\prodi\\v_index.php', 118, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\prodi\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/prodi/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/prodi/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Prodi.php(31): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Prodi->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Prodi))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:12:27 --> Undefined index: fakultas
+in APPPATH\Views\master\ap\v_index.php on line 29.
+ 1 APPPATH\Views\master\ap\v_index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: fakultas', 'APPPATH\\Views\\master\\ap\\v_index.php', 29, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\ap\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/ap/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/ap/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Ap.php(28): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ap->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ap))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:12:30 --> Undefined index: fakultas
+in APPPATH\Views\master\ap\v_index.php on line 29.
+ 1 APPPATH\Views\master\ap\v_index.php(29): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: fakultas', 'APPPATH\\Views\\master\\ap\\v_index.php', 29, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\ap\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/ap/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/ap/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Ap.php(28): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ap->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ap))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:13:04 --> Undefined index: jenjang
+in APPPATH\Views\master\ap\detail.php on line 15.
+ 1 APPPATH\Views\master\ap\detail.php(15): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenjang', 'APPPATH\\Views\\master\\ap\\detail.php', 15, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\ap\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/ap/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/ap/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Ap.php(39): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ap->detail('10')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ap))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:33:14 --> Undefined variable: kelas
+in APPPATH\Views\master\mapel\v_mapel.php on line 57.
+ 1 APPPATH\Views\master\mapel\v_mapel.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\master\\mapel\\v_mapel.php', 57, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mapel/v_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/mapel/v_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(23): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 00:34:50 --> Undefined variable: guru
+in APPPATH\Views\master\mapel\v_mapel.php on line 118.
+ 1 APPPATH\Views\master\mapel\v_mapel.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: guru', 'APPPATH\\Views\\master\\mapel\\v_mapel.php', 118, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mapel/v_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/mapel/v_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(25): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 01:13:45 --> Undefined index: Guru
+in APPPATH\Views\master\mapel\v_detail_mapel.php on line 44.
+ 1 APPPATH\Views\master\mapel\v_detail_mapel.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: Guru', 'APPPATH\\Views\\master\\mapel\\v_detail_mapel.php', 44, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_detail_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mapel/v_detail_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/mapel/v_detail_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(39): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->detail('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 01:36:28 --> Undefined index: id_gedung
+in APPPATH\Views\master\mapel\v_detail_mapel.php on line 113.
+ 1 APPPATH\Views\master\mapel\v_detail_mapel.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_gedung', 'APPPATH\\Views\\master\\mapel\\v_detail_mapel.php', 113, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_detail_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mapel/v_detail_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/mapel/v_detail_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(40): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->detail('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 01:46:04 --> Undefined index: nama_mapel
+in APPPATH\Views\master\mapel\v_detail_mapel.php on line 161.
+ 1 APPPATH\Views\master\mapel\v_detail_mapel.php(161): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_mapel', 'APPPATH\\Views\\master\\mapel\\v_detail_mapel.php', 161, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_detail_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/mapel/v_detail_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/mapel/v_detail_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(40): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->detail('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:20:52 --> Undefined index: jenjang
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 23.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenjang', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(32): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:22:06 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 17.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(32): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:22:41 --> Undefined index: kode_mapel
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 20.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: kode_mapel', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:23:19 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 17.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 17, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:24:02 --> Undefined property: App\Controllers\JadwalTk::$ModelKelas
+in APPPATH\Controllers\JadwalTk.php on line 46.
+ 1 APPPATH\Controllers\JadwalTk.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\JadwalTk::$ModelKelas', 'APPPATH\\Controllers\\JadwalTk.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:24:17 --> Undefined index: jenjang
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 23.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: jenjang', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:24:29 --> Undefined property: App\Controllers\JadwalTk::$ModelKelas
+in APPPATH\Controllers\JadwalTk.php on line 46.
+ 1 APPPATH\Controllers\JadwalTk.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\JadwalTk::$ModelKelas', 'APPPATH\\Controllers\\JadwalTk.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('10')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:25:12 --> Undefined property: App\Controllers\JadwalTk::$ModelKelas
+in APPPATH\Controllers\JadwalTk.php on line 46.
+ 1 APPPATH\Controllers\JadwalTk.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\JadwalTk::$ModelKelas', 'APPPATH\\Controllers\\JadwalTk.php', 46, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('10')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 03:43:23 --> Undefined variable: guru
+in APPPATH\Views\nilai\v_nilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_nilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: guru', 'APPPATH\\Views\\nilai\\v_nilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_nilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('nilai/v_nilai', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('nilai/v_nilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(143): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->nilaisiswa()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 06:36:22 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 61.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(33): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 06:50:50 --> Undefined index: guru
+in APPPATH\Views\jadwaltk\v_jadwal.php on line 58.
+ 1 APPPATH\Views\jadwaltk\v_jadwal.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: guru', 'APPPATH\\Views\\jadwaltk\\v_jadwal.php', 58, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\v_jadwal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/v_jadwal', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/v_jadwal')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(36): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 08:51:31 --> Undefined index: id_jadwal
+in APPPATH\Views\jadwaltk\detail.php on line 96.
+ 1 APPPATH\Views\jadwaltk\detail.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Views\\jadwaltk\\detail.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 08:51:55 --> Array to string conversion
+in APPPATH\Views\jadwaltk\detail.php on line 96.
+ 1 APPPATH\Views\jadwaltk\detail.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\jadwaltk\\detail.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 08:57:55 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:00:54 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:02:36 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:04:36 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:04:40 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:04:45 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:05:42 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:07:09 --> Undefined index: id_ruangan
+in APPPATH\Views\jadwaltk\detail.php on line 201.
+ 1 APPPATH\Views\jadwaltk\detail.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_ruangan', 'APPPATH\\Views\\jadwaltk\\detail.php', 201, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:07:30 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:13:23 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:16:09 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:16:57 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:19:29 --> Undefined index: nama_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:20:22 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:21:01 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelJadwal.php on line 36.
+ 1 APPPATH\Models\ModelJadwal.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelJadwal.php', 36, [...])
+ 2 APPPATH\Controllers\JadwalTk.php(104): App\Models\ModelJadwal->delete_data([])
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:22:02 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:23:55 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:26:40 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-08 09:27:17 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_guru' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('1')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-08 09:27:17 --> Unknown column 'tbl_jadwal.id_guru' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+WHERE `tbl_jadwal`.`id_kelas` = \'1\'
+ORDER BY `tbl_mapel`.`smt` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+WHERE `tbl_jadwal`.`id_kelas` = \'1\'
+ORDER BY `tbl_mapel`.`smt` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+WHERE `tbl_jadwal`.`id_kelas` = \'1\'
+ORDER BY `tbl_mapel`.`smt` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ORDER BY `tbl_mapel`.`smt` ASC', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('1')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:27:39 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:31:17 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:32:17 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('delete', '1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:33:04 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:34:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:35:20 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:37:07 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:37:28 --> Undefined index: nama_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:39:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:39:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:39:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 94.
+ 1 APPPATH\Views\jadwaltk\detail.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:40:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:40:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:40:46 --> Trying to access array offset on value of type null
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('11')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:40:52 --> Undefined index: smt
+in APPPATH\Views\jadwaltk\detail.php on line 20.
+ 1 APPPATH\Views\jadwaltk\detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: smt', 'APPPATH\\Views\\jadwaltk\\detail.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:40:56 --> Undefined index: smt
+in APPPATH\Views\jadwaltk\detail.php on line 20.
+ 1 APPPATH\Views\jadwaltk\detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: smt', 'APPPATH\\Views\\jadwaltk\\detail.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:41:36 --> Undefined index: smt
+in APPPATH\Views\jadwaltk\detail.php on line 20.
+ 1 APPPATH\Views\jadwaltk\detail.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: smt', 'APPPATH\\Views\\jadwaltk\\detail.php', 20, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(50): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->detail_jadwal('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-08 09:42:59 --> Too few arguments to function App\Controllers\JadwalTk::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 2 expected
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

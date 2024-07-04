@@ -1,0 +1,1404 @@
+ERROR - 2023-01-02 00:00:27 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 00:00:27 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = :id_siswa:
+AND `tbl_krs`.`id_ta` = :tbl_krs.id_ta:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:01:39 --> mysqli_sql_exception: Unknown column 'tbl_krs.id_jadwal' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 00:01:39 --> Unknown column 'tbl_krs.id_jadwal' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_nilai`.`id_ta` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_nilai`.`id_ta` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_nilai`.`id_ta` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = :id_siswa:
+AND `tbl_nilai`.`id_ta` = :tbl_nilai.id_ta:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:01:57 --> Invalid file: krs/v_krs.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('krs/v_krs.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 3 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:02:31 --> Invalid file: krs/v_krs.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('krs/v_krs.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 3 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:03:25 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 00:03:25 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = :id_siswa:
+AND `tbl_krs`.`id_ta` = :tbl_krs.id_ta:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:03:55 --> Invalid file: krs/v_krs.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('krs/v_krs.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 3 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:04:09 --> Invalid file: krs/v_krs.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('krs/v_krs.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 3 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:06:10 --> Undefined index: id_krs
+in APPPATH\Views\krs\v_krs.php on line 85.
+ 1 APPPATH\Views\krs\v_krs.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_krs', 'APPPATH\\Views\\krs\\v_krs.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:07:29 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', Array, true)
+#8 C:\xampp\htdocs\siakad2\app\Views\tampilan.php(397): view('krs/v_krs')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('tampilan', Array, true)
+#12 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(38): view('tampilan', Array)
+#13 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#14 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-01-02 00:07:29 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 9 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+13 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:10:29 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 00:10:29 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = \'5\'
+AND `tbl_krs`.`id_ta` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_jadwal`.`id_guru`
+WHERE `id_siswa` = :id_siswa:
+AND `tbl_krs`.`id_ta` = :tbl_krs.id_ta:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Krs.php(35): App\Models\ModelKrs->DataKrs('5', '5')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:11:03 --> Undefined index: id_nilai
+in APPPATH\Views\krs\v_krs.php on line 85.
+ 1 APPPATH\Views\krs\v_krs.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Views\\krs\\v_krs.php', 85, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:16:13 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', Array, true)
+#8 C:\xampp\htdocs\siakad2\app\Views\tampilan.php(397): view('krs/v_krs')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('tampilan', Array, true)
+#12 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(38): view('tampilan', Array)
+#13 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#14 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-01-02 00:16:13 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 9 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+13 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 00:39:02 --> mysqli_sql_exception: Unknown column 'id_nilai.id_siswa' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(71): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(158): App\Models\ModelGr->siswa('35')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginguru1->datanilai('35')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 00:39:02 --> Unknown column 'id_nilai.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `id_nilai`.`id_siswa`
+WHERE `id_jadwal` = \'35\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `id_nilai`.`id_siswa`
+WHERE `id_jadwal` = \'35\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `id_nilai`.`id_siswa`
+WHERE `id_jadwal` = \'35\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_nilai`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `id_nilai`.`id_siswa`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(71): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru1.php(158): App\Models\ModelGr->siswa('35')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginguru1->datanilai('35')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:40:07 --> Undefined index: id_krs
+in APPPATH\Views\nilai\v_datanilai.php on line 78.
+ 1 APPPATH\Views\nilai\v_datanilai.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_krs', 'APPPATH\\Views\\nilai\\v_datanilai.php', 78, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(161): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginguru1->datanilai('35')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:48:27 --> Undefined index: nidn
+in APPPATH\Views\master\guru\v_index.php on line 63.
+ 1 APPPATH\Views\master\guru\v_index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nidn', 'APPPATH\\Views\\master\\guru\\v_index.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\guru\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/guru/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/guru/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Guru.php(24): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Guru->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:49:35 --> Undefined index: nidn
+in APPPATH\Views\v_dashboard_guru.php on line 32.
+ 1 APPPATH\Views\v_dashboard_guru.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nidn', 'APPPATH\\Views\\v_dashboard_guru.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_dashboard_guru.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_dashboard_guru', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('v_dashboard_guru')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(35): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 00:59:19 --> Undefined index: nim
+in APPPATH\Views\master\siswa\v_index.php on line 62.
+ 1 APPPATH\Views\master\siswa\v_index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\master\\siswa\\v_index.php', 62, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\siswa\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/siswa/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('master/siswa/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\siswa.php(24): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Siswa->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 01:00:42 --> Undefined index: nim
+in APPPATH\Views\kelas\v_rincian_kelas.php on line 64.
+ 1 APPPATH\Views\kelas\v_rincian_kelas.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\kelas\\v_rincian_kelas.php', 64, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\kelas\\v_rincian_kelas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('kelas/v_rincian_kelas', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('kelas/v_rincian_kelas')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Kelas.php(103): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Kelas->rincian_kelas('1')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 01:11:26 --> Undefined index: nim
+in APPPATH\Views\v_dashboard_siswa.php on line 32.
+ 1 APPPATH\Views\v_dashboard_siswa.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\v_dashboard_siswa.php', 32, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_dashboard_siswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_dashboard_siswa', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('v_dashboard_siswa')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginsiswa.php(29): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 01:11:57 --> Undefined index: nim
+in APPPATH\Views\krs\v_krs.php on line 16.
+ 1 APPPATH\Views\krs\v_krs.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\krs\\v_krs.php', 16, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('krs/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 01:13:00 --> Undefined index: nim
+in APPPATH\Views\khs\v_khs.php on line 16.
+ 1 APPPATH\Views\khs\v_khs.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\khs\\v_khs.php', 16, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\khs\\v_khs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('khs/v_khs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('khs/v_khs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginsiswa.php(69): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->khs()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 01:15:26 --> Undefined index: nim
+in APPPATH\Views\nilai\v_datanilai.php on line 82.
+ 1 APPPATH\Views\nilai\v_datanilai.php(82): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nim', 'APPPATH\\Views\\nilai\\v_datanilai.php', 82, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(161): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginguru1->datanilai('36')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 07:59:35 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_prodi' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 07:59:35 --> Table 'db_siakadtk.tbl_prodi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', [], false)
+ 5 APPPATH\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 07:59:52 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_prodi' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 07:59:52 --> Table 'db_siakadtk.tbl_prodi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', [], false)
+ 5 APPPATH\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:01:37 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_prodi' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:01:37 --> Table 'db_siakadtk.tbl_prodi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', [], false)
+ 5 APPPATH\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:07:22 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_prodi' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:07:22 --> Table 'db_siakadtk.tbl_prodi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_prodi`
+ORDER BY `tbl_prodi`.`id_prodi` ASC', [], false)
+ 5 APPPATH\Models\ModelProdi.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\JadwalTk.php(32): App\Models\ModelProdi->allData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:07:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`)) in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:07:57 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = :id_jadwal:
+AND `id_jadwal` = :id_jadwal.1:', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:09:57 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`)) in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:09:57 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = :id_jadwal:
+AND `id_jadwal` = :id_jadwal.1:', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:10:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_jadwal`, CONSTRAINT `tbl_jadwal_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `tbl_mapel` (`id_mapel`)) in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(35): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(100): App\Models\ModelMapel->delete_data(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Mapel->delete('1', '17')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:10:49 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_jadwal`, CONSTRAINT `tbl_jadwal_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `tbl_mapel` (`id_mapel`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tbl_mapel`
+WHERE `id_mapel` = \'17\'
+AND `id_mapel` = \'17\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tbl_mapel`
+WHERE `id_mapel` = \'17\'
+AND `id_mapel` = \'17\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tbl_mapel`
+WHERE `id_mapel` = \'17\'
+AND `id_mapel` = \'17\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_mapel`
+WHERE `id_mapel` = :id_mapel:
+AND `id_mapel` = :id_mapel.1:', [...], false)
+ 5 APPPATH\Models\ModelMapel.php(35): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Mapel.php(100): App\Models\ModelMapel->delete_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Mapel->delete('1', '17')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:13:05 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`)) in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:13:05 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = :id_jadwal:
+AND `id_jadwal` = :id_jadwal.1:', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:13:29 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`)) in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:13:29 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_siakadtk`.`tbl_nilai`, CONSTRAINT `tbl_nilai_ibfk_2` FOREIGN KEY (`id_jadwal`) REFERENCES `tbl_jadwal` (`id_jadwal`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = \'37\'
+AND `id_jadwal` = \'37\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2391): CodeIgniter\Database\BaseConnection->query('DELETE FROM `tbl_jadwal`
+WHERE `id_jadwal` = :id_jadwal:
+AND `id_jadwal` = :id_jadwal.1:', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(42): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\JadwalTk.php(99): App\Models\ModelJadwal->delete_data([...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\JadwalTk->delete('37', '3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:17:10 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', Array, true)
+#8 C:\xampp\htdocs\siakad2\app\Views\tampilan.php(403): view('krs/v_krs')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('tampilan', Array, true)
+#12 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(38): view('tampilan', Array)
+#13 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#14 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-01-02 08:17:10 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'28\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 9 APPPATH\Views\tampilan.php(403): view('krs/v_krs')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+13 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:14 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(54): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->tambah_ap('39')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(54): App\Models\ModelKrs->DataSiswa()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->tambah_ap('39')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:14 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 3 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Krs.php(54): App\Models\ModelKrs->DataSiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->tambah_ap('39')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:17 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 3 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:20 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:20 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 3 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Krs.php(25): App\Models\ModelKrs->DataSiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_ta`
+WHERE `status` = :status:', [...], false)
+ 3 APPPATH\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_ta`
+WHERE `status` = :status:', [...], false)
+ 3 APPPATH\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:43:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:43:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_ta`
+WHERE `status` = :status:', [...], false)
+ 3 APPPATH\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:44:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'db_siakadtk', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_siakadtk' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad2\app\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-02 08:44:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_siakadtk'
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_ta`
+WHERE `status` = :status:', [...], false)
+ 3 APPPATH\Models\ModelTa.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Loginsiswa.php(26): App\Models\ModelTa->ta_aktif()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:44:29 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:44:29 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:44:33 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:44:33 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:44:44 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:44:44 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 08:44:50 --> mysqli_sql_exception: Unknown column 'nis' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-02 08:44:50 --> Unknown column 'nis' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = \'1092\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_siswa`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_siswa`.`id_kelas`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`id_guru` = `tbl_kelas`.`id_guru`
+WHERE `nis` = :nis:', [...], false)
+ 5 APPPATH\Models\ModelKrs.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginsiswa.php(27): App\Models\ModelKrs->DataSiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-02 09:12:39 --> mysqli_sql_exception: Table 'db_siakadtk.tbl_krs' doesn't exist in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', Array, true)
+#8 C:\xampp\htdocs\siakad2\app\Views\tampilan.php(403): view('krs/v_krs')
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Common.php(1134): CodeIgniter\View\View->render('tampilan', Array, true)
+#12 C:\xampp\htdocs\siakad2\app\Controllers\Krs.php(38): view('tampilan', Array)
+#13 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Krs->index()
+#14 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2023-01-02 09:12:39 --> Table 'db_siakadtk.tbl_krs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'39\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'39\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = \'39\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_krs`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Views\krs\v_krs.php(124): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 9 APPPATH\Views\tampilan.php(403): view('krs/v_krs')
+10 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+11 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+13 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+14 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->index()
+15 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+16 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-02 20:59:08 --> Call to undefined function base_urll()
+in APPPATH\Views\tampilan.php on line 188.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 4 APPPATH\Controllers\Admin.php(19): view('tampilan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

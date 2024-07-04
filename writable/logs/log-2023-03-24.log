@@ -1,0 +1,786 @@
+CRITICAL - 2023-03-24 08:24:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\ModelGr.php on line 87.
+ 1 APPPATH\Controllers\Loginguru1.php(204): App\Models\ModelGr->simpannilai([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:24:36 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::update()
+in APPPATH\Models\ModelGr.php on line 87.
+ 1 APPPATH\Controllers\Loginguru1.php(204): App\Models\ModelGr->simpannilai([...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:25:21 --> syntax error, unexpected 'session' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Loginguru1.php on line 207.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('loginguru1/simpannilai/105')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('loginguru1/simpannilai/105')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('loginguru1/simpannilai/105')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:26:13 --> Undefined variable: value
+in APPPATH\Controllers\Loginguru1.php on line 193.
+ 1 APPPATH\Controllers\Loginguru1.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'APPPATH\\Controllers\\Loginguru1.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:40:57 --> Undefined index: id_siswa
+in APPPATH\Views\nilai\v_datanilai.php on line 94.
+ 1 APPPATH\Views\nilai\v_datanilai.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Views\\nilai\\v_datanilai.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:42:17 --> Undefined index: id_siswa
+in APPPATH\Views\nilai\v_datanilai.php on line 96.
+ 1 APPPATH\Views\nilai\v_datanilai.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Views\\nilai\\v_datanilai.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:42:32 --> Undefined index: id_siswa
+in APPPATH\Views\nilai\v_datanilai.php on line 96.
+ 1 APPPATH\Views\nilai\v_datanilai.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Views\\nilai\\v_datanilai.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:43:12 --> Undefined index: id_siswa
+in APPPATH\Views\nilai\v_datanilai.php on line 96.
+ 1 APPPATH\Views\nilai\v_datanilai.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Views\\nilai\\v_datanilai.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:43:39 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:44:16 --> Undefined variable: id_jadwal
+in APPPATH\Controllers\Loginguru1.php on line 164.
+ 1 APPPATH\Controllers\Loginguru1.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_jadwal', 'APPPATH\\Controllers\\Loginguru1.php', 164, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:44:33 --> Undefined property: App\Controllers\loginguru1::$input
+in APPPATH\Controllers\Loginguru1.php on line 164.
+ 1 APPPATH\Controllers\Loginguru1.php(164): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\loginguru1::$input', 'APPPATH\\Controllers\\Loginguru1.php', 164, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:44:58 --> Undefined index: id_siswa
+in APPPATH\Controllers\Loginguru1.php on line 168.
+ 1 APPPATH\Controllers\Loginguru1.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Controllers\\Loginguru1.php', 168, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:45:17 --> Undefined index: id_siswa
+in APPPATH\Controllers\Loginguru1.php on line 168.
+ 1 APPPATH\Controllers\Loginguru1.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Controllers\\Loginguru1.php', 168, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:46:02 --> Undefined index: id_siswa
+in APPPATH\Controllers\Loginguru1.php on line 193.
+ 1 APPPATH\Controllers\Loginguru1.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Controllers\\Loginguru1.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:47:24 --> Undefined index: id_siswa
+in APPPATH\Controllers\Loginguru1.php on line 193.
+ 1 APPPATH\Controllers\Loginguru1.php(193): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Controllers\\Loginguru1.php', 193, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:50:07 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:50:36 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:54:02 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:54:27 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:55:11 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:56:31 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:57:16 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:58:07 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\form_helper.php on line 123
+in SYSTEMPATH\Helpers\form_helper.php on line 143.
+ 1 SYSTEMPATH\Helpers\form_helper.php(123): form_input('id_nilai', null, 'ROOTPATH\\public', 'hidden')
+ 2 APPPATH\Views\nilai\v_datanilai.php(86): form_hidden('id_nilai', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 6 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+10 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 08:58:09 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\form_helper.php on line 123
+in SYSTEMPATH\Helpers\form_helper.php on line 143.
+ 1 SYSTEMPATH\Helpers\form_helper.php(123): form_input('id_nilai', null, 'ROOTPATH\\public', 'hidden')
+ 2 APPPATH\Views\nilai\v_datanilai.php(86): form_hidden('id_nilai', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 6 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+10 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:01:02 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\form_helper.php on line 123
+in SYSTEMPATH\Helpers\form_helper.php on line 143.
+ 1 SYSTEMPATH\Helpers\form_helper.php(123): form_input('id_nilai', null, 'ROOTPATH\\public', 'hidden')
+ 2 APPPATH\Views\nilai\v_datanilai.php(86): form_hidden('id_nilai', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 6 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+10 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:01:34 --> Argument 2 passed to form_input() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\form_helper.php on line 123
+in SYSTEMPATH\Helpers\form_helper.php on line 143.
+ 1 SYSTEMPATH\Helpers\form_helper.php(123): form_input('id_jadwal', null, 'ROOTPATH\\public', 'hidden')
+ 2 APPPATH\Views\nilai\v_datanilai.php(86): form_hidden('id_jadwal', null)
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 6 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+10 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:02:02 --> Undefined variable: value
+in APPPATH\Views\nilai\v_datanilai.php on line 55.
+ 1 APPPATH\Views\nilai\v_datanilai.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'APPPATH\\Views\\nilai\\v_datanilai.php', 55, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:07:44 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:18:07 --> Undefined index: id_nilai
+in APPPATH\Views\krs\v_krs.php on line 74.
+ 1 APPPATH\Views\krs\v_krs.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Views\\krs\\v_krs.php', 74, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('krs/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('krs/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Krs.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Krs->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:20:49 --> Undefined variable: id_jadwal
+in APPPATH\Controllers\Loginguru1.php on line 156.
+ 1 APPPATH\Controllers\Loginguru1.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_jadwal', 'APPPATH\\Controllers\\Loginguru1.php', 156, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:21:06 --> Too few arguments to function App\Controllers\loginguru1::datanilai(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Loginguru1.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:21:54 --> Too few arguments to function App\Controllers\loginguru1::datanilai(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Loginguru1.php on line 151.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 09:22:09 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(157): App\Models\ModelGr->siswa('105')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 09:22:09 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_kelas` = `tbl_kelas`.`id_kelas`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru1.php(157): App\Models\ModelGr->siswa('105')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:23:01 --> Undefined variable: jadwal
+in APPPATH\Views\nilai\v_datanilai.php on line 10.
+ 1 APPPATH\Views\nilai\v_datanilai.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jadwal', 'APPPATH\\Views\\nilai\\v_datanilai.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:23:16 --> Undefined variable: jadwal
+in APPPATH\Views\nilai\v_datanilai.php on line 6.
+ 1 APPPATH\Views\nilai\v_datanilai.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jadwal', 'APPPATH\\Views\\nilai\\v_datanilai.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:23:31 --> Undefined variable: jadwal
+in APPPATH\Views\nilai\v_datanilai.php on line 6.
+ 1 APPPATH\Views\nilai\v_datanilai.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jadwal', 'APPPATH\\Views\\nilai\\v_datanilai.php', 6, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:25:29 --> Undefined index: nilai_quis
+in APPPATH\Views\nilai\v_datanilai.php on line 65.
+ 1 APPPATH\Views\nilai\v_datanilai.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nilai_quis', 'APPPATH\\Views\\nilai\\v_datanilai.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru1.php(160): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->datanilai('105')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:27:53 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Loginguru1.php on line 210.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('loginguru1/datanilai/105')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('loginguru1/datanilai/105')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('loginguru1/datanilai/105')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:28:16 --> syntax error, unexpected 'public' (T_PUBLIC)
+in APPPATH\Controllers\Loginguru1.php on line 210.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('loginguru1/datanilai/105')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('loginguru1/datanilai/105')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('loginguru1/datanilai/105')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:28:32 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:29:29 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:29:36 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:30:33 --> Too few arguments to function App\Controllers\loginguru1::simpannilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru1.php on line 162.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:34:08 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:35:46 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:35:54 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:36:28 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:36:36 --> Undefined index: id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(203): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:41:50 --> Undefined index: id_nilai
+in APPPATH\Views\nilai\v_datanilai.php on line 65.
+ 1 APPPATH\Views\nilai\v_datanilai.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Views\\nilai\\v_datanilai.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('106')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 09:42:05 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('106')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('106')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 09:42:05 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_kelas` = `tbl_kelas`.`id_kelas`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('106')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('106')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 09:42:17 --> mysqli_sql_exception: Not unique table/alias: 'tbl_jadwal' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('106')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('106')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 09:42:17 --> Not unique table/alias: 'tbl_jadwal'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_kelas` = `tbl_kelas`.`id_kelas`
+WHERE `tbl_nilai`.`id_jadwal` = :tbl_nilai.id_jadwal:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('106')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('106')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 09:47:02 --> mysqli_sql_exception: Unknown column 'id_nilai' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_jad...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_jad...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_jad...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jad...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(86): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(202): App\Models\ModelGr->simpannilai(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 09:47:02 --> Unknown column 'id_nilai' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_jadwal` SET `id_nilai` = :id_nilai:, `nilai_quis` = :nilai_quis:
+WHERE `id_nilai` IS NULL', [...], false)
+ 2 APPPATH\Models\ModelGr.php(86): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Loginguru1.php(202): App\Models\ModelGr->simpannilai([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:51:22 --> Undefined variable: value
+in APPPATH\Controllers\Loginguru1.php on line 192.
+ 1 APPPATH\Controllers\Loginguru1.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'APPPATH\\Controllers\\Loginguru1.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 09:56:43 --> Undefined index: id_siswa
+in APPPATH\Controllers\Loginguru1.php on line 168.
+ 1 APPPATH\Controllers\Loginguru1.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_siswa', 'APPPATH\\Controllers\\Loginguru1.php', 168, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 10:00:15 --> mysqli_sql_exception: Unknown column 'ta' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_nil...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_nil...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_nil...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nil...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(87): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(173): App\Models\ModelGr->simpannilai(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 10:00:15 --> Unknown column 'ta' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nilai` SET `id_jadwal` = :id_jadwal:, `ta` = :ta:, `nilai_quis` = :nilai_quis:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(87): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Loginguru1.php(173): App\Models\ModelGr->simpannilai([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-24 10:00:37 --> mysqli_sql_exception: Unknown column 'ta' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_nil...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_nil...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_nil...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nil...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(87): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(173): App\Models\ModelGr->simpannilai(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-24 10:00:37 --> Unknown column 'ta' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nilai` SET `id_jadwal` = :id_jadwal:, `ta` = :ta:, `nilai_quis` = :nilai_quis:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(87): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Loginguru1.php(173): App\Models\ModelGr->simpannilai([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:02:37 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 86.
+ 1 APPPATH\Models\ModelGr.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 86, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(174): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:05:18 --> Undefined variable: id_nilai
+in APPPATH\Controllers\Loginguru1.php on line 169.
+ 1 APPPATH\Controllers\Loginguru1.php(169): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_nilai', 'APPPATH\\Controllers\\Loginguru1.php', 169, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:13:38 --> Undefined index: tbl_nilai.id_jadwal
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tbl_nilai.id_jadwal', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(174): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:17:50 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(174): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('107')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:18:59 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(174): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('107')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 10:19:22 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Models\ModelGr.php(85): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 85, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(174): App\Models\ModelGr->simpannilai([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:55:30 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 91.
+ 1 APPPATH\Models\ModelGr.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 91, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(184): App\Models\ModelGr->updateNilai([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:56:12 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 91.
+ 1 APPPATH\Models\ModelGr.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 91, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(184): App\Models\ModelGr->updateNilai([...], null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:56:24 --> Call to undefined method App\Models\ModelGr::getNilaiSiswa
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Loginguru1.php(169): CodeIgniter\Model->__call('getNilaiSiswa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:57:19 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\ModelGr.php on line 85.
+ 1 APPPATH\Controllers\Loginguru1.php(169): App\Models\ModelGr->getNilaiSiswa('105')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:59:12 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result_array()
+in APPPATH\Models\ModelGr.php on line 88.
+ 1 APPPATH\Controllers\Loginguru1.php(169): App\Models\ModelGr->getNilaiSiswa('105')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 22:59:30 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Loginguru1.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Loginguru1.php', 170, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(170): count(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:01:18 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH\Controllers\Loginguru1.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', 'APPPATH\\Controllers\\Loginguru1.php', 170, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(170): count(null)
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('105')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:21:29 --> syntax error, unexpected ','
+in APPPATH\Controllers\Loginguru1.php on line 168.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('loginguru1/simpannilai/106')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('loginguru1/simpannilai/106')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('loginguru1/simpannilai/106')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:21:47 --> Undefined variable: quis
+in APPPATH\Controllers\Loginguru1.php on line 171.
+ 1 APPPATH\Controllers\Loginguru1.php(171): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: quis', 'APPPATH\\Controllers\\Loginguru1.php', 171, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('106')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:31:12 --> Array to string conversion
+in APPPATH\Views\nilai\v_datanilai.php on line 19.
+ 1 APPPATH\Views\nilai\v_datanilai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\nilai\\v_datanilai.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:32:17 --> Array to string conversion
+in APPPATH\Views\nilai\v_datanilai.php on line 19.
+ 1 APPPATH\Views\nilai\v_datanilai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\nilai\\v_datanilai.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:33:41 --> Array to string conversion
+in APPPATH\Views\nilai\v_datanilai.php on line 19.
+ 1 APPPATH\Views\nilai\v_datanilai.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\nilai\\v_datanilai.php', 19, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('107')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 23:36:10 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Loginguru1.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-24 23:43:25 --> Call to undefined method CodeIgniter\Validation\Validation::setRuleErrorMessage()
+in APPPATH\Controllers\Loginguru1.php on line 208.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('107')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

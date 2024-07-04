@@ -1,0 +1,50 @@
+ERROR - 2023-03-01 07:49:33 --> mysqli_sql_exception: Unknown column 'hari' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(36): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(84): App\Models\ModelJadwal->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\JadwalTk->add('1')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-01 07:49:33 --> Unknown column 'hari' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (:id_kelas:, :id_ta:, :id_mapel:, :id_guru:, :hari:, :waktu:)', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(36): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JadwalTk.php(84): App\Models\ModelJadwal->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\JadwalTk->add('1')
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-01 07:50:49 --> mysqli_sql_exception: Unknown column 'hari' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(36): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(84): App\Models\ModelJadwal->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(925): App\Controllers\JadwalTk->add('1')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-01 07:50:49 --> Unknown column 'hari' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (\'1\', \'5\', \'20\', \'1\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_jadwal` (`id_kelas`, `id_ta`, `id_mapel`, `id_guru`, `hari`, `waktu`) VALUES (:id_kelas:, :id_ta:, :id_mapel:, :id_guru:, :hari:, :waktu:)', [...], false)
+ 5 APPPATH\Models\ModelJadwal.php(36): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\JadwalTk.php(84): App\Models\ModelJadwal->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\JadwalTk->add('1')
+ 8 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 9 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

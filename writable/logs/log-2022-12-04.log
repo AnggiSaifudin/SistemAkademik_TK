@@ -1,0 +1,483 @@
+CRITICAL - 2022-12-04 03:31:41 --> Invalid file: v_print_krs.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_print_krs.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_print_krs', [], true)
+ 3 APPPATH\Controllers\Krs.php(76): view('v_print_krs', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->Print()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 03:39:53 --> Undefined variable: mhs
+in APPPATH\Views\krs\v_print_krs.php on line 49.
+ 1 APPPATH\Views\krs\v_print_krs.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mhs', 'APPPATH\\Views\\krs\\v_print_krs.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_print_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_print_krs', [], true)
+ 5 APPPATH\Controllers\Krs.php(76): view('krs/v_print_krs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 03:40:16 --> Undefined variable: mhs
+in APPPATH\Views\krs\v_print_krs.php on line 49.
+ 1 APPPATH\Views\krs\v_print_krs.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mhs', 'APPPATH\\Views\\krs\\v_print_krs.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_print_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_print_krs', [], true)
+ 5 APPPATH\Controllers\Krs.php(76): view('krs/v_print_krs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 03:40:19 --> Undefined variable: mhs
+in APPPATH\Views\krs\v_print_krs.php on line 49.
+ 1 APPPATH\Views\krs\v_print_krs.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mhs', 'APPPATH\\Views\\krs\\v_print_krs.php', 49, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\krs\\v_print_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('krs/v_print_krs', [], true)
+ 5 APPPATH\Controllers\Krs.php(76): view('krs/v_print_krs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 06:49:24 --> Invalid file: absen/v_absen.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('absen/v_absen.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absen', [], true)
+ 3 APPPATH\Views\tampilan.php(365): view('absen/v_absen')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Loginsiswa.php(51): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->absensi()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 06:54:50 --> Undefined variable: data_ap
+in APPPATH\Views\absen\v_absen_siswa.php on line 16.
+ 1 APPPATH\Views\absen\v_absen_siswa.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_ap', 'APPPATH\\Views\\absen\\v_absen_siswa.php', 16, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absen_siswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absen_siswa', [], true)
+ 5 APPPATH\Views\tampilan.php(365): view('absen/v_absen_siswa')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginsiswa.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->absensi()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 06:56:18 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Loginsiswa.php(47): CodeIgniter\Model->__call('DataSiswa', [])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\loginsiswa->absensi()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 08:22:59 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(764): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Loginguru.php(53): CodeIgniter\Model->__call('DataGuru', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->nilaisiswa()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:35:11 --> Illegal string offset 'id_jadwal'
+in APPPATH\Controllers\Loginguru.php on line 100.
+ 1 APPPATH\Controllers\Loginguru.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_jadwal\'', 'APPPATH\\Controllers\\Loginguru.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:36:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\absen\v_absensi.php on line 8.
+ 1 APPPATH\Views\absen\v_absensi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\absen\\v_absensi.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(102): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:37:19 --> Trying to access array offset on value of type null
+in APPPATH\Views\absen\v_absensi.php on line 8.
+ 1 APPPATH\Views\absen\v_absensi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\absen\\v_absensi.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(102): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:38:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\absen\v_absensi.php on line 8.
+ 1 APPPATH\Views\absen\v_absensi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\absen\\v_absensi.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(102): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:39:44 --> Trying to access array offset on value of type null
+in APPPATH\Views\absen\v_absensi.php on line 8.
+ 1 APPPATH\Views\absen\v_absensi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\absen\\v_absensi.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(102): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 09:40:22 --> Trying to access array offset on value of type null
+in APPPATH\Views\absen\v_absensi.php on line 8.
+ 1 APPPATH\Views\absen\v_absensi.php(8): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\absen\\v_absensi.php', 8, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(102): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 18:53:02 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_siswa' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('6')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 18:53:02 --> Unknown column 'tbl_jadwal.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('6')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 18:53:20 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_siswa' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('id_jadwal')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 18:53:20 --> Unknown column 'tbl_jadwal.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('id_jadwal')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 18:53:21 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_siswa' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('id_jadwal')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 18:53:21 --> Unknown column 'tbl_jadwal.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'id_jadwal\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_jadwal`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(44): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(101): App\Models\ModelGr->siswa('id_jadwal')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('6')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 19:25:10 --> mysqli_sql_exception: Column 'id_jadwal' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 19:25:10 --> Column 'id_jadwal' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 19:26:37 --> mysqli_sql_exception: Column 'id_jadwal' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 19:26:37 --> Column 'id_jadwal' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 19:26:49 --> mysqli_sql_exception: Column 'id_jadwal' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 19:26:49 --> Column 'id_jadwal' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+WHERE `id_jadwal` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+WHERE `id_jadwal` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+WHERE `id_jadwal` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_krs`.`id_jadwal`
+WHERE `id_jadwal` = :id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-12-04 19:31:07 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_jadwal' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-12-04 19:31:07 --> Unknown column 'tbl_jadwal.id_jadwal' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_krs`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_krs`.`id_siswa`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:', [...], false)
+ 5 APPPATH\Models\ModelGr.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Loginguru.php(89): App\Models\ModelGr->siswa('3')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->absensi('3')
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 19:51:04 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Krs.php on line 79.
+ 1 APPPATH\Controllers\Krs.php(79): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Krs.php', 79, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Krs->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 21:28:38 --> Array to string conversion
+in APPPATH\Controllers\Loginguru.php on line 100.
+ 1 APPPATH\Controllers\Loginguru.php(100): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Loginguru.php', 100, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->simpanabsen('3')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 21:49:24 --> Too few arguments to function App\Controllers\Loginguru::printabsen(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Loginguru.php on line 127.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->printabsen()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 21:50:39 --> Undefined index: foto_siswa
+in APPPATH\Views\absen\v_print_absensi.php on line 42.
+ 1 APPPATH\Views\absen\v_print_absensi.php(42): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: foto_siswa', 'APPPATH\\Views\\absen\\v_print_absensi.php', 42, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_print_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_print_absensi', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('absen/v_print_absensi')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(135): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->printabsen('7')
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-04 22:08:53 --> Undefined variable: data_ap
+in APPPATH\Views\absen\v_print_absensi.php on line 108.
+ 1 APPPATH\Views\absen\v_print_absensi.php(108): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_ap', 'APPPATH\\Views\\absen\\v_print_absensi.php', 108, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\absen\\v_print_absensi.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('absen/v_print_absensi', [], true)
+ 5 APPPATH\Controllers\Loginguru.php(134): view('absen/v_print_absensi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Loginguru->printabsen('7')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

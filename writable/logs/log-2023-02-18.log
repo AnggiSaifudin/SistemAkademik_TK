@@ -1,0 +1,376 @@
+CRITICAL - 2023-02-18 20:18:27 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(67): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:20:09 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(67): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:20:39 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(67): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:20:57 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(67): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:24:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:25:57 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:33:10 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 67.
+ 1 APPPATH\Controllers\Laporan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 67, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:34:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:34:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:34:57 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:35:06 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 75.
+ 1 APPPATH\Views\laporan\v_printl.php(75): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 75, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:35:20 --> Undefined variable: data_ap
+in APPPATH\Views\laporan\v_printl.php on line 94.
+ 1 APPPATH\Views\laporan\v_printl.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_ap', 'APPPATH\\Views\\laporan\\v_printl.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:41:36 --> Undefined index: nama_guru
+in APPPATH\Views\laporan\v_printl.php on line 65.
+ 1 APPPATH\Views\laporan\v_printl.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_guru', 'APPPATH\\Views\\laporan\\v_printl.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:42:31 --> Undefined variable: data_ap
+in APPPATH\Views\laporan\v_printl.php on line 120.
+ 1 APPPATH\Views\laporan\v_printl.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_ap', 'APPPATH\\Views\\laporan\\v_printl.php', 120, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(69): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:47:24 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:47:54 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:48:14 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:48:39 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:50:00 --> Undefined variable: ambildata
+in APPPATH\Views\laporan\v_printl.php on line 120.
+ 1 APPPATH\Views\laporan\v_printl.php(120): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ambildata', 'APPPATH\\Views\\laporan\\v_printl.php', 120, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:50:46 --> Undefined variable: id_siswa
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_siswa', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:51:23 --> Undefined variable: id_siswa
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_siswa', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 20:53:06 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:06:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:26:55 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:42:26 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:43:28 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 69.
+ 1 APPPATH\Controllers\Laporan.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:44:32 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 68.
+ 1 APPPATH\Controllers\Laporan.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 68, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:44:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:44:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:45:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:45:55 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:46:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:46:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:47:04 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:47:18 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 60.
+ 1 APPPATH\Views\laporan\v_printl.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:48:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 110.
+ 1 APPPATH\Views\laporan\v_printl.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 110, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:51:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\laporan\v_printl.php on line 110.
+ 1 APPPATH\Views\laporan\v_printl.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\laporan\\v_printl.php', 110, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(71): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 21:59:54 --> Undefined variable: smt
+in APPPATH\Controllers\Laporan.php on line 68.
+ 1 APPPATH\Controllers\Laporan.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: smt', 'APPPATH\\Controllers\\Laporan.php', 68, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 22:00:55 --> Undefined variable: siswa
+in APPPATH\Views\laporan\v_printl.php on line 110.
+ 1 APPPATH\Views\laporan\v_printl.php(110): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Views\\laporan\\v_printl.php', 110, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(76): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-18 22:04:16 --> Undefined variable: data_ap
+in APPPATH\Views\laporan\v_printl.php on line 76.
+ 1 APPPATH\Views\laporan\v_printl.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data_ap', 'APPPATH\\Views\\laporan\\v_printl.php', 76, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(76): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

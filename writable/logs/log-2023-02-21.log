@@ -1,0 +1,204 @@
+CRITICAL - 2023-02-21 07:00:17 --> Object of class App\Controllers\loginguru1 could not be converted to string
+in APPPATH\Controllers\Loginguru1.php on line 194.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\loginguru1->simpannilai('34')
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 07:00:35 --> Object of class App\Controllers\loginguru1 could not be converted to string
+in APPPATH\Controllers\Loginguru1.php on line 194.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\loginguru1->simpannilai('34')
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:29:40 --> syntax error, unexpected '=', expecting ')'
+in APPPATH\Models\ModelSiswa.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ModelSiswa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelSiswa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelSiswa')
+ 4 APPPATH\Controllers\Loginsiswa.php(19): spl_autoload_call('App\\Models\\ModelSiswa')
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\loginsiswa->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:30:14 --> syntax error, unexpected '=', expecting ')'
+in APPPATH\Models\ModelSiswa.php on line 35.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(260): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\ModelSiswa.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(238): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\ModelSiswa')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\ModelSiswa')
+ 4 APPPATH\Controllers\Loginsiswa.php(19): spl_autoload_call('App\\Models\\ModelSiswa')
+ 5 SYSTEMPATH\CodeIgniter.php(887): App\Controllers\loginsiswa->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:30:42 --> Trying to access array offset on value of type null
+in APPPATH\Views\khs\v_print_r.php on line 156.
+ 1 APPPATH\Views\khs\v_print_r.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\khs\\v_print_r.php', 156, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\khs\\v_print_r.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('khs/v_print_r', [], true)
+ 5 APPPATH\Controllers\Loginsiswa.php(85): view('khs/v_print_r', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\loginsiswa->print()
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:40:27 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:40:28 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:40:29 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:40:45 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:40:54 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:44:14 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:44:15 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:44:15 --> Call to undefined function App\Controllers\format()
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:49:52 --> Call to a member function number() on string
+in APPPATH\Views\laporan\v_printl.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(87): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'sosial dan emosi', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 08:52:19 --> Call to undefined function 2023-02-21()
+in APPPATH\Views\laporan\v_printl.php on line 68.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(87): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'sosial dan emosi', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 19:58:45 --> Undefined variable: ta
+in APPPATH\Views\laporan\v_printl.php on line 50.
+ 1 APPPATH\Views\laporan\v_printl.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta', 'APPPATH\\Views\\laporan\\v_printl.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(87): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 7 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:05:49 --> Call to a member function format() on string
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:05:50 --> Call to a member function format() on string
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:08:15 --> Call to a member function format() on string
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:09:04 --> Call to a member function format() on null
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:09:53 --> Call to a member function format() on string
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:09:54 --> Call to a member function format() on string
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:10:03 --> Call to a member function format() on null
+in APPPATH\Controllers\Laporan.php on line 52.
+ 1 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:12:18 --> Call to a member function format() on string
+in APPPATH\Views\laporan\v_printl.php on line 69.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(87): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:27:38 --> Call to a member function date() on string
+in APPPATH\Views\laporan\v_printl.php on line 69.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:30:10 --> Call to undefined function data()
+in APPPATH\Views\laporan\v_printl.php on line 69.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-21 20:31:51 --> Call to undefined function data()
+in APPPATH\Views\laporan\v_printl.php on line 70.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 4 APPPATH\Controllers\Laporan.php(88): view('laporan/v_printl', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Printlaporan('1', 'Kelas A', 'kognitif', '2023-02-21')
+ 6 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

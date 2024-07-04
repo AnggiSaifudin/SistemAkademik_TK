@@ -1,0 +1,311 @@
+CRITICAL - 2023-03-18 21:04:18 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 4 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 118 and exactly 5 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(118): App\Models\LaporanModel->DataLaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:05:25 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 4 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 119 and exactly 5 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(119): App\Models\LaporanModel->DataLaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:06:00 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 4 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 119 and exactly 5 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(119): App\Models\LaporanModel->DataLaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:06:09 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 4 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 119 and exactly 5 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(119): App\Models\LaporanModel->DataLaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:06:52 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 4 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 119 and exactly 5 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(119): App\Models\LaporanModel->DataLaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:07:31 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:07:54 --> Undefined variable: ta
+in APPPATH\Controllers\Laporan.php on line 119.
+ 1 APPPATH\Controllers\Laporan.php(119): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta', 'APPPATH\\Controllers\\Laporan.php', 119, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:08:15 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:08:43 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:08:51 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:09:25 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:09:58 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:10:30 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:10:57 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:11:00 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:13:04 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:13:53 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:14:09 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:14:41 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:15:37 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:18:18 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:18:59 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:19:41 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 21:21:28 --> Too few arguments to function App\Controllers\Laporan::Printlaporan(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 105.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-18 22:12:52 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(60): App\Models\LaporanModel->DataLaporan('Kelas A', 'sosial dan emos...', '2023-02-21', Array, 'ganjil')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-18 22:12:52 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_nilai`.`id_ta`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(60): App\Models\LaporanModel->DataLaporan('Kelas A', 'sosial dan emosi', '2023-02-21', [...], 'ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-18 22:12:54 --> mysqli_sql_exception: Illegal parameter data types varchar and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php(60): App\Models\LaporanModel->DataLaporan('Kelas A', 'sosial dan emos...', '2023-02-21', Array, 'ganjil')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-18 22:12:54 --> Illegal parameter data types varchar and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_mapel`.`smt`, `tbl_kelas`.`nama_kelas`, `tbl_mapel`.`mapel`, `tbl_nilai`.`nilai_quis`, `tbl_nilai`.`nilai_ketrampilan`, `tbl_nilai`.`nilai_kerajinan`, `tbl_nilai`.`na`, `tbl_nilai`.`nilai_huruf`, `tbl_nilai`.`deskripsi`
+FROM `tbl_nilai`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_nilai`.`id_ta`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_jadwal` = `tbl_nilai`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+LEFT JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `tbl_nilai`.`id_siswa`
+WHERE `tbl_kelas`.`nama_kelas` = :tbl_kelas.nama_kelas:
+AND `tbl_mapel`.`mapel` = :tbl_mapel.mapel:
+AND `tbl_nilai`.`tgl_nilai` = :tbl_nilai.tgl_nilai:
+AND `tbl_ta`.`ta` = :tbl_ta.ta:
+AND `tbl_ta`.`semester` = :tbl_ta.semester:', [...], false)
+ 2 APPPATH\Models\LaporanModel.php(33): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(60): App\Models\LaporanModel->DataLaporan('Kelas A', 'sosial dan emosi', '2023-02-21', [...], 'ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Viewlaporan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:22:34 --> syntax error, unexpected '$query' (T_VARIABLE), expecting ';'
+in APPPATH\Models\LaporanModel.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\LaporanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\LaporanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\LaporanModel')
+ 4 APPPATH\Controllers\Laporan.php(24): spl_autoload_call('App\\Models\\LaporanModel')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 22:22:35 --> syntax error, unexpected '$query' (T_VARIABLE), expecting ';'
+in APPPATH\Models\LaporanModel.php on line 32.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\LaporanModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\LaporanModel')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\LaporanModel')
+ 4 APPPATH\Controllers\Laporan.php(24): spl_autoload_call('App\\Models\\LaporanModel')
+ 5 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:18:25 --> syntax error, unexpected ')', expecting variable (T_VARIABLE)
+in APPPATH\Controllers\Laporan.php on line 104.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('Laporan/Printlaporan/Kelas A/kognitif/2023-02-21/ganjil/2022/2023')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('Laporan/Printlaporan/Kelas A/kognitif/2023-02-21/ganjil/2022/2023')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('Laporan/Printlaporan/Kelas A/kognitif/2023-02-21/ganjil/2022/2023')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:21:25 --> Undefined variable: ta
+in APPPATH\Controllers\Laporan.php on line 117.
+ 1 APPPATH\Controllers\Laporan.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ta', 'APPPATH\\Controllers\\Laporan.php', 117, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas A', 'kognitif', '2023-02-21', 'ganjil', '2022', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:25:51 --> Array to string conversion
+in APPPATH\Controllers\Laporan.php on line 118.
+ 1 APPPATH\Controllers\Laporan.php(118): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Controllers\\Laporan.php', 118, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas A', 'kognitif', '2023-02-21', 'ganjil', '2022', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:34:19 --> Undefined index: tahun_akhir
+in APPPATH\Controllers\Laporan.php on line 117.
+ 1 APPPATH\Controllers\Laporan.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: tahun_akhir', 'APPPATH\\Controllers\\Laporan.php', 117, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas A', 'kognitif', '2023-02-21', 'ganjil', '2022/2023', '2023')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:39:47 --> Illegal string offset 'semester'
+in APPPATH\Views\laporan\v_printl.php on line 50.
+ 1 APPPATH\Views\laporan\v_printl.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'semester\'', 'APPPATH\\Views\\laporan\\v_printl.php', 50, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_printl.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_printl', [], true)
+ 5 APPPATH\Controllers\Laporan.php(120): view('laporan/v_printl', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printlaporan('Kelas A', 'agama dan moral', '2023-02-21', 'genap', '2022/2023', '2023')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:44:38 --> Too few arguments to function App\Controllers\Laporan::Printpdf(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 5 expected
+in APPPATH\Controllers\Laporan.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('undefined', 'Kelas A', 'sosial dan emosi', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:45:14 --> Too few arguments to function App\Controllers\Laporan::Printpdf(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 6 expected
+in APPPATH\Controllers\Laporan.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('undefined', 'Kelas A', 'sosial dan emosi', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:45:18 --> Too few arguments to function App\Controllers\Laporan::Printpdf(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 6 expected
+in APPPATH\Controllers\Laporan.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('undefined', 'Kelas A', 'sosial dan emosi', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:45:33 --> Too few arguments to function App\Controllers\Laporan::Printpdf(), 4 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 6 expected
+in APPPATH\Controllers\Laporan.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('undefined', 'Kelas A', 'kognitif', '2023-02-21')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-18 23:49:22 --> Illegal string offset 'semester'
+in APPPATH\Views\laporan\v_print_pdf.php on line 54.
+ 1 APPPATH\Views\laporan\v_print_pdf.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'semester\'', 'APPPATH\\Views\\laporan\\v_print_pdf.php', 54, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_print_pdf.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('laporan/v_print_pdf', [], true)
+ 5 APPPATH\Controllers\Laporan.php(90): view('laporan/v_print_pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->Printpdf('Kelas A', 'kognitif', '2023-02-21', 'ganjil', '2022/2023', '2023')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

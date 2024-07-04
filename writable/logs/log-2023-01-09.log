@@ -1,0 +1,165 @@
+CRITICAL - 2023-01-09 01:01:21 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Model->__call('allData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:05:09 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Model->__call('allData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:05:33 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Model->__call('allData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:05:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Model->__call('allData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:06:13 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Model->__call('allData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:11:52 --> Undefined variable: krs
+in APPPATH\Views\laporan\v_laporan.php on line 35.
+ 1 APPPATH\Views\laporan\v_laporan.php(35): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: krs', 'APPPATH\\Views\\laporan\\v_laporan.php', 35, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\laporan\\v_laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('laporan/v_laporan', [], true)
+ 5 APPPATH\Views\tampilan.php(403): view('laporan/v_laporan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Laporan.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+11 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+12 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:12:15 --> Too few arguments to function App\Models\ModelKrs::DataKrs(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 34 and exactly 2 expected
+in APPPATH\Models\ModelKrs.php on line 60.
+ 1 APPPATH\Controllers\Laporan.php(34): App\Models\ModelKrs->DataKrs()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:12:39 --> Undefined variable: id_siswa
+in APPPATH\Controllers\Laporan.php on line 34.
+ 1 APPPATH\Controllers\Laporan.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_siswa', 'APPPATH\\Controllers\\Laporan.php', 34, [])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:13:54 --> Undefined property: App\Controllers\Laporan::$ModelTa
+in APPPATH\Controllers\Laporan.php on line 31.
+ 1 APPPATH\Controllers\Laporan.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\Laporan::$ModelTa', 'APPPATH\\Controllers\\Laporan.php', 31, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:14:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:14:51 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:16:05 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:18:18 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:18:57 --> Too few arguments to function App\Models\ModelKrs::DataKrs(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 52 and exactly 2 expected
+in APPPATH\Models\ModelKrs.php on line 60.
+ 1 APPPATH\Controllers\Laporan.php(52): App\Models\ModelKrs->DataKrs()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Print()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:32:22 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:33:45 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:35:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:37:03 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:37:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:37:33 --> Too few arguments to function App\Models\ModelKrs::DataKrs(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 38 and exactly 2 expected
+in APPPATH\Models\ModelKrs.php on line 60.
+ 1 APPPATH\Controllers\Laporan.php(38): App\Models\ModelKrs->DataKrs()
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-09 01:39:29 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Laporan.php on line 38.
+ 1 APPPATH\Controllers\Laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Laporan.php', 38, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

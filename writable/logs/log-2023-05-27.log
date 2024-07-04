@@ -1,0 +1,39 @@
+CRITICAL - 2023-05-27 22:04:24 --> Undefined index: id_kelas
+in APPPATH\Views\master\guru\v_index.php on line 72.
+ 1 APPPATH\Views\master\guru\v_index.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Views\\master\\guru\\v_index.php', 72, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\guru\\v_index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('master/guru/v_index', [], true)
+ 5 APPPATH\Views\tampilan.php(419): view('master/guru/v_index')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Guru.php(24): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 22:14:17 --> Undefined index: id_kelas
+in APPPATH\Models\ModelKelas.php on line 37.
+ 1 APPPATH\Models\ModelKelas.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Models\\ModelKelas.php', 37, [...])
+ 2 APPPATH\Controllers\Kelas.php(98): App\Models\ModelKelas->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->edit('34')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 22:17:56 --> Undefined index: id_kelas
+in APPPATH\Models\ModelKelas.php on line 37.
+ 1 APPPATH\Models\ModelKelas.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Models\\ModelKelas.php', 37, [...])
+ 2 APPPATH\Controllers\Kelas.php(98): App\Models\ModelKelas->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->edit('34')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-27 22:18:40 --> Undefined index: id_kelas
+in APPPATH\Models\ModelKelas.php on line 37.
+ 1 APPPATH\Models\ModelKelas.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Models\\ModelKelas.php', 37, [...])
+ 2 APPPATH\Controllers\Kelas.php(98): App\Models\ModelKelas->edit([...])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Kelas->edit('34')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kelas))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

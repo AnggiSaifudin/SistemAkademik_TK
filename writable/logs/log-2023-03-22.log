@@ -1,0 +1,886 @@
+ERROR - 2023-03-22 08:41:49 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:41:49 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:42:37 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:42:37 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:43:37 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:43:37 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:44:32 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:44:32 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:46:05 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:46:05 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:47:00 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:47:00 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 08:47:47 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php(108): App\Models\ModelMapel->add(Array)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 08:47:47 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_mapel` (`kode_mapel`, `mapel`, `id_kelas`) VALUES (:kode_mapel:, :mapel:, :id_kelas:)', [...], false)
+ 2 APPPATH\Models\ModelMapel.php(30): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Mapel.php(108): App\Models\ModelMapel->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:29:56 --> Undefined variable: mapel
+in APPPATH\Views\master\mapel\v_mapel.php on line 60.
+ 1 APPPATH\Views\master\mapel\v_mapel.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mapel', 'APPPATH\\Views\\master\\mapel\\v_mapel.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('master/mapel/v_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('master/mapel/v_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(31): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:31:17 --> Undefined variable: id_kelas
+in APPPATH\Controllers\Mapel.php on line 30.
+ 1 APPPATH\Controllers\Mapel.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Controllers\\Mapel.php', 30, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:31:29 --> Too few arguments to function App\Controllers\Mapel::index(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Mapel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:32:14 --> Too few arguments to function App\Controllers\Mapel::index(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Mapel.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:32:47 --> Too few arguments to function App\Controllers\Mapel::index(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Mapel.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:34:48 --> Too few arguments to function App\Models\ModelMapel::allDataMapel(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\Mapel.php on line 30 and exactly 1 expected
+in APPPATH\Models\ModelMapel.php on line 20.
+ 1 APPPATH\Controllers\Mapel.php(30): App\Models\ModelMapel->allDataMapel()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:35:23 --> Undefined index: id_kelas
+in APPPATH\Views\master\mapel\v_mapel.php on line 96.
+ 1 APPPATH\Views\master\mapel\v_mapel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_kelas', 'APPPATH\\Views\\master\\mapel\\v_mapel.php', 96, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\master\\mapel\\v_mapel.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('master/mapel/v_mapel', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('master/mapel/v_mapel')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Mapel.php(32): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->index()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:36:33 --> Too few arguments to function App\Controllers\Mapel::delete(), 1 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 2 expected
+in APPPATH\Controllers\Mapel.php on line 120.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->delete('1')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:39:52 --> Too few arguments to function App\Controllers\Mapel::add(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Mapel.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mapel->add()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:48:04 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:49:58 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:51:05 --> Too few arguments to function App\Models\ModelKelas::detail(), 0 passed in C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php on line 41 and exactly 1 expected
+in APPPATH\Models\ModelKelas.php on line 26.
+ 1 APPPATH\Controllers\JadwalTk.php(41): App\Models\ModelKelas->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:51:34 --> Undefined variable: id_kelas
+in APPPATH\Controllers\JadwalTk.php on line 41.
+ 1 APPPATH\Controllers\JadwalTk.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Controllers\\JadwalTk.php', 41, [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:52:11 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:53:30 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:54:03 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:54:39 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:54:57 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 11.
+ 1 APPPATH\Views\jadwaltk\detail.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 11, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:55:41 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 113.
+ 1 APPPATH\Views\jadwaltk\detail.php(113): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 113, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:56:12 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 190.
+ 1 APPPATH\Views\jadwaltk\detail.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 190, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:56:28 --> syntax error, unexpected '?>', expecting ')'
+in APPPATH\Views\jadwaltk\detail.php on line 190.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 3 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 09:58:30 --> Undefined variable: kelas
+in APPPATH\Views\jadwaltk\detail.php on line 10.
+ 1 APPPATH\Views\jadwaltk\detail.php(10): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 10, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(52): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:02:55 --> Undefined variable: mapel
+in APPPATH\Views\jadwaltk\detail.php on line 130.
+ 1 APPPATH\Views\jadwaltk\detail.php(130): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: mapel', 'APPPATH\\Views\\jadwaltk\\detail.php', 130, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:07:00 --> Too few arguments to function App\Controllers\JadwalTk::add(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 54.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:07:41 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:08:47 --> Too few arguments to function App\Controllers\JadwalTk::detail_jadwal(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\JadwalTk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:11:34 --> Undefined variable: id_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 123.
+ 1 APPPATH\Views\jadwaltk\detail.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:11:42 --> Undefined variable: id_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 123.
+ 1 APPPATH\Views\jadwaltk\detail.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:12:04 --> Undefined variable: id_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 123.
+ 1 APPPATH\Views\jadwaltk\detail.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:12:06 --> Undefined variable: id_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 123.
+ 1 APPPATH\Views\jadwaltk\detail.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:19:03 --> Undefined variable: id_kelas
+in APPPATH\Views\jadwaltk\detail.php on line 123.
+ 1 APPPATH\Views\jadwaltk\detail.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Views\\jadwaltk\\detail.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwaltk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('jadwaltk/detail', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('jadwaltk/detail')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\JadwalTk.php(51): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 10:23:27 --> Undefined variable: id_kelas
+in APPPATH\Models\ModelJadwal.php on line 25.
+ 1 APPPATH\Models\ModelJadwal.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Models\\ModelJadwal.php', 25, [])
+ 2 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 10:23:43 --> mysqli_sql_exception: Column 'id_kelas' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 10:23:43 --> Column 'id_kelas' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_mapel`.`id_mapel`
+WHERE `id_kelas` = :id_kelas:
+OR `tbl_jadwal`.`id_kelas` IS NULL
+ORDER BY `tbl_mapel`.`kode_mapel` ASC, `smt` ASC', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 10:24:57 --> mysqli_sql_exception: Column 'id_kelas' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 10:24:57 --> Column 'id_kelas' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+LEFT JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_mapel`.`id_mapel`
+WHERE `id_kelas` = :id_kelas:
+OR `tbl_jadwal`.`id_kelas` IS NULL
+ORDER BY `tbl_mapel`.`kode_mapel` ASC, `smt` ASC', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 10:45:13 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_kelas' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 10:45:13 --> Unknown column 'tbl_jadwal.id_kelas' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 10:46:33 --> mysqli_sql_exception: Column 'id_kelas' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 10:46:33 --> Column 'id_kelas' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_mapel`.`id_mapel`
+WHERE `id_kelas` = :id_kelas:', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 10:49:02 --> mysqli_sql_exception: Column 'id_kelas' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 10:49:02 --> Column 'id_kelas' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+JOIN `tbl_jadwal` ON `tbl_jadwal`.`id_mapel` = `tbl_mapel`.`id_mapel`
+WHERE `id_kelas` = :id_kelas:', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(46): App\Models\ModelJadwal->ap('25')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:41:01 --> syntax error, unexpected '='
+in APPPATH\Controllers\JadwalTk.php on line 86.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('jadwaltk')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('jadwaltk')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('jadwaltk')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 22:44:49 --> mysqli_sql_exception: Unknown column 'nip' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-22 22:44:49 --> Unknown column 'nip' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+WHERE `id_mapel` = :id_mapel:
+AND `nip` = :nip:
+AND `id_kelas` = :id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 22:45:58 --> mysqli_sql_exception: Unknown column 'nip' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-22 22:45:58 --> Unknown column 'nip' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+WHERE `id_mapel` = :id_mapel:
+AND `nip` = :nip:
+AND `id_kelas` = :id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 22:47:47 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.id_mapel' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-22 22:47:47 --> Unknown column 'tbl_jadwal.id_mapel' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_mapel`
+WHERE `tbl_jadwal`.`id_mapel` = :tbl_jadwal.id_mapel:
+AND `tbl_jadwal`.`nip` = :tbl_jadwal.nip:
+AND `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(92): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:48:26 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(642): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(832): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\JadwalTk.php(89): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:52:11 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 95.
+ 1 APPPATH\Controllers\JadwalTk.php(95): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 95, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 22:54:38 --> mysqli_sql_exception: Column 'id_mapel' in where clause is ambiguous in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(93): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-22 22:54:38 --> Column 'id_mapel' in where clause is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+WHERE `id_mapel` = :id_mapel:
+AND `nip` = :nip:
+AND `id_kelas` = :id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(93): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 22:55:54 --> mysqli_sql_exception: Unknown column 'tbl_guru.ip' in 'where clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(95): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#9 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-22 22:55:54 --> Unknown column 'tbl_guru.ip' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+JOIN `tbl_mapel` ON `tbl_mapel`.`id_mapel` = `tbl_jadwal`.`id_mapel`
+JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `tbl_jadwal`.`id_mapel` = :tbl_jadwal.id_mapel:
+AND `tbl_guru`.`ip` = :tbl_guru.ip:
+AND `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\JadwalTk.php(95): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:56:05 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 98.
+ 1 APPPATH\Controllers\JadwalTk.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:57:53 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 APPPATH\Controllers\JadwalTk.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:58:16 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 90.
+ 1 APPPATH\Controllers\JadwalTk.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 90, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:58:35 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 99.
+ 1 APPPATH\Controllers\JadwalTk.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 99, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 22:59:38 --> Undefined variable: kode_mapel
+in APPPATH\Controllers\JadwalTk.php on line 98.
+ 1 APPPATH\Controllers\JadwalTk.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kode_mapel', 'APPPATH\\Controllers\\JadwalTk.php', 98, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->add('25')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 23:13:40 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.kode_mapel' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 23:13:40 --> Unknown column 'tbl_jadwal.kode_mapel' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:
+ORDER BY `tbl_mapel`.`smt` ASC', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-22 23:14:33 --> mysqli_sql_exception: Unknown column 'tbl_jadwal.kode_mapel' in 'on clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelJadwal.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('3')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('3')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-22 23:14:33 --> Unknown column 'tbl_jadwal.kode_mapel' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_mapel` ON `tbl_mapel`.`kode_mapel` = `tbl_jadwal`.`kode_mapel`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_ta` ON `tbl_ta`.`id_ta` = `tbl_kelas`.`id_ta`
+LEFT JOIN `tbl_guru` ON `tbl_guru`.`nip` = `tbl_jadwal`.`nip`
+WHERE `tbl_jadwal`.`id_kelas` = :tbl_jadwal.id_kelas:', [...], false)
+ 2 APPPATH\Models\ModelJadwal.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\JadwalTk.php(45): App\Models\ModelJadwal->allData('3')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\JadwalTk->detail_jadwal('3')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalTk))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

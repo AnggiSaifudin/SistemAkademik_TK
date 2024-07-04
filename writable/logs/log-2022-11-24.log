@@ -1,0 +1,37 @@
+ERROR - 2022-11-24 06:48:17 --> mysqli_sql_exception: Unknown column 'tbl_gedung.id_ruangan' in 'order clause' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelRuangan.php(9): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Ruangan.php(21): App\Models\ModelRuangan->allData()
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Ruangan->index()
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-24 06:48:17 --> Unknown column 'tbl_gedung.id_ruangan' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tbl_ruangan`
+LEFT JOIN `tbl_gedung` ON `tbl_gedung`.`id_gedung` = `tbl_ruangan`.`id_gedung`
+ORDER BY `tbl_gedung`.`id_ruangan` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_ruangan`
+LEFT JOIN `tbl_gedung` ON `tbl_gedung`.`id_gedung` = `tbl_ruangan`.`id_gedung`
+ORDER BY `tbl_gedung`.`id_ruangan` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_ruangan`
+LEFT JOIN `tbl_gedung` ON `tbl_gedung`.`id_gedung` = `tbl_ruangan`.`id_gedung`
+ORDER BY `tbl_gedung`.`id_ruangan` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_ruangan`
+LEFT JOIN `tbl_gedung` ON `tbl_gedung`.`id_gedung` = `tbl_ruangan`.`id_gedung`
+ORDER BY `tbl_gedung`.`id_ruangan` ASC', [], false)
+ 5 APPPATH\Models\ModelRuangan.php(9): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Ruangan.php(21): App\Models\ModelRuangan->allData()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Ruangan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

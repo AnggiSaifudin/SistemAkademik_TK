@@ -1,0 +1,35 @@
+CRITICAL - 2023-02-17 00:08:35 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 1 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 47 and exactly 2 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(47): App\Models\LaporanModel->DataLaporan(1)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 00:16:11 --> Undefined variable: id_kelas
+in APPPATH\Controllers\Laporan.php on line 49.
+ 1 APPPATH\Controllers\Laporan.php(49): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Controllers\\Laporan.php', 49, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 00:16:24 --> Too few arguments to function App\Models\LaporanModel::DataLaporan(), 1 passed in C:\xampp\htdocs\siakad2\app\Controllers\Laporan.php on line 49 and exactly 3 expected
+in APPPATH\Models\LaporanModel.php on line 9.
+ 1 APPPATH\Controllers\Laporan.php(49): App\Models\LaporanModel->DataLaporan(0.9995056846267919)
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 00:25:06 --> Use of undefined constant kognitif - assumed 'kognitif' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\Laporan.php on line 45.
+ 1 APPPATH\Controllers\Laporan.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant kognitif - assumed \'kognitif\' (this will throw an Error in a future version of PHP)', 'APPPATH\\Controllers\\Laporan.php', 45, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 07:12:23 --> Undefined variable: id_kelas
+in APPPATH\Controllers\Laporan.php on line 51.
+ 1 APPPATH\Controllers\Laporan.php(51): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id_kelas', 'APPPATH\\Controllers\\Laporan.php', 51, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(925): App\Controllers\Laporan->Viewlaporan()
+ 3 SYSTEMPATH\CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

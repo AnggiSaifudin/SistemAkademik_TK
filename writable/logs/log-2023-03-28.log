@@ -1,0 +1,132 @@
+ERROR - 2023-03-28 00:21:24 --> mysqli_sql_exception: Not unique table/alias: 'tbl_nilai' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(113): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-28 00:21:24 --> Not unique table/alias: 'tbl_nilai'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_nilai`.`nilai_quis`
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_nilai` ON `tbl_nilai`.`id_jadwal` = `tbl_jadwal`.`id_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_nilai` ON `tbl_nilai`.`nis` = `tbl_siswa`.`nis` AND `tbl_nilai`.`id_jadwal` = `tbl_jadwal`.`id_jadwal`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:
+GROUP BY `tbl_siswa`.`nis`, `tbl_siswa`.`nis`', [...], false)
+ 2 APPPATH\Models\ModelGr.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 00:21:44 --> mysqli_sql_exception: Unknown column 'tbl_siswa.nis' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(112): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-28 00:21:44 --> Unknown column 'tbl_siswa.nis' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_nilai`.`nilai_quis`
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_nilai` ON `tbl_nilai`.`nis` = `tbl_siswa`.`nis` AND `tbl_nilai`.`id_jadwal` = `tbl_jadwal`.`id_jadwal`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:
+GROUP BY `tbl_siswa`.`nis`, `tbl_siswa`.`nis`', [...], false)
+ 2 APPPATH\Models\ModelGr.php(112): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-28 00:22:00 --> mysqli_sql_exception: Unknown column 'tbl_siswa.nis' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(111): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-28 00:22:00 --> Unknown column 'tbl_siswa.nis' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nis`, `tbl_siswa`.`nama_siswa`, `tbl_nilai`.`nilai_quis`
+FROM `tbl_jadwal`
+LEFT JOIN `tbl_kelas` ON `tbl_kelas`.`id_kelas` = `tbl_jadwal`.`id_kelas`
+LEFT JOIN `tbl_nilai` ON `tbl_nilai`.`nis` = `tbl_siswa`.`nis` AND `tbl_nilai`.`id_jadwal` = `tbl_jadwal`.`id_jadwal`
+WHERE `tbl_jadwal`.`id_jadwal` = :tbl_jadwal.id_jadwal:
+GROUP BY `tbl_siswa`.`nis`', [...], false)
+ 2 APPPATH\Models\ModelGr.php(111): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Loginguru.php(153): App\Models\ModelGr->siswa('114')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 00:22:33 --> Undefined index: nilai_ketrampilan
+in APPPATH\Views\nilai\v_datanilai.php on line 121.
+ 1 APPPATH\Views\nilai\v_datanilai.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nilai_ketrampilan', 'APPPATH\\Views\\nilai\\v_datanilai.php', 121, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 00:26:37 --> Undefined index: na
+in APPPATH\Views\nilai\v_datanilai.php on line 137.
+ 1 APPPATH\Views\nilai\v_datanilai.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: na', 'APPPATH\\Views\\nilai\\v_datanilai.php', 137, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 00:30:29 --> Undefined variable: siswa
+in APPPATH\Controllers\Loginguru1.php on line 192.
+ 1 APPPATH\Controllers\Loginguru1.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Controllers\\Loginguru1.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 00:30:49 --> Undefined variable: siswa
+in APPPATH\Controllers\Loginguru1.php on line 192.
+ 1 APPPATH\Controllers\Loginguru1.php(192): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: siswa', 'APPPATH\\Controllers\\Loginguru1.php', 192, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai(null)
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-28 00:31:47 --> Too few arguments to function App\Controllers\Loginguru::datanilai(), 0 passed in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Loginguru.php on line 146.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

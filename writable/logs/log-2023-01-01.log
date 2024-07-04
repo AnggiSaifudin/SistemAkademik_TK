@@ -1,0 +1,36 @@
+CRITICAL - 2023-01-01 23:48:16 --> Class 'App\Models\ModelKrs' not found
+in APPPATH\Controllers\Loginsiswa.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(889): App\Controllers\loginsiswa->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 23:53:13 --> Undefined variable: krs
+in APPPATH\Views\jadwalsiswa\v_krs.php on line 123.
+ 1 APPPATH\Views\jadwalsiswa\v_krs.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: krs', 'APPPATH\\Views\\jadwalsiswa\\v_krs.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwalsiswa\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwalsiswa/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwalsiswa/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Jadwalsiswa.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jadwalsiswa->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwalsiswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-01 23:58:26 --> Undefined variable: jadwalsiswa
+in APPPATH\Views\jadwalsiswa\v_krs.php on line 123.
+ 1 APPPATH\Views\jadwalsiswa\v_krs.php(123): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: jadwalsiswa', 'APPPATH\\Views\\jadwalsiswa\\v_krs.php', 123, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\jadwalsiswa\\v_krs.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('jadwalsiswa/v_krs', [], true)
+ 5 APPPATH\Views\tampilan.php(397): view('jadwalsiswa/v_krs')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Jadwalsiswa.php(38): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Jadwalsiswa->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jadwalsiswa))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

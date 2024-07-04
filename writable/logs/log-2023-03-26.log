@@ -1,0 +1,214 @@
+CRITICAL - 2023-03-26 04:22:37 --> Object of class App\Controllers\Siswa could not be converted to string
+in APPPATH\Controllers\siswa.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Siswa->insert()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 08:22:33 --> "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('ROOTPATH\\public')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nip', 'Nip', '1980122620', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Guru.php(152): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->update('1980122620')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 08:23:48 --> "" is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 320.
+ 1 SYSTEMPATH\Validation\Validation.php(320): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('ROOTPATH\\public')
+ 2 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('nip', 'Nip', '1980122620', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Guru.php(152): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Guru->update('1980122620')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:28:15 --> Undefined variable: kelas
+in APPPATH\Views\nilai\v_datanilai.php on line 97.
+ 1 APPPATH\Views\nilai\v_datanilai.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\nilai\\v_datanilai.php', 97, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:29:22 --> Undefined variable: tbl_kelas
+in APPPATH\Views\nilai\v_datanilai.php on line 97.
+ 1 APPPATH\Views\nilai\v_datanilai.php(97): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tbl_kelas', 'APPPATH\\Views\\nilai\\v_datanilai.php', 97, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 5 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+ 9 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+10 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+11 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+12 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:29:53 --> Undefined variable: kelas
+in APPPATH\Views\nilai\v_datanilai.php on line 98.
+ 1 APPPATH\Views\nilai\v_datanilai.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\nilai\\v_datanilai.php', 98, [...])
+ 2 [internal function]: CodeIgniter\View\View->{closure}([...])
+ 3 APPPATH\Views\nilai\v_datanilai.php(99): array_filter([...], Object(Closure))
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\nilai\\v_datanilai.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('nilai/v_datanilai', [], true)
+ 7 APPPATH\Views\tampilan.php(413): view('nilai/v_datanilai')
+ 8 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 9 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('tampilan', [], true)
+11 APPPATH\Controllers\Loginguru.php(156): view('tampilan', [...])
+12 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Loginguru->datanilai('114')
+13 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginguru))
+14 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:36:31 --> Undefined variable: nis
+in APPPATH\Controllers\Loginguru1.php on line 235.
+ 1 APPPATH\Controllers\Loginguru1.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nis', 'APPPATH\\Controllers\\Loginguru1.php', 235, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:38:40 --> Undefined variable: nis
+in APPPATH\Controllers\Loginguru1.php on line 223.
+ 1 APPPATH\Controllers\Loginguru1.php(223): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nis', 'APPPATH\\Controllers\\Loginguru1.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:38:45 --> Undefined variable: nis
+in APPPATH\Controllers\Loginguru1.php on line 223.
+ 1 APPPATH\Controllers\Loginguru1.php(223): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nis', 'APPPATH\\Controllers\\Loginguru1.php', 223, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-26 22:51:19 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_nil...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_nil...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_nil...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nil...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(101): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(241): App\Models\ModelGr->updateNilai(Array, Array, '123', '114')
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-26 22:51:19 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nilai` SET `id_jadwal` = :id_jadwal.1:, `id_ta` = :id_ta:, `nis` = :nis:, `nilai_quis` = :nilai_quis:, `nilai_ketrampilan` = :nilai_ketrampilan:, `nilai_kerajinan` = :nilai_kerajinan:, `na` = :na:, `nilai_huruf` = :nilai_huruf:, `deskripsi` = :deskripsi:, `tgl_nilai` = :tgl_nilai:
+WHERE `id_nilai` = :id_nilai:
+AND `id_jadwal` = :id_jadwal:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(101): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Loginguru1.php(241): App\Models\ModelGr->updateNilai([...], [...], '123', '114')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 22:53:06 --> Undefined variable: nis
+in APPPATH\Models\ModelGr.php on line 87.
+ 1 APPPATH\Models\ModelGr.php(87): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nis', 'APPPATH\\Models\\ModelGr.php', 87, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(235): App\Models\ModelGr->getNilaiSiswa('114', '1776')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:00:12 --> Undefined variable: nis
+in APPPATH\Controllers\Loginguru1.php on line 241.
+ 1 APPPATH\Controllers\Loginguru1.php(241): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: nis', 'APPPATH\\Controllers\\Loginguru1.php', 241, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:02:59 --> Too few arguments to function App\Models\ModelGr::updateNilai(), 3 passed in C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php on line 241 and exactly 4 expected
+in APPPATH\Models\ModelGr.php on line 95.
+ 1 APPPATH\Controllers\Loginguru1.php(241): App\Models\ModelGr->updateNilai([...], '123', '114')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-26 23:12:12 --> mysqli_sql_exception: Unknown column 'id_pengisian' in 'field list' in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tbl_nil...', 0)
+#1 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_nil...')
+#2 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_nil...')
+#3 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nil...', Array, false)
+#4 C:\xampp\htdocs\siakad2\app\Models\ModelGr.php(100): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php(243): App\Models\ModelGr->updateNilai(Array, '123', '114', 1980422372)
+#6 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+#7 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+#8 C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\siakad2\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-03-26 23:12:12 --> Unknown column 'id_pengisian' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_nilai` SET `id_pengisian` = :id_pengisian:, `id_jadwal` = :id_jadwal.1:, `id_ta` = :id_ta:, `nis` = :nis:, `nilai_quis` = :nilai_quis:, `nilai_ketrampilan` = :nilai_ketrampilan:, `nilai_kerajinan` = :nilai_kerajinan:, `na` = :na:, `nilai_huruf` = :nilai_huruf:, `deskripsi` = :deskripsi:, `tgl_nilai` = :tgl_nilai:
+WHERE `id_nilai` = :id_nilai:
+AND `id_jadwal` = :id_jadwal:', [...], false)
+ 2 APPPATH\Models\ModelGr.php(100): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Loginguru1.php(243): App\Models\ModelGr->updateNilai([...], '123', '114', 1980422372)
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:18:37 --> Undefined index: id_nilai
+in APPPATH\Models\ModelGr.php on line 99.
+ 1 APPPATH\Models\ModelGr.php(99): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_nilai', 'APPPATH\\Models\\ModelGr.php', 99, [...])
+ 2 APPPATH\Controllers\Loginguru1.php(241): App\Models\ModelGr->updateNilai([...], '123', '114', '1776')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:30:05 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 196.
+ 1 APPPATH\Controllers\Loginguru1.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:30:42 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 196.
+ 1 APPPATH\Controllers\Loginguru1.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:30:53 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 196.
+ 1 APPPATH\Controllers\Loginguru1.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:31:13 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 196.
+ 1 APPPATH\Controllers\Loginguru1.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:32:17 --> A non-numeric value encountered
+in APPPATH\Controllers\Loginguru1.php on line 196.
+ 1 APPPATH\Controllers\Loginguru1.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'APPPATH\\Controllers\\Loginguru1.php', 196, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-26 23:33:23 --> Too few arguments to function App\Models\ModelGr::updateNilai(), 3 passed in C:\xampp\htdocs\siakad2\app\Controllers\Loginguru1.php on line 241 and exactly 4 expected
+in APPPATH\Models\ModelGr.php on line 98.
+ 1 APPPATH\Controllers\Loginguru1.php(241): App\Models\ModelGr->updateNilai([...], null, '114')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\loginguru1->simpannilai('114')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\loginguru1))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

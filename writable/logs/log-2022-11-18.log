@@ -1,0 +1,243 @@
+CRITICAL - 2022-11-18 06:55:11 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:55:40 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:55:57 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:55:58 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:57:19 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:57:20 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:58:02 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:58:03 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:59:18 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:59:18 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:59:19 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:59:19 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 06:59:31 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 07:00:06 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 07:00:07 --> Invalid file: v_login.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_login.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('v_login')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 07:07:25 --> Invalid file: layout/v_head.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/v_head.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_head', [], true)
+ 3 APPPATH\Views\layout\v_wrapper.php(3): view('layout/v_head')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+ 7 APPPATH\Controllers\Home.php(19): view('layout/v_wrapper', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 20:39:18 --> Invalid file: layout/v_wrapper.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/v_wrapper.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('layout/v_wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 20:39:37 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 20:39:38 --> Invalid file: home.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(16): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 21:56:17 --> Undefined variable: variable
+in APPPATH\Views\v_login.php on line 38.
+ 1 APPPATH\Views\v_login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: variable', 'APPPATH\\Views\\v_login.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\login.php(19): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 21:56:36 --> Undefined variable: variable
+in APPPATH\Views\v_login.php on line 38.
+ 1 APPPATH\Views\v_login.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: variable', 'APPPATH\\Views\\v_login.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\v_login.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('v_login', [], true)
+ 5 APPPATH\Controllers\login.php(19): view('v_login', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 22:48:34 --> Undefined variable: title
+in APPPATH\Views\tampilan.php on line 11.
+ 1 APPPATH\Views\tampilan.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\tampilan.php', 11, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 5 APPPATH\Controllers\Home.php(16): view('tampilan')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 23:35:58 --> syntax error, unexpected '.'
+in APPPATH\Views\admin.php on line 49.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\Home.php(18): view('admin', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 23:46:15 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\url_helper.php on line 87
+in SYSTEMPATH\Helpers\url_helper.php on line 31.
+ 1 SYSTEMPATH\Helpers\url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH\Helpers\url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH\Views\admin.php(52): base_url(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin', [], true)
+ 7 APPPATH\Controllers\Home.php(18): view('admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-18 23:47:16 --> Argument 1 passed to _get_uri() must be of the type string, null given, called in C:\xampp\htdocs\siakad2\vendor\codeigniter4\framework\system\Helpers\url_helper.php on line 87
+in SYSTEMPATH\Helpers\url_helper.php on line 31.
+ 1 SYSTEMPATH\Helpers\url_helper.php(87): _get_uri(null, Object(Config\App))
+ 2 SYSTEMPATH\Helpers\url_helper.php(105): site_url(null, null, Object(Config\App))
+ 3 APPPATH\Views\admin.php(53): base_url(null)
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin', [], true)
+ 7 APPPATH\Controllers\Home.php(18): view('admin', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

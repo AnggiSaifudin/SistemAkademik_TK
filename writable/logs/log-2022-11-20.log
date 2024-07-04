@@ -1,0 +1,23 @@
+CRITICAL - 2022-11-20 06:40:55 --> syntax error, unexpected end of file
+in APPPATH\Views\master\v_fakultas.php on line 166.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('master/v_fakultas', [], true)
+ 3 APPPATH\Views\tampilan.php(159): view('master/v_fakultas')
+ 4 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\tampilan.php')
+ 5 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('tampilan', [], true)
+ 7 APPPATH\Controllers\Fakultas.php(23): view('tampilan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Fakultas->index()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 06:56:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 845.
+ 1 SYSTEMPATH\Model.php(587): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(373): CodeIgniter\Model->builder()
+ 3 SYSTEMPATH\BaseModel.php(984): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\Fakultas.php(48): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Fakultas->delete_data('7')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
