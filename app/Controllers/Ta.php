@@ -170,7 +170,7 @@ class Ta extends BaseController
     public function setting()
     {
         $data = [
-            'title' => 'Setting Tahun Akademik',
+            'title' => 'Setting Tahun Pelajaran',
             'page' => 'setting/v_set_ta',
             'ta' => $this->ModelTa->allData(),
         ];
@@ -187,7 +187,7 @@ class Ta extends BaseController
             'status' => 1
         ];
         $this->ModelTa->edit($data);
-        session()->setFlashdata('pesan', 'Status Tahun Akademik berhasil di ganti');
+        session()->setFlashdata('pesan', 'Status Tahun Pelajaran berhasil di ganti');
         return redirect()->to(base_url('ta/setting'));
     }
 

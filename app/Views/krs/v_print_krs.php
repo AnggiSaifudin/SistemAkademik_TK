@@ -39,7 +39,6 @@
                         <table class=" table-striped">
 
                             <tr>
-                                <td rowspan="6"><img src="<?= base_url('fotosiswa/' . $siswa['foto_siswa']); ?>" height="150px" width="100px"></td>
                                 <td width="150px">Tahun Akademik</td>
                                 <td>:</td>
                                 <td>

@@ -1,15 +1,4 @@
-<div class="col-md-3">
-    <!-- Profile Image -->
-    <div class="card card-primary card-outline">
-        <div class="card-body">
-            <div class="text-center">
-                <img class="img-fluid" src="<?= base_url('fotoguru/' . $guru['foto_guru']); ?>" height="400px">
-            </div>
-        </div>
-        <!-- /.card-body -->
-    </div>
-    <!-- /.card -->
-</div>
+
 
 
 <div class="col-md-6">

@@ -1,15 +1,4 @@
-<div class="col-md-3">
-    <!-- Profile Image -->
-    <div class="card card-primary card-outline">
-        <div class="card-body">
-            <div class="text-center">
-                <img class="profile-user-img img-fluid" src="<?= base_url('fotosiswa/' . $siswa['foto_siswa']); ?>">
-            </div>
-        </div>
-        <!-- /.card-body -->
-    </div>
-    <!-- /.card -->
-</div>
+
 
 
 <div class="col-md-6">

@@ -13,11 +13,6 @@ class ModelGr extends Model
         // 'id_ta',
         'nisn',
         'nilai_quis',
-        'nilai_ketrampilan',
-        'nilai_kerajinan',
-        'na',
-        'nilai_huruf',
-        'deskripsi',
         'tgl_nilai',
     ];
     public function DataGuru()
@@ -108,7 +103,7 @@ class ModelGr extends Model
         ->join('tbl_siswa', 'tbl_siswa.id_kelas = tbl_kelas.id_kelas', 'left')
         ->join('tbl_nilai', 'tbl_nilai.nisn = tbl_siswa.nisn AND tbl_nilai.id_jadwal = tbl_jadwal.id_jadwal', 'left')
         ->where('tbl_jadwal.id_jadwal', $id_jadwal)
-        ->select('tbl_siswa.nisn, tbl_siswa.nama_siswa, tbl_nilai.nilai_quis, tbl_nilai.nilai_ketrampilan, tbl_nilai.nilai_kerajinan, tbl_nilai.na, tbl_nilai.nilai_huruf, tbl_nilai.deskripsi')
+        ->select('tbl_siswa.nisn, tbl_siswa.nama_siswa, tbl_nilai.nilai_quis')
         ->groupBy('tbl_siswa.nisn')
         ->get()->getResultArray();  
     }
@@ -178,4 +173,61 @@ class ModelGr extends Model
     }
 
     // akhir bawaan dari modelGr
+    // ujicoba kehadiran
+    public function get_siswa($nuptk,$id_ta)
+    {
+        return $this->db->table('tbl_kelas')
+        ->join('tbl_guru', 'tbl_guru.nuptk = tbl_kelas.nuptk', 'left')
+        ->join('tbl_siswa', 'tbl_siswa.id_kelas = tbl_kelas.id_kelas', 'left')
+        ->join('tbl_hadir', 'tbl_hadir.nisn = tbl_siswa.nisn', 'left')
+        ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
+        // ->where('tbl_kelas.id_kelas', $id_kelas)
+        ->where('tbl_kelas.id_ta', $id_ta)
+        ->where('tbl_guru.nuptk', $nuptk)
+        ->select('tbl_siswa.nisn, tbl_siswa.nama_siswa, tbl_hadir.sakit, tbl_hadir.ijin, tbl_hadir.tp')
+        // ->groupBy('tbl_siswa.nisn')
+        ->get()->getResultArray();  
+        // end ujicoba
+    }
+    public function get_kelas()
+    {
+        return $this->db->table('tbl_kelas')
+            ->join('tbl_guru', 'tbl_guru.nuptk = tbl_kelas.nuptk', 'left')
+            ->join('tbl_siswa', 'tbl_siswa.id_kelas = tbl_kelas.id_kelas', 'left')
+            // ->join('tbl_hadir', 'tbl_hadir.nisn = tbl_siswa.nisn', 'left')
+
+            ->get()->getRowArray();
+    }
+
+    // ujicoba hadir
+    public function simpanhadir($data)
+    {
+   // Cek apakah data kehadiran null atau tidak
+        if (!empty($data)) {
+            foreach ($data as $kehadiran) {
+                // Cek apakah data kehadiran sudah ada di database
+                $existingKehadiran = $this->db->table('tbl_hadir')
+                    ->where('nuptk', $kehadiran['nuptk'])
+                    ->where('nisn', $kehadiran['nisn'])
+                    // ->where('id_ta', $kehadiran['id_ta'])
+                    ->get()
+                    ->getRowArray();
+
+                if ($existingKehadiran) {
+                    // Jika data kehadiran sudah ada, lakukan update
+                    $this->db->table('tbl_hadir')
+                        ->where('nuptk', $kehadiran['nuptk'])
+                        ->where('nisn', $kehadiran['nisn'])
+                        // ->where('id_ta', $kehadiran['id_ta'])
+                        ->update($kehadiran);
+                } else {
+                    // Jika data kehadiran belum ada, lakukan insert
+                    $this->db->table('tbl_hadir')->insert($kehadiran);
+                }
+            }
+        }
+    }
+
+
+    // end ujicoba hadir
 }

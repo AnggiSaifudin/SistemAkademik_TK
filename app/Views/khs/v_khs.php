@@ -2,7 +2,6 @@
     <table class=" table-striped">
 
         <tr>
-            <td rowspan="6"><img src="<?= base_url('fotosiswa/' . $siswa['foto_siswa']); ?>" height="150px" width="100px"></td>
             <td width="150px">Tahun Pelajaran</td>
             <td>:</td>
             <td>
@@ -36,7 +35,7 @@
 </div>
 
 
-<div class="col-sm-12">
+<!-- <div class="col-sm-12">
     <a href="<?= base_url('loginsiswa/print'); ?>" target="_blank" class="btn btn-xs btn-success">
         <i class="fa fa-print"></i>
         Print Aspek Perkembangan
@@ -45,7 +44,7 @@
         <i class="fa fa-file-pdf"></i>
         Download
     </a>
-</div>
+</div> -->
 
 
 <div class="col-sm-12">
@@ -62,30 +61,42 @@
         <thead class=" bg-blue">
             <tr>
                 <th class="text-center">No</th>
+                <th class="text-center">Tahun Pelajaran</th>
                 <th class="text-center">Kode Mapel</th>
                 <th class="text-center">Mata Pelajaran</th>
-                <th class="text-center">Nilai Quis</th>
-                <th class="text-center">Nilai Ketrampilan</th>
-                <th class="text-center">Nilai Kerajinan</th>
-                <th class="text-center">Nilai Akhir</th>
-                <th class="text-center">GRADE</th>
-                <th width="50px" class="text-center">Deskripsi</th>
+                <th class="text-center">Deskripsi</th>
             </tr>
         </thead>
         <tbody>
-
             <?php $no = 1;
             foreach ($data_ap as $key => $value) { ?>
                 <tr>
                     <td class="text-center"><?= $no++; ?></td>
+                    <td class="text-center"><?= $value['ta']; ?>/<?= $value['semester']; ?></td>
                     <td class="text-center"><?= $value['kode_mapel']; ?></td>
                     <td class="text-center"><?= $value['mapel']; ?></td>
-                    <td class="text-center"><?= $value['nilai_quis']; ?></td>
-                    <td class="text-center"><?= $value['nilai_ketrampilan']; ?></td>
-                    <td class="text-center"><?= $value['nilai_kerajinan']; ?></td>
-                    <td class="text-center"><?= $value['na']; ?></td>
-                    <td class="text-center"><?= $value['nilai_huruf']; ?></td>
-                    <td class="text-center"><?= $value['deskripsi']; ?></td>
+                    <td class="text-left" >
+                    <?= nl2br($value['nilai_quis']); ?>
+                    </td>
+                </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+    <table class="table table-bordered table-striped table-responsive-lg">
+        <thead class=" bg-blue">
+            <tr>
+                <th class="text-center">Ijin</th>
+                <th class="text-center">Sakit</th>
+                <th class="text-center">Tanpa Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+            foreach ($hadir as $key => $value) { ?>
+                <tr>
+                    <td class="text-center"><?= $value['sakit']; ?></td>
+                    <td class="text-center"><?= $value['ijin']; ?></td>
+                    <td class="text-center"><?= $value['tp']; ?></td>
                 </tr>
             <?php } ?>
         </tbody>

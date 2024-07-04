@@ -74,16 +74,9 @@
                                         <th rowspan="2" class="text-center">No</th>
                                         <th rowspan="2" class="text-center">Nim</th>
                                         <th rowspan="2" class="text-center">Siswa</th>
-                                        <th colspan="18" class="text-center">Penilaian</th>
                                     </tr>
                                     <tr>
-                                        <th class="text-center" width="80px">Nilai Quis</th>
-                                        <th class="text-center" width="80px">Nilai Ketrampilan</th>
-                                        <th class="text-center" width="80px">Nilai Kerajinan</th>
-                                        <th class="text-center">NA</th>
-                                        <th class="text-center">Huruf</th>
-                                        <th class="text-center">Deskripsi</th>
-                                        <th class="text-center">Pendahuluan</th>
+                                        <th class="text-center" width="1100px">Deskripsi</th>
                                     </tr>
 
                                 </thead>
@@ -91,29 +84,11 @@
                                 <?php $no = 1;
                                 foreach ($siswa as $key => $value) { ?>
                                     <tr>
-                                        <td class="text-center"><?= $no++; ?></td>
-                                        <td class="text-center"><?= $value['nisn']; ?></td>
-                                        <td class="text-center"><?= $value['nama_siswa']; ?></td>
-                                        <td class="text-center">
-                                            <?= $value['nilai_quis']; ?>
-                                        </td>
-                                        <td class="text-center">
-                                            <?= $value['nilai_ketrampilan']; ?>
-                                        </td>
-                                        <td class="text-center">
-                                            <?= $value['nilai_kerajinan']; ?>
-                                        </td>
-                                        <td class="text-center">
-                                            <?= $value['na']; ?>
-                                        </td>
-                                        <td>
-                                            <?= $value['nilai_huruf']; ?>
-                                        </td>
-                                        <td>
-                                            <?= $value['deskripsi']; ?>
-                                        </td>
-                                        <td>
-                                            <?= $value['pendahuluan']; ?>
+                                        <td class="text-left"><?= $no++; ?></td>
+                                        <td class="text-left"><?= $value['nisn']; ?></td>
+                                        <td class="text-left"><?= $value['nama_siswa']; ?></td>
+                                        <td class="text-left" style="border: none;">
+                                            <?= nl2br($value['nilai_quis']); ?>
                                         </td>
                                     </tr>
                                 <?php } ?>

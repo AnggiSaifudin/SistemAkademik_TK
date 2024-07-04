@@ -88,6 +88,7 @@ $kelas = $this->ModelKelas->allData();
                 // 'id_kelas' = $id_kelas; // set id_kelas sesuai dengan parameter
                 // 'id_ta' = $ta['id_ta'];
 
+                // untuk sebuah validasi agar saat kode mapel sudah ada tetapi berbeda kelas tetap akan ditambahkan
                 $is_exist = $this->ModelJadwal
                 ->select('tbl_jadwal.*, tbl_mapel.kode_mapel')
                 ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel')

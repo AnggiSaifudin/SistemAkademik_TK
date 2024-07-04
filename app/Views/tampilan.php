@@ -183,12 +183,12 @@
                                             <p>Mengajar</p>
                                         </a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a href="<?= base_url('laporan'); ?>" class="nav-link">
                                             <i class="fa-solid fa-file nav-icon"></i>
                                             <p>Laporan</p>
                                         </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -230,9 +230,9 @@
                     <?php } elseif (session()->get('level') == 2) { ?>
 
                         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                            <div class="image">
+                            <!-- <div class="image">
                                 <img src="<?= base_url('fotoguru/' . session()->get('foto')); ?>" class="img-circle elevation-2" alt="User Image">
-                            </div>
+                            </div> -->
                             <div class="info">
                                 <p>
                                     <a><?= session()->get('nama') ?>
@@ -285,6 +285,12 @@
                                             <p>Nilai Siswa</p>
                                         </a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a href="<?= base_url('loginguru1/kehadiran'); ?>" class="nav-link">
+                                            <i class="fa-solid fa-user nav-icon"></i>
+                                            <p>Kehadiran</p>
+                                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             <!-- 
@@ -310,9 +316,9 @@
                     <?php } elseif (session()->get('level') == 3) { ?>
 
                         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                            <div class="image">
+                            <!-- <div class="image">
                                 <img src="<?= base_url('fotosiswa/' . session()->get('foto')); ?>" class="img-circle elevation-2" alt="User Image">
-                            </div>
+                            </div> -->
                             <div class="info">
                                 <p>
                                     <a><?= session()->get('nama') ?>

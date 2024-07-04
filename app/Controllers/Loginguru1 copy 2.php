@@ -161,42 +161,11 @@ class loginguru1 extends BaseController
     }
     public function simpannilai($id_jadwal)
     {
-        // $siswa = $this->ModelGr->siswa($id_jadwal);
-        // foreach ($siswa as $key => $value) {
-        //     $quis = $this->request->getPost('nilai_quis');
-            // $ketrampilan = $this->request->getPost($value['id_nilai'] . 'nilai_ketrampilan');
-            // $kerajinan = $this->request->getPost($value['id_nilai'] . 'nilai_kerajinan');
-            // $na =  ($quis + $ketrampilan + $kerajinan) / 3;
-            // if ($na >= 4) {
-            //     $nh = 'A';
-            //     $desk = 'Berkembang Sangat Baik';
-            //     // $pendahuluan = 'Berkembang';
-            // } elseif ($na < 4 && $na >= 3) {
-            //     $nh = 'B';
-            //     $desk = 'Berkembang Sesuai Harapan';
-            //     // $pendahuluan = 'Berkembang';
-            // } elseif ($na < 3 && $na >= 2) {
-            //     $nh = 'C';
-            //     $desk = 'Mulai Berkembang';
-            //     // $pendahuluan = 'Berkembang';
-            // } elseif ($na < 2 && $na >= 1) {
-            //     $nh = 'D';
-            //     $desk = 'Belum Berkembang';
-            //     // $pendahuluan = 'Berkembang';
-            // } else {
-            //     $nh = '-';
-            //     $desk = '-';
-            // }
+
             $data = [
 
                 'nilai_quis' => $this->request->getPost('nilai_quis'),
-                // 'nilai_ketrampilan' => $this->request->getPost($value['id_nilai'] . 'nilai_ketrampilan'),
-                // 'nilai_kerajinan' => $this->request->getPost($value['id_nilai'] . 'nilai_kerajinan'),
-                // 'na' => number_format($na, 0),
-                // 'nilai_huruf' => $nh,
-                // 'deskripsi' => $desk,
-                // 'tgl_nilai' => $this->request->getPost('tgl_nilai'),
-                // 'pendahuluan' => $pendahuluan,
+            
             ];
             dd($data);
             // $this->ModelGr->simpannilai($data);

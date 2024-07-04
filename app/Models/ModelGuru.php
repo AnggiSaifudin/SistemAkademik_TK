@@ -43,5 +43,15 @@ class ModelGuru extends Model
         $this->db->table('tbl_guru')->where('nuptk', $data['nuptk'])->delete($data);
     }
 
+    public function nambah($data){
+        $this->db->table('tbl_guru')->insert($data);
+    }
+
+    public function cekdata($nuptk){
+        return $this->db->table('tbl_guru')
+        ->where('nuptk',$nuptk)
+        ->get()->getRowArray();
+    }
+
 
 }

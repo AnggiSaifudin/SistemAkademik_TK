@@ -30,7 +30,7 @@
 
 <div class="col-12">
 
-    <a href="<?= base_url('loginguru/printnilai'); ?>" target="_blank" class="btn btn-xs btn-success">
+<a href="<?= base_url('loginguru1/printnilai/'. $jadwal['id_jadwal']); ?>" target="_blank" class="btn btn-xs btn-success">
         <i class="fa fa-print"></i>
         Print Nilai
     </a>
@@ -75,17 +75,12 @@ if (session()->getFlashdata('error')) {
                 <th rowspan="2" class="text-center">No</th>
                 <th rowspan="2" class="text-center">Nisn</th>
                 <th rowspan="2" class="text-center">Siswa</th>
-                <th colspan="18" class="text-center">Penilaian</th>
             </tr>
             <tr>
                 <th class="text-center" width="180px">
-                    Nilai Quis(Tanya Jawab)
+                    Deskripsi
                 </th>
-                <th class="text-center" width="80px">Ketrampilan</th>
-                <th class="text-center" width="80px">Kerajinan</th>
-                <th class="text-center" width="80px">NA</th>
-                <th class="text-center">GRADE</th>
-                <th class="text-center">Deskripsi</th>
+
 
             </tr>
 
@@ -104,43 +99,12 @@ foreach ($siswa as $key => $value) {
         ?>
         <tr>
             <td class="text-center"><?= $no++; ?></td>
-            <td class="text-center"><?= $value['nisn']; ?></td>
-            <td class="text-center"><?= $value['nama_siswa']; ?></td>
-            <td class="text-center">
-            <select name="<?= $value['nisn']; ?>nilai_quis" class="form-control text-center">
-                    <option value=""></option>
-                    <option value="1" <?php if ($value['nilai_quis'] == '1') { echo 'selected'; } ?>>1</option>
-                    <option value="2" <?php if ($value['nilai_quis'] == '2') { echo 'selected'; } ?>>2</option>
-                    <option value="3" <?php if ($value['nilai_quis'] == '3') { echo 'selected'; } ?>>3</option>
-                    <option value="4" <?php if ($value['nilai_quis'] == '4') { echo 'selected'; } ?>>4</option>
-                </select>
-            </td>
-            <td class="text-center">
-            <select name="<?= $value['nisn']; ?>nilai_ketrampilan" class="form-control text-center">
-                    <option value=""></option>
-                    <option value="1" <?php if ($value['nilai_ketrampilan'] == '1') { echo 'selected'; } ?>>1</option>
-                    <option value="2" <?php if ($value['nilai_ketrampilan'] == '2') { echo 'selected'; } ?>>2</option>
-                    <option value="3" <?php if ($value['nilai_ketrampilan'] == '3') { echo 'selected'; } ?>>3</option>
-                    <option value="4" <?php if ($value['nilai_ketrampilan'] == '4') { echo 'selected'; } ?>>4</option>
-                </select>
-            </td>
-            <td class="text-center">
-            <select name="<?= $value['nisn']; ?>nilai_kerajinan" class="form-control text-center">
-                    <option value=""></option>
-                    <option value="1" <?php if ($value['nilai_kerajinan'] == '1') { echo 'selected'; } ?>>1</option>
-                    <option value="2" <?php if ($value['nilai_kerajinan'] == '2') { echo 'selected'; } ?>>2</option>
-                    <option value="3" <?php if ($value['nilai_kerajinan'] == '3') { echo 'selected'; } ?>>3</option>
-                    <option value="4" <?php if ($value['nilai_kerajinan'] == '4') { echo 'selected'; } ?>>4</option>
-                </select>
-            </td>
-                        <td class="text-center">
-            <?= $value['na']; ?>
-            </td>
-            <td class="text-center">
-            <?= $value['nilai_huruf']; ?>
-            </td>
-            <td class="text-center">
-            <?= $value['deskripsi']; ?>
+            <td class="text-left"><?= $value['nisn']; ?></td>
+            <td class="text-left"><?= $value['nama_siswa']; ?></td>
+            <td class="text-left">
+                <div class="form-group">
+                <textarea name="<?= $value['nisn']; ?>nilai_quis" class="form-control" style="width: 900px; height: 250px;"placeholder="Masukan Deskripsi"><?= $value['nilai_quis']; ?></textarea>
+                </div>
             </td>
         </tr>
         <?php } ?>

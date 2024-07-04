@@ -1,17 +1,76 @@
 
-<div class="col-md-12">
-  <div class="card card-primary">
-  <div class="text-center col-md bg-white">
-        <h1><b>Welcome Administrator</b></h1>
-        <br>
-        <p class="text-center" style="font-size:20px;">Selamat Datang di Area Control Panel Admin <b> TK PUTRA VII BOJONGBATA KABUPATEN PEMALANG</b></p>
-        <p class="text-center" style="font-size:20px;">Silahkan Pergunakan Menu di Samping Untuk Mengelola Ruang Sistem Ini</p>
-        <br>
-        <br>
-        <p class="text-center" style="font-size:20px;">Demi Menjaga Keamanan dan Kenyamanan Anda Dalam Mengakses Data</p>
-        <p class="text-center" style="font-size:20px;">Jangan Lupa Klik Menu <b> Logout </b>Jika Sudah Selesai Ruang Administrator Ini </p>
-        <br>
-        <p class="text-right" style="font-size:20px;">Terima Kasih</p>
-  </div>
-</div>
-</div>
+
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3><?= $jml_siswa; ?></h3>
+
+                <p>Jumlah Siswa</p>
+              </div>
+              <div class="icon">
+              <i class="fa-sharp fa-solid fa-users nav-icon"></i>
+              </div>
+              <a href="<?= base_url('siswa'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3><?= $jml_guru; ?></h3>
+
+                <p>Jumlah Guru</p>
+              </div>
+              <div class="icon">
+              <i class="fa-solid fa-user nav-icon"></i>
+              </div>
+              <a href="<?= base_url('guru'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner">
+                <h3><?= $jml_kelas; ?></h3>
+
+                <p>Jumlah Kelas</p>
+              </div>
+              <div class="icon">
+              <i class="fa-solid fa-landmark nav-icon"></i>
+              </div>
+              <a href="<?= base_url('kelas'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3><?= $jml_mapel; ?></h3>
+
+                <p>Jumlah Aspek Perkembangan</p>
+              </div>
+              <div class="icon">
+              <i class="fa-solid fa-book nav-icon"></i>
+              </div>
+              <a href="<?= base_url('mapel'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <!-- ./col -->
+          <!-- <div class="col-lg-3 col-6">
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3><?= $jml_user; ?></h3>
+
+                <p>Jumlah User</p>
+              </div>
+              <div class="icon">
+              <i class="fa-solid fa-user nav-icon"></i>
+              </div>
+              <a href="<?= base_url('user'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+          </div> -->
+          <!-- ./col -->

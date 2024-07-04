@@ -45,17 +45,32 @@ class ModelKrs extends Model
     {
         $this->db->table('tbl_nilai')->insert($data);
     }
-    public function DataKrs($nisn, $id_ta)
+    public function DataKrs($nisn)
     {
         return $this->db->table('tbl_nilai')
             ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_nilai.id_jadwal', 'left')
             ->join('tbl_mapel', 'tbl_mapel.kode_mapel = tbl_jadwal.kode_mapel', 'left')
             ->join('tbl_kelas', 'tbl_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
             ->join('tbl_guru', 'tbl_guru.nuptk = tbl_jadwal.nuptk', 'left')
+            ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
             ->where('nisn', $nisn)
-            ->where('tbl_kelas.id_ta', $id_ta)
+            // ->where('tbl_kelas.id_ta', $id_ta)
             ->get()->getResultArray();
     }
+
+    // ujicoba hadir
+    public function detailhadir($nisn,$id_ta){
+        return $this->db->table('tbl_hadir')
+        ->join('tbl_guru', 'tbl_guru.nuptk = tbl_hadir.nuptk', 'left')
+        ->join('tbl_kelas', 'tbl_kelas.nuptk = tbl_guru.nuptk', 'left')
+        ->join('tbl_siswa', 'tbl_siswa.nisn = tbl_hadir.nisn', 'left')
+        ->join('tbl_ta', 'tbl_ta.id_ta = tbl_kelas.id_ta', 'left')
+        ->where('tbl_hadir.nisn', $nisn)
+        ->where('tbl_ta.id_ta', $id_ta)
+
+        ->get()->getResultArray();
+    }
+    // end ujicoba hadir
 
 
     // public function delete_data($data)

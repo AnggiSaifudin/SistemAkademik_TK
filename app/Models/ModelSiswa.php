@@ -34,4 +34,14 @@ class ModelSiswa extends Model
     //     $this->db->table('tbl_siswa')
     //     ->join('tbl_nilai', 'tbl_nilai.id_siswa = tbl_siswa.id_siswa', 'left');
     // }
+
+    public function nambah($data){
+        $this->db->table('tbl_siswa')->insert($data);
+    }
+
+    public function cekdata($nisn){
+        return $this->db->table('tbl_siswa')
+        ->where('nisn',$nisn)
+        ->get()->getRowArray();
+    }
 }

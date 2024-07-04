@@ -171,43 +171,18 @@ $data = [];
 
 foreach ($siswa as $key => $value) {
     $quis = $this->request->getPost($value['nisn'].'nilai_quis');
-    $ketrampilan = $this->request->getPost($value['nisn'] . 'nilai_ketrampilan');
-    $kerajinan = $this->request->getPost($value['nisn'] . 'nilai_kerajinan');
     $tgl_nilai = $this->request->getPost('tgl_nilai');
 
-        // Validasi input tidak boleh kosong
-        if (empty($quis) || empty($ketrampilan) || empty($kerajinan) || empty($tgl_nilai)) {
+                // // Validasi input tidak boleh kosong
+        if (empty($quis) || empty($tgl_nilai)) {
             // Jika ada input yang kosong, berikan pesan kesalahan
             session()->setFlashdata('error', 'Harap lengkapi semua INPUTAN .');
             return redirect()->back()->withInput();
         }
         
-        // Validasi input harus berupa angka
-        if (!is_numeric($quis) || !is_numeric($ketrampilan) || !is_numeric($kerajinan)) {
-            // Jika ada input yang bukan angka, berikan pesan kesalahan
-            session()->setFlashdata('error', 'Harap masukkan nilai dalam format angka.');
-            return redirect()->back()->withInput();
-        }
-
-    $na =  ($quis + $ketrampilan + $kerajinan) / 3;
 
 
-    if ($na >= 4) {
-        $nh = 'A';
-        $desk = 'Berkembang Sangat Baik';
-    } elseif ($na < 4 && $na >= 3) {
-        $nh = 'B';
-        $desk = 'Berkembang Sesuai Harapan';
-    } elseif ($na < 3 && $na >= 2) {
-        $nh = 'C';
-        $desk = 'Mulai Berkembang';
-    } elseif ($na < 2 && $na >= 1) {
-        $nh = 'D';
-        $desk = 'Belum Berkembang';
-    } else {
-        $nh = '-';
-        $desk = '-';
-    }
+
     $tgl_nilai = $this->request->getPost('tgl_nilai');
 
     $data[] = [
@@ -215,11 +190,6 @@ foreach ($siswa as $key => $value) {
         // 'id_ta'=> $ta['id_ta'],
         'nisn' => $value['nisn'],
         'nilai_quis' => $this->request->getPost($value['nisn'].'nilai_quis'),
-        'nilai_ketrampilan' => $this->request->getPost($value['nisn'] . 'nilai_ketrampilan'),
-        'nilai_kerajinan' => $this->request->getPost($value['nisn'] . 'nilai_kerajinan'),
-        'na' => number_format($na, 0),
-        'nilai_huruf' => $nh,
-        'deskripsi' => $desk,
         'tgl_nilai' => $tgl_nilai,
     ];
 
@@ -241,4 +211,60 @@ return redirect()->to(base_url('loginguru/datanilai/' . $id_jadwal));
         ];
         return view('nilai/v_printnilai', $data);
     }
+
+    public function kehadiran()
+    {
+        $guru = $this->ModelGr->DataGuru();
+        $kelas_data = $this->ModelGr->get_kelas();
+        $ta = $this->ModelTa->ta_aktif();
+        // $getkelas=$this->ModelGr->get_siswa($kelas_data['id_kelas'],$guru['nuptk']);
+        // dd($getkelas);
+
+        $data = [
+            'title' => 'Kehadiran',
+            'page' => 'kehadiran/v_index',
+            'get_kelas' => $this->ModelGr->get_siswa($guru['nuptk'],$ta['id_ta']),
+            // 'get_siswa' => $this->ModelGr->get_siswa($id_kelas),
+        ];
+        return view('tampilan', $data);
+    }
+
+    // ujicoba hadir
+public function simpanhadir()
+{
+    // Uji
+    $guru = $this->ModelGr->DataGuru();
+    $ta = $this->ModelTa->ta_aktif();
+    $get_kelas = $this->ModelGr->get_siswa($guru['nuptk'], $ta['id_ta']);
+
+    $data = [];
+
+    foreach ($get_kelas as $key => $value) {
+        $nisn = $value['nisn'];
+        $sakit = $this->request->getPost($nisn . 'sakit');
+        $ijin = $this->request->getPost($nisn . 'ijin');
+        $tp = $this->request->getPost($nisn . 'tp');
+
+        // Jika data tidak null, masukkan ke array $data
+        if ($sakit !== null || $ijin !== null || $tp !== null) {
+            $data[] = [
+                'nuptk' => $guru['nuptk'],
+                'nisn' => $nisn,
+                'sakit' => $sakit,
+                'ijin' => $ijin,
+                'tp' => $tp,
+            ];
+        }
+        if (empty($sakit) || empty($ijin) || empty($tp)) {
+            // Jika ada input yang kosong, berikan pesan kesalahan
+            session()->setFlashdata('error', 'Harap lengkapi semua INPUTAN .');
+            return redirect()->back()->withInput();
+        }
+    }
+    // dd($data);
+    $this->ModelGr->simpanhadir($data);
+session()->setFlashdata('pesan', 'Ketidakhadiran berhasil DISIMPAN');
+return redirect()->to(base_url('loginguru1/kehadiran'));
+}
+// end hadir
 }

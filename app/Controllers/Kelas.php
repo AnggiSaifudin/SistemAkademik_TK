@@ -34,10 +34,9 @@ class Kelas extends BaseController
         if ($this->validate([
             'nama_kelas' => [
                 'label' => 'Nama kelas',
-                'rules' => 'required|is_unique[tbl_kelas.nama_kelas,id_kelas,{id_kelas}]',
+                'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input nama kelas lain!!',
                 ]
             ],
             'nuptk' => [
@@ -45,7 +44,6 @@ class Kelas extends BaseController
                 'rules' => 'required',
                 'errors' => [
                     'required' => '{field} wajib diisi!!!',
-                    'is_unique' => '{field} sudah ada. input kode lain!!'
                 ]
             ],
         ])) {
@@ -73,10 +71,10 @@ public function edit($id_kelas)
     if ($this->validate([
         'nama_kelas' => [
             'label' => 'Nama kelas',
-            'rules' => 'required|is_unique[tbl_kelas.nama_kelas,id_kelas,{id_kelas}]',
+            'rules' => 'required',
             'errors' => [
                 'required' => '{field} wajib diisi!!!',
-                'is_unique' => '{field} sudah ada. input nama kelas lain!!',
+                // 'is_unique' => '{field} sudah ada. input nama kelas lain!!',
             ]
         ],
         'nuptk' => [
@@ -84,7 +82,7 @@ public function edit($id_kelas)
             'rules' => 'required',
             'errors' => [
                 'required' => '{field} wajib diisi!!!',
-                'is_unique' => '{field} sudah ada. input kode lain!!'
+                // 'is_unique' => '{field} sudah ada. input kode lain!!'
             ]
         ],
     ])) {
